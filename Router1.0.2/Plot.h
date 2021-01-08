@@ -1,10 +1,10 @@
-void rms_Plot(){   
+void rms_Plot(int ADC_INPUT, int ADC_Gain, int VoltRange){   
     
     unsigned int Edge_Counter_L = 0; // using
-    boolean Comp_State_Low = false;//using
-    boolean Comp_State_change = false; //using
-    boolean Comp_State = true;//using
-    boolean last_Comp_State = HIGH;//using
+    bool Comp_State_Low = false;//using
+    bool Comp_State_change = false; //using
+    bool Comp_State = true;//using
+    bool last_Comp_State = true;//using
     
     int FlagTC = true; ////using flag to sample ant put into the list //using
     unsigned int nTC = 0; //using
@@ -24,7 +24,7 @@ void rms_Plot(){
     while(nTC < 700 && FlagTC == true ){
     
       channel1_2 = analogRead(ADC_INPUT);//A2 ATMEGA signal
-      channel1_2_float = float(channel1_2) * ADC_Gain *VoltRange/1023; //ADC gain is used to setting up the trigger
+      channel1_2_float = float(channel1_2) * ADC_Gain * VoltRange/1023; //ADC gain is used to setting up the trigger
       Comp_State_Low = (channel1_2_float > VTC_mean) ? false:true;   
       
       //Serial.print("channel1_2_float : ");Serial.println(channel1_2_float);

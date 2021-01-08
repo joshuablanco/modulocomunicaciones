@@ -1,5 +1,10 @@
 /****************** Router       ******************/
 /****************** Lybraries    ******************/
+#include <Wire.h>
+#include <Adafruit_SPIDevice.h>
+#include <Adafruit_I2CRegister.h>
+#include <Adafruit_I2CDevice.h>
+#include <Adafruit_BusIO_Register.h>
 #include <Arduino.h>
 #include "Adafruit_SHT31.h"
 #include <Adafruit_INA219.h>
@@ -8,42 +13,48 @@
 #include <TrueRMS.h>
 #include <SoftwareSerial.h>
 #include <XBee.h>
-#include <plot.h>
+
+
+#include <EnergyBat.h>
+#include <Plot.h>
+#include <TempHum.h>
+#include <ReadRMS.h>
+#include <WaterRead.h>
 
 /********* VALUES TO SET (INPUTS) *********/
 float Sensitivity = 0.1;  // Parameter to INPUT related with the current sensor characterizing
 float VoltRange = 4.8;    // ADC full scale peak-to-peak is 5.00Volts measure in full operation
 float ADC_Gain = 1;       // 1.05 related with the trigger
 float Scale_Plot_Axis = 1;// Scale Data to plot in the screen y-axis
- 
+
 /* STRUCTS */
-struct Temperature{
+struct Temperature {
     int Tint;
     int Tdecimal;
     int Hint;
     int Hdecimal;
 };
 
-struct Battery{
+struct Battery {
     int ShuntVoltageInt;
     int ShuntVoltageDecimal;
     int CurrentmaInt;
     int CurrentmaDecimal;
 };
 
-struct Water{
+struct Water {
     int WaterState;
 };
 
-struct CurrentData{
+struct CurrentData {
     float VTCComplete;//RMS Value with decimals  VTC
     double VTCAvg;// MEan value with decimals VTC_mean
     int VTCint;
     int VTCDecMSB;
-    int VTCDecLSB;    
+    int VTCDecLSB;
 };
 
-struct Plotting{
+struct Plotting {
     uint8_t sampless[300];
     int Num_Samples;
     int MaxCurrent;
@@ -54,7 +65,7 @@ const char TAIL = 'T';
 
 /****** XBEE SETUP  ****/
 XBee xbee = XBee();
-SoftwareSerial Xbee_Serial(4,3);
+SoftwareSerial Xbee_Serial(4, 3);
 
 
 /****** RMS SETUP *******/
@@ -65,7 +76,7 @@ SoftwareSerial Xbee_Serial(4,3);
 #define AVG_WINDOW 500  // window of 500 samples.  
 
 MCP3202 adc = MCP3202(10);
-Rms2 readRms ;// create an instance of
+Rms2 readRms;// create an instance of
 Average MeasAvg; // 
 
 unsigned long nextLoop;
@@ -85,30 +96,30 @@ Adafruit_SHT31 sht31 = Adafruit_SHT31();
 /****** CURRENT MONITOR ******/
 Adafruit_INA219 ina219;
 
-//using fgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvd<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.{-v          p'0Â´      ,mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmgf7 ------
+//using fgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvd<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.{-v          p'0´      ,mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmgf7 ------
 
 void setup() {
     /* Current Rms */
-    adc.begin();  
+    adc.begin();
     Serial.begin(9600);   /// for programming
     Xbee_Serial.begin(9600);   /// Xbee serial output
-  
+
     readRms.begin(VoltRange, RMS_WINDOW, ADC_12BIT, BLR_ON, CNT_SCAN);
     readRms.start(); //start measuring
-    
+
     MeasAvg.begin(VoltRange, AVG_WINDOW, ADC_10BIT, CNT_SCAN); // 
     MeasAvg.start(); //start measuring  
-    
+
     /***********SHT31**********/
     sht31.begin(0x44);
-    if(! sht31.begin(0x44)) {
-      //Serial.println("Couldnt find SHT31");
-      while(1) delay(1);
-      }  
-      
+    if (!sht31.begin(0x44)) {
+        //Serial.println("Couldnt find SHT31");
+        while (1) delay(1);
+    }
+
     /*****CURRENT MONITOR*****/
     ina219.begin();
-    ina219.setCalibration_16V_400mA(); 
+    ina219.setCalibration_16V_400mA();
 
 }
 
@@ -121,20 +132,20 @@ void loop() {
 
     temperatureH = TempHum();
     battery = EnergyBat();
-    water = WaterRead();
+    water = WaterRead(2);
     currentData = Read_RMS();
     //plotting = rms_Plot();
 
     //Transmission PayLoad
-    uint8_t payload[] = {temperatureH.Tint,temperatureH.Tdecimal,
+    uint8_t payload[] = { temperatureH.Tint,temperatureH.Tdecimal,
     temperatureH.Hint,temperatureH.Hdecimal,battery.ShuntVoltageInt,
     battery.ShuntVoltageDecimal,battery.CurrentmaInt,battery.CurrentmaDecimal,
     water.WaterState,
-    currentData.VTCint,currentData.VTCDecMSB,currentData.VTCDecLSB};
-    
+    currentData.VTCint,currentData.VTCDecMSB,currentData.VTCDecLSB };
+
     //Addressing Xbee
     XBeeAddress64 addr64 = XBeeAddress64(0x0013a200, 0x41553D44);
-    ZBTxRequest zbTx = ZBTxRequest(addr64, payload, sizeof(payload));   
+    ZBTxRequest zbTx = ZBTxRequest(addr64, payload, sizeof(payload));
     xbee.send(zbTx);
 
     delay(1000);
