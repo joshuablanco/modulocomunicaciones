@@ -1,0 +1,209 @@
+
+**** 08/13/20 17:18:48 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simuband"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimuAnalysisBode\simuanalo
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Simuband.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1 100k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMUANALOGDEVICEBODE
+V_V1         VDD 0 2.5
+V_V2         VCC 0 5
+R_R1         N00641 N00720  5.62k TC=0,0 
+R_R2         N00720 N00749  2.87k TC=0,0 
+R_R3         N00720 N00786  5.62k TC=0,0 
+R_R4         N00616 N00641  11.3k TC=0,0 
+R_R5         N00616 N00620  7.68k TC=0,0 
+R_R6         N01061 N00616  11.3k TC=0,0 
+C_C1         N00620 N00641  910p  TC=0,0 
+C_C2         N00749 N00786  910p  TC=0,0 
+C_C3         0 N00720  12n  TC=0,0 
+C_C4         0 N00616  2.2n  TC=0,0 
+V_V3         N01061 0  AC 1
++SIN 2.5 1 60 0 0 0
+X_U6-1         VDD N00620 VCC 0 N00641 OPA2131E/BB
+X_U6-2         VDD N00749 VCC 0 N00786 OPA2131E/BB
+
+**** RESUMING Simuband.cir ****
+.END
+
+**** 08/13/20 17:18:48 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simuband"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimuAnalysisBode\simuanalo
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U6-1.DY       X_U6-1.dx       X_U6-2.DY       X_U6-2.dx       
+          IS  190.000000E-18  800.000000E-18  190.000000E-18  800.000000E-18 
+          RS    2.000000E+03                    2.000000E+03                 
+          KF   22.580000E-18                   22.580000E-18                 
+
+
+**** 08/13/20 17:18:48 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simuband"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimuAnalysisBode\simuanalo
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U6-1.jx       X_U6-2.jx       
+               PJF             PJF             
+         VTO   -1              -1            
+        BETA  812.100000E-06  812.100000E-06 
+          IS    2.500000E-12    2.500000E-12 
+
+
+**** 08/13/20 17:18:48 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simuband"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimuAnalysisBode\simuanalo
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (  VDD)    2.5000  (N00616)    2.5000 (N00620)    2.5000     
+
+(N00641)    2.5001 (N00720)    2.5000 (N00749)    2.5000 (N00786)    2.5000     
+
+(N01061)    2.5000 (X_U6-1.6)-2.739E-09                  (X_U6-1.7)    2.5001   
+
+(X_U6-1.8)    2.5001                  (X_U6-1.9)    0.0000                      
+
+(X_U6-2.6) 21.94E-12                  (X_U6-2.7)    2.5000                      
+
+(X_U6-2.8)    2.5000                  (X_U6-2.9)    0.0000                      
+
+(X_U6-1.10)    1.8945                 (X_U6-1.11)     .2793                     
+
+(X_U6-1.12)     .2793                 (X_U6-1.20)     .4261                     
+
+(X_U6-1.21)    0.0000                 (X_U6-1.22)    0.0000                     
+
+(X_U6-1.53)    2.5000                 (X_U6-1.54)    2.5000                     
+
+(X_U6-1.61)     .6000                 (X_U6-1.62)    -.6000                     
+
+(X_U6-1.63)-51.89E-18                 (X_U6-1.64)    2.5000                     
+
+(X_U6-1.65)    0.0000                 (X_U6-1.66)    0.0000                     
+
+(X_U6-1.67)    0.0000                 (X_U6-1.68)    0.0000                     
+
+(X_U6-1.90) 11.42E-06                 (X_U6-1.91)   20.0000                     
+
+(X_U6-1.92)  -20.0000                 (X_U6-1.99)    2.5000                     
+
+(X_U6-2.10)    1.8945                 (X_U6-2.11)     .2793                     
+
+(X_U6-2.12)     .2793                 (X_U6-2.20)    -.4156                     
+
+(X_U6-2.21)    0.0000                 (X_U6-2.22)    0.0000                     
+
+(X_U6-2.53)    2.5000                 (X_U6-2.54)    2.5000                     
+
+(X_U6-2.61)     .6000                 (X_U6-2.62)    -.6000                     
+
+(X_U6-2.63)-51.89E-18                 (X_U6-2.64)    2.5000                     
+
+(X_U6-2.65)    0.0000                 (X_U6-2.66)    0.0000                     
+
+(X_U6-2.67)    0.0000                 (X_U6-2.68)    0.0000                     
+
+(X_U6-2.90)-7.625E-06                 (X_U6-2.91)   20.0000                     
+
+(X_U6-2.92)  -20.0000                 (X_U6-2.99)    2.5000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E-11
+    V_V2        -2.687E-03
+    V_V3         3.787E-09
+    X_U6-1.vb   -2.739E-14
+    X_U6-1.vc   -8.831E-17
+    X_U6-1.ve    8.830E-17
+    X_U6-1.vlim   1.142E-08
+    X_U6-1.vlp  -2.000E-11
+    X_U6-1.vln  -2.000E-11
+    X_U6-1.VQ1   1.142E-08
+    X_U6-1.VQ2   4.269E-13
+    X_U6-1.VN1  -1.942E-06
+    X_U6-1.VN2  -1.942E-06
+    X_U6-2.vb    2.194E-16
+    X_U6-2.vc    7.878E-20
+    X_U6-2.ve   -7.878E-20
+    X_U6-2.vlim  -7.625E-09
+    X_U6-2.vlp  -2.000E-11
+    X_U6-2.vln  -2.000E-11
+    X_U6-2.VQ1  -4.164E-13
+    X_U6-2.VQ2  -7.624E-09
+    X_U6-2.VN1  -1.942E-06
+    X_U6-2.VN2  -1.942E-06
+
+    TOTAL POWER DISSIPATION   1.34E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/13/20 17:18:48 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simuband"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimuAnalysisBode\simuanalo
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .22
+

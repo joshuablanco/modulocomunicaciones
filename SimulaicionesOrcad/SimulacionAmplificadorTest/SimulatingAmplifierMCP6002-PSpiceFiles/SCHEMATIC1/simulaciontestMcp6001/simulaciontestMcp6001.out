@@ -1,0 +1,208 @@
+
+**** 08/05/20 22:04:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulaciontestMcp6001"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionAmp
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simulaciontestMcp6001.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 600m 0 0.01m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMULATINGAMPLIFIERMCP6002
+V_V1         VCC 0 3.3
+V_V2         0 VEE 3.3
+X_U2         0 N01469 VCC VEE N01348 MCP6001
+R_R1         N01348 N01469  1k TC=0,0 
+R_R2         0 N01469  1k TC=0,0 
+.PARAM  rx=1k
+
+**** RESUMING simulaciontestMcp6001.cir ****
+.END
+
+**** 08/05/20 22:04:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulaciontestMcp6001"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionAmp
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.DESD       X_U2.DL         X_U2.DN1        
+          IS    1.000000E-15    1.000000E-15    1.000000E-12 
+          KF                                  146.000000E-18 
+
+
+**** 08/05/20 22:04:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulaciontestMcp6001"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionAmp
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.NMI        
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 08/05/20 22:04:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulaciontestMcp6001"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionAmp
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.REXP       
+           R    1            
+         TCE   10.1          
+
+
+**** 08/05/20 22:04:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulaciontestMcp6001"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionAmp
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    3.3000  (  VEE)   -3.3000  (N01348)-695.2E-06 (N01469)-347.6E-06     
+
+(X_U2.10)    3.8000                   (X_U2.11)    3.6275                       
+
+(X_U2.12)    3.6275                   (X_U2.13)    3.6000                       
+
+(X_U2.14)-347.6E-06                   (X_U2.15)    -.3454                       
+
+(X_U2.16)   -3.6000                   (X_U2.20)     .5137                       
+
+(X_U2.21)    -.5137                   (X_U2.26)-213.4E-06                       
+
+(X_U2.27)-440.0E-06                   (X_U2.30)-2.000E-06                       
+
+(X_U2.31)  119.6500                   (X_U2.32) -135.8000                       
+
+(X_U2.33)-2.000E-06                   (X_U2.34)-849.8E-06                       
+
+(X_U2.35)-849.8E-06                   (X_U2.37)-849.8E-06                       
+
+(X_U2.38)-849.8E-06                   (X_U2.39)-849.8E-06                       
+
+(X_U2.50)-347.9E-06                   (X_U2.51)-35.14E-12                       
+
+(X_U2.52)-347.6E-06                   (X_U2.55)    3.2993                       
+
+(X_U2.56)   -3.2988                   (X_U2.57)-695.4E-06                       
+
+(X_U2.61) 110.0E-06                   (X_U2.62) 58.20E-12                       
+
+(X_U2.70) 1.000E-06                   (X_U2.71)-1.000E-06                       
+
+(X_U2.96)-695.2E-06                   (X_U2.98)-129.7E-09                       
+
+(X_U2.99)-347.6E-09                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.110E-04
+    V_V2        -1.113E-04
+    X_U2.V10     5.000E-05
+    X_U2.V16     3.636E-12
+    X_U2.V13     3.636E-12
+
+    TOTAL POWER DISSIPATION   7.59E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/05/20 22:04:12 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulaciontestMcp6001"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionAmp
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =       42.03
+  Total job time (using Solver 1)   =        8.38
+

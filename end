@@ -1,0 +1,256 @@
+[33mcommit 3f3eba2239bdd9f87dff8e6080a6eaa3d658b9bd[m[33m ([m[1;36mHEAD -> [m[1;32mdevrobot[m[33m)[m
+Author: Josh <joshua.andres.blanco@gmail.com>
+Date:   Thu Jan 7 20:34:08 2021 -0500
+
+    hasta el 7 de enero se completa el sprint de conceptos se procede con la PCB
+
+[33mcommit bae0b652e03bfb2b1cf1f217ab2e583509bbe10b[m
+Author: Josh <joshua.andres.blanco@gmail.com>
+Date:   Thu Jan 7 20:29:16 2021 -0500
+
+    lets try
+
+[33mcommit 27dca033f36ac9c665d1a2837416118d0f7063d3[m
+Author: Josh <joshua.andres.blanco@gmail.com>
+Date:   Thu Jan 7 20:27:34 2021 -0500
+
+    lets try
+
+[33mcommit d98f0eae930ea92583adecc2ae2174bbeec5b52c[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Dec 14 14:08:19 2020 -0500
+
+    git
+
+[33mcommit 59182ee505c8457c090a36b8d833e887b398eaa4[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Sun Dec 13 17:45:22 2020 -0500
+
+    trabajo en san andres
+
+[33mcommit f15e8a9cc4219cc43fa90896ed3c1b3f1b8f9bf4[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Nov 30 20:27:01 2020 -0500
+
+    agregando archivos nuevos
+
+[33mcommit fa529a157b722dfe13c58b2694b10c3e321c31a9[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Nov 30 20:18:52 2020 -0500
+
+    cambios realizados
+
+[33mcommit f46c6f3c01213802a479a7fe747bc5412fb50e9f[m
+Merge: 6ce05ce 793d273
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Fri Aug 28 09:08:24 2020 -0500
+
+    Merge branch 'devrobot' of https://github.com/joshuablanco/ModCom into devrobot
+
+[33mcommit 6ce05ced2b937c43c99fc63b6ce6ba0a6c8baf3f[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Fri Aug 28 09:06:58 2020 -0500
+
+    Avances documento lectura Entendiendo Ruido
+
+[33mcommit 793d273dd34eee9a4413fb64acb6c63c27fceb8f[m
+Merge: d480526 b1a5d56
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Aug 27 11:06:57 2020 -0500
+
+    Merge pull request #12 from joshuablanco/master
+    
+    sdasd
+
+[33mcommit b1a5d56e1623212fe7f3335653ebdf72fd431ae8[m
+Merge: 603a701 d480526
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Aug 27 11:03:48 2020 -0500
+
+    Merge pull request #11 from joshuablanco/devrobot
+    
+    Merge pull request #10 from joshuablanco/devmaster
+
+[33mcommit d48052633ec3bbaefab4a8f5e4ab473fbdb928bf[m
+Merge: f16e147 e002122
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Aug 27 11:03:14 2020 -0500
+
+    Merge pull request #10 from joshuablanco/devmaster
+    
+    Devmaster
+
+[33mcommit 603a701670c7541b91d2c6f32069550bc1c20fc1[m
+Merge: 33999e3 e002122
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Aug 27 11:01:06 2020 -0500
+
+    Merge pull request #9 from joshuablanco/devmaster
+    
+    Devmaster
+
+[33mcommit e00212225146792e7565389f9c511eb1382b6b76[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Aug 27 10:57:46 2020 -0500
+
+    Modificacion del archivo GIT para manejo del repositorio
+
+[33mcommit 1fbd19529cfa2e053f5f604e07c09e6d55b9646b[m
+Author: Joshua Blanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Aug 27 10:49:07 2020 -0500
+
+    Primer avance
+
+[33mcommit 33999e32f357b669c70ddb09d43214119426b56e[m
+Merge: 47f8cbf f16e147
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Tue Aug 4 13:24:32 2020 -0500
+
+    Merge pull request #8 from joshuablanco/devrobot
+    
+    Devrobot
+
+[33mcommit f16e1470053fde1577e149f26c097984a18e46ef[m
+Merge: 00e4968 7887c24
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:54:32 2020 -0500
+
+    Merge branch 'devrobot' of https://github.com/joshuablanco/ModCom into devrobot
+
+[33mcommit 00e49684a14085b888ddbeabd4687cd9975a38f9[m
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:54:15 2020 -0500
+
+    especificacion de como se trabaja en git y borrado del archivo de pruebas para mirar funcionamiento de git
+
+[33mcommit 47f8cbf00deafd31b4afe2a126eb9d9fc377bf5a[m
+Merge: c7230a8 fb66651
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:48:36 2020 -0500
+
+    Merge pull request #6 from joshuablanco/devmaster
+    
+    para devmaster
+
+[33mcommit 7887c245c83e38ee2c4a7e8e869dbba23a3929cd[m
+Merge: 4fc8140 fb66651
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:44:13 2020 -0500
+
+    Merge pull request #5 from joshuablanco/devmaster
+    
+    para devmaster
+
+[33mcommit fb6665178e4b99dff522c9ac8d406f4790732836[m
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:43:13 2020 -0500
+
+    para devmaster
+
+[33mcommit c7230a83bb0d09a1dbc74929603a6ab94dcdaacc[m
+Merge: cd9c9ba 4fc8140
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:35:26 2020 -0500
+
+    Merge pull request #4 from joshuablanco/devrobot
+    
+    Devrobot
+
+[33mcommit 4fc8140256bd5fa283f87305117a3a464751c111[m
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:33:12 2020 -0500
+
+    prueba
+
+[33mcommit 7ebaf00adb5fcde84ee7c0555fe0f002256cadd3[m
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:27:29 2020 -0500
+
+    Update Guid_GuideLines.txt
+    
+    prueba devrobot
+
+[33mcommit cd9c9ba512e548f9264afcdaf6c814cf632029f6[m
+Merge: dc0fe37 9e0badc
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:11:18 2020 -0500
+
+    Merge pull request #3 from joshuablanco/devrobot
+    
+    anadiendo archivo de prueba desde git bash
+
+[33mcommit 9e0badcda8471ef9c307ba9b1ad635955ec1be38[m
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 20:02:05 2020 -0500
+
+    anadiendo archivo de prueba desde git bash
+
+[33mcommit dc0fe37ce7d19cdee89ae428425d52da99ed289c[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 0d094de 370548f
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 18:53:38 2020 -0500
+
+    Merge pull request #2 from joshuablanco/DevRobot
+    
+    Merge pull request #1 from joshuablanco/master
+
+[33mcommit 0d094de0755ed382d72e2fd78f861732fc573c65[m
+Merge: e2273ed 7df910f
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 18:24:34 2020 -0500
+
+    Merge branch 'master' into devrobot
+
+[33mcommit 370548f24b532452fcc005f9dc4476545e598455[m[33m ([m[1;31morigin/DevRobot[m[33m)[m
+Merge: ae39f6b 7df910f
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 18:18:00 2020 -0500
+
+    Merge pull request #1 from joshuablanco/master
+    
+    Merge branch 'DevRobot'
+
+[33mcommit e2273ed24b28bcefe118c7ff22ffb4b201983bbb[m
+Author: joshuablanco <joshua.andres.blanco@hotmail.com>
+Date:   Mon Aug 3 17:27:51 2020 -0500
+
+    "#mensaje"
+
+[33mcommit 7df910f79387b6b2442a1d5b5d8a2a574fed1366[m
+Merge: 8f05582 ae39f6b
+Author: Joshua Andres Blanco Jerez <joshua.andres.blanco@gmail.com>
+Date:   Sat Jul 25 22:04:05 2020 -0500
+
+    Merge branch 'DevRobot'
+
+[33mcommit ae39f6be0fdbca9713ad18f7a0f6858f3f722795[m
+Author: Joshua Andres Blanco Jerez <joshua.andres.blanco@gmail.com>
+Date:   Sat Jul 25 22:03:17 2020 -0500
+
+    Anadiendo PCB al repositorio
+    
+    y anadiendo el archivo para visualizar las señales en las pruebas
+
+[33mcommit 8f0558279f225b9c40598b3de2a04af80f790a66[m
+Author: joshua blanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Jan 2 23:37:40 2020 -0600
+
+    archivo Git
+
+[33mcommit dfeec922ae5159ade1db3f7cf71ffe7ad8029a15[m
+Author: joshua blanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Jan 2 23:15:23 2020 -0600
+
+    prueba commit y cambios
+
+[33mcommit be25c22d2ca3437287da5d43b3e1c45562fa8561[m
+Author: joshua blanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Jan 2 22:53:33 2020 -0600
+
+    agregar archivos nuevos
+
+[33mcommit d1a0f9456b86681a6a64f5c7b7304274452f37d2[m
+Author: joshua blanco <joshua.andres.blanco@hotmail.com>
+Date:   Thu Jan 2 22:52:25 2020 -0600
+
+    primer commit se incluye el adc_data para calibrar

@@ -1,0 +1,7 @@
+* source SIMULATINGAMPLIFIERMCP6002
+V_V1         VCC 0 3.3
+V_V2         0 VEE 3.3
+X_U2         0 N01469 VCC VEE N01348 MCP6001
+R_R1         N01348 N01469  1k TC=0,0 
+R_R2         0 N01469  1k TC=0,0 
+.PARAM  rx=1k

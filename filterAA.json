@@ -1,0 +1,50 @@
+{
+	"Name": "FILTROFINALAA",
+	"Description": "filtro antialiasing final",
+	"Tool": "FW",
+	"Version": "1.1",
+	"Design": {
+		"visitedTabs": [
+			"filter-type",
+			"specifications",
+			"components"
+		],
+		"filterType": "lowPass",
+		"specifications": {
+			"gain": 0,
+			"gainUnit": "dB",
+			"passbandAttenuation": -3,
+			"passbandFrequency": 1500,
+			"stopbandAttenuation": -40,
+			"stopbandFrequency": 150000,
+			"filterResponseValue": 0.9,
+			"filterResponseSlider": "58",
+			"centerFrequency": null
+		},
+		"components": {
+			"vsPlus": 5,
+			"vsMinus": 0,
+			"optimization": "Power",
+			"optimizationPreference": "nonSpecific",
+			"compensateForGbw": true,
+			"stages": [
+				{
+					"stageLetter": "A",
+					"componentSizing": 72,
+					"gain": -1,
+					"gainEnabled": false,
+					"implementation": "sallenKey",
+					"opAmps": "AD8515"
+				}
+			],
+			"recommendedAmps": [],
+			"sortOrder": [
+				0
+			]
+		},
+		"tolerances": {},
+		"nextSteps": {}
+	},
+	"CreatedDate": "2020-11-24 11:13:32 AM",
+	"UpdatedDate": "2020-11-24 11:13:32 AM"
+}

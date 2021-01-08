@@ -1,0 +1,103 @@
+Introducción
+	- Motivacion
+	- justificación del proyecto
+	- Centro de datos
+
+Objetivos
+	- Generales
+	- Específicos
+	
+Normatividad
+	- Introducción
+	- Historial
+	- Típica topología y descripción térmica de equipos en un Centro de Datos	
+	- Nuevos lineamientos y definicion de clases
+	- curva psicometrica
+	- tipos de clases 
+	- Confiabilidad
+
+Requerimientos
+	- Temperatura y humedad
+	- Autonomía.
+	- Fugas líquidas.
+	- Consumo de corriente.
+	- Conexión.
+	- Detección de anomalías.
+
+Proceso de diseño
+	- Ciclo de diseño 
+	- Establecimiento de requerimientos
+		° Temperatura y humedad
+		° Corriente AC
+		° Fugas líquidas
+		° Autonomía
+		° Comunicacion
+		° Alarmas
+	- Arquitectura propuesta
+		° Recolección de datos
+			* Temperatura y Humedad relativa
+				* Sensores						
+			* Autonomía
+				* Polarización	
+				* Reguladores
+				* Sensores 			
+			* Corriente AC
+				* Sensores
+				* Ruido	
+				* Topologías			
+				* Filtros activos
+				* Filtro Bucket
+				* ADC
+			* Fugas líquidas
+				* Aspectos generales
+				* Sensores				
+		° Transporte
+			* XBee
+				* Fundamentos
+				* Tipo de topologías
+				* Configuración básica
+				* Comandos AT
+				* Modo API
+				* Observaciones
+				* Ventajas
+		° Aplicación
+			* Microcontrolador
+			* Pantalla
+			* Indicadores
+			* Conexión a la Nube
+			* DashBoard
+	- Selección de componentes
+		° Temperatura y Humedad relativa				
+		° Autonomía		
+			* Polarización			
+			* Reguladores
+			* Sensores 			
+		° Corriente AC
+			* Sensores
+			* Amplificador			
+			* ADC
+		° Fugas líquidas
+			* Aspectos generales
+			* Sensores
+			*   	
+Implementacion y resultados
+	- Circuito impreso
+	- Toma de lecturas
+	- Pruebas Detección de anomalías
+	- Pruebas de transmisión
+	- Pantalla
+
+Programacion
+	° Temperatura y humedad
+	° Corriente AC
+	° Fugas líquidas
+	° Autonomía
+	° Comunicacion
+	° Alarmas
+
+
+
+
+
+
+

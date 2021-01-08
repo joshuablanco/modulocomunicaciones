@@ -1,0 +1,122 @@
+/************************** GIT_GUIDELINES **********************************/
+
+usar siempre status para saber en que estado esta si tiene que agregar o 
+usar commit o borrar o editar.
+
+
+- pwd : se sabe el directorio actual 
+
+- git init : se inicializa Git en el proyecto que se desee
+
+- git status : para saber que archivos estan trabajando o los actuales 
+
+- git add : para agregar archivos al reopistorio 
+
+- git log : muestra lo que se ha hecho 
+
+BRANCHING
+
+- git branch Nameyouwant : version alternativa al master 
+
+- git checkout NombreRama : indica el nombre de a rama que se quiere ir
+
+se trabajan 3 ramas la rama personal que es en la que se realizan los trabajos, la rama de desarrollo que se sube 
+lo que funciona y la rama master que se hace los merge con un pullrequest desde master github
+
+COMMIT
+- git commit : para crear snapshot es decir una foto de su codigo y sus cambios 
+  *al aparecer el archivo de texto plano se presiona "i" para editar 
+  *posteriormente se presiona escape para salir de la edicion 
+  *se escribe ":wq" para salir del commit y que se ejecute
+
+- git config --global user.email "email@asdas.com"
+
+-git config --global user.name "Nombre que quiera"
+
+- git commit -a -m "Mensaje" (-a incluye todos -m mensaje)
+
+- git commit -m "He agregado un gitignore"
+
+PUSHING AND PULL
+- git push  
+
+- git push -u origin master
+
+- git pull DireccionRepositorioURL
+
+- git log: arroja un hash para diferenciar commits o versiones 
+
+- git checkout -- FileName :EN EL MOMENTO DE EDITAR EL CODIGO Y POR ALGUN 
+  MOTIVO QUERER NO GUARDARLOS EN EL GIT USAR SI SE QUIERE REGRESAR A LOS 
+  CAMBIOS PRIMERO SE REALIZA UN COMMIT.
+
+- git diff FileName : PARA SABER QUE LINEAS DE CODIGO SE MODIFICARON 
+
+- .gitignore : es 
+un archivo que se crea SIN EXTENSION y se escribe el nombre 
+  de los archivos qe se desean ignorar en esta
+
+- git checkout Nameyouwant para salir del master y entrar a la rama 
+  Nameyouwant 
+
+- git remote add origin https://github.com/joshuablanco/ModCom.git
+
+
+IGNORING 
+
+se crea un archivo .gitignore
+en este archivo se incluye todo lo que se quiere ignorar 
+el archivo .gitignore si se agrega a la rama si se trabaja con vscode y asp .netcore
+hay un comando muy util que ignora archivos dll generados por compilacion 
+
+dotnet new gitignore 
+
+
+
+SUBIR A GITHUB 
+…or create a new repository on the command line
+echo "# DateApp-1.0" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/joshuablanco/DateApp-1.0.git
+git push -u origin main
+
+
+
+
+ADD SSH KEY
+1. Open Git Bash
+2. Enter ls -al ~/.ssh to see if existing SSH keys are present:
+	$ ls -al ~/.ssh
+	# Lists the files in your .ssh directory, if they exist
+3. if dont exist a public key so create one, you know who are those keys beacaus end with ".pub"
+To create a key
+	a. ssh-keygen -t ed25519 -C "Email@ad.com"
+	Note: If you are using a legacy system that doesn't support 	the Ed25519 		algorithm, use:
+	$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+	
+	b. agregar un agente SSH
+	eval `ssh-agent -s`
+	> Agent pid 1280
+
+	c.agregue la clave privada al agente ssh 
+	ssh-add ~/.ssh/id_ed25519
+
+	
+Adding to Github Account
+
+1. Copy your ssh key to the clip board you can do this with the command clip < ~/$PATH
+	clip < ~/.ssh/id_ed25519
+
+
+
+
+
+
+
+
+
+
+

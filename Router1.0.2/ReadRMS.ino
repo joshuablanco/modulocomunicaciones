@@ -1,0 +1,54 @@
+CurrentData Read_RMS(){
+    
+    CurrentData currentdata = CurrentData();
+
+    ////// Find Rms value Average     
+    unsigned int adcVal_0;
+    int cnt=0;
+
+    float VTC; //using
+
+    boolean FlagNo = false;
+
+    while(FlagNo == false){  // 500 samples
+        adcVal_0 = adc.readChannel(0);
+        
+        readRms.update(adcVal_0);
+        MeasAvg.update(adcVal_0);
+
+        cnt++;
+
+        if(cnt >= 500) { // publish every 0.5s
+            
+            readRms.publish();     
+            MeasAvg.publish();
+            
+            VTC = readRms.rmsVal;
+            VTC_mean = (double)MeasAvg.average;
+            
+            VTC = Fit_Rms(VTC); // Fitted Value   
+            cnt=0;        
+            FlagNo = true;
+        }
+        delay(1);
+    }
+    
+
+    unsigned int VTCdec = (uint16_t)((VTC - (byte)VTC) * 1000);
+    byte LowByte = (VTCdec & 0x00FF);
+    byte HighByte = ((VTCdec & 0xFF00) >> 8);
+
+    currentdata.VTCAvg = VTC_mean;
+    currentdata.VTCComplete = VTC;
+    currentdata.VTCint = (int)VTC;
+    currentdata.VTCDecLSB = (int)LowByte;
+    currentdata.VTCDecMSB = (int)HighByte;
+}
+
+float Fit_Rms(float RmsVal){
+    float RmsMCP;
+    float RmsMCP_Real;
+    //RmsMCP_Real = 0.1653*pow(RmsVal,4)-0.4892*pow(RmsVal,3)+0.4305*pow(RmsVal,2)+0.8739*RmsVal+0.006338;
+    RmsMCP_Real = -1.48*pow(RmsVal,4)+2.381*pow(RmsVal,3)-1.194*pow(RmsVal,2)+1.18*RmsVal-0.01193;  
+    return RmsMCP_Real;   
+}

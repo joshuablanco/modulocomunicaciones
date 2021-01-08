@@ -1,0 +1,58 @@
+
+**** 08/12/20 19:36:10 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Simuband"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimuAnalysisBode\SimuAnalo
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Simuband.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 100 1 100k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMUANALOGDEVICEBODE
+V_V1         VEE 0 2.5
+V_V2         VCC 0 5
+R_R1         N00641 N00720  5.62k TC=0,0 
+R_R2         N00720 N00749  2.87k TC=0,0 
+R_R3         N00720 N00786  5.62k TC=0,0 
+R_R4         N00616 N00641  11.3k TC=0,0 
+R_R5         N00616 N00620  7.68k TC=0,0 
+R_R6         N01061 N00616  11.3k TC=0,0 
+C_C1         N00620 N00641  910p  TC=0,0 
+C_C2         N00749 N00786  910n  TC=0,0 
+C_C3         0 N00720  12n  TC=0,0 
+C_C4         0 N00616  2.2n  TC=0,0 
+V_V3         N01061 0 DC 0Vdc AC 1Vac 
+X_U3-1         VEE N00620 VCC 0 N00641 OPA2131E/BB
+X_U3-2         VEE N00749 VCC 0 N00786 OPA2131E/BB
+C_C5         N01753 VCC  100n  TC=0,0 
+C_C6         0 VEE  1n  TC=0,0 
+
+**** RESUMING Simuband.cir ****
+.END
+
+ERROR(ORPSIM-15141): Less than 2 connections at node N01753.
+
+ERROR(ORPSIM-15142): Node N01753 is floating
+

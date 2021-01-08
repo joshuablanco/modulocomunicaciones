@@ -1,0 +1,153 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="919"
+     height="689">
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%"
+                        id="mx-gradient-efd3d2-1-efd3d2-1-s-0">
+            <stop offset="0%" style="stop-color:#efd3d2"/>
+            <stop offset="100%" style="stop-color:#efd3d2"/>
+        </linearGradient>
+    </defs>
+    <g transform=" scale(1) translate(-295.5,-205.5)">
+        <ellipse cx="750" cy="555" rx="330" ry="305"
+                 fill="url(#mx-gradient-efd3d2-1-efd3d2-1-s-0)" stroke="#000000"
+                 pointer-events="none"/>
+        <ellipse cx="560" cy="830" rx="130" ry="60" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="22px">
+            <text x="560" y="827">
+                Corroción del Servidor vs
+            </text>
+            <text x="560" y="853">
+                 Temperatura Ambiente
+            </text>
+        </g>
+        <ellipse cx="965" cy="820" rx="135" ry="60" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="22px">
+            <text x="965" y="817">
+                Envoltura Permitida 
+            </text>
+            <text x="965" y="843">
+                Ambiental del Servidor
+            </text>
+        </g>
+        <ellipse cx="760" cy="265" rx="140" ry="55" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="24px">
+            <text x="760" y="261.5">
+                Potencia Servidor vs
+            </text>
+            <text x="760" y="290.5">
+                 Temperatura Ambiente
+            </text>
+        </g>
+        <ellipse cx="1025" cy="410" rx="145" ry="60" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="22px">
+            <text x="1025" y="407">
+                Desempeño del Servidor vs
+            </text>
+            <text x="1025" y="433">
+                 Temperatura Ambiente
+            </text>
+        </g>
+        <ellipse cx="1080" cy="630" rx="130" ry="60" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="22px">
+            <text x="1080" y="627">
+                Costo del Servidor vs
+            </text>
+            <text x="1080" y="653">
+                 Temperatura Ambiente
+            </text>
+        </g>
+        <ellipse cx="480" cy="415" rx="140" ry="55" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="20px">
+            <text x="480" y="400">
+                Ruido acústico
+            </text>
+            <text x="480" y="424">
+                del Servidor vs
+            </text>
+            <text x="480" y="448">
+                 Temperatura Ambiente
+            </text>
+        </g>
+        <ellipse cx="430" cy="635" rx="130" ry="55" fill="#ffffff"
+                 stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="22px">
+            <text x="430" y="632">
+                Fiabilidad del Servidor vs
+            </text>
+            <text x="430" y="658">
+                 Temperatura Ambiente
+            </text>
+        </g>
+        <ellipse cx="755" cy="550" rx="125.00000000000001" ry="70"
+                 fill="#ffffff" stroke="#000000" pointer-events="none"/>
+        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
+           font-size="24px">
+            <text x="755" y="546.5">
+                Envoltura operativa
+            </text>
+            <text x="755" y="575.5">
+                del Centro de Datos
+            </text>
+        </g>
+        <path d="M 761.74 480 L 760.87 480 Q 760 480 760 470 L 760 320"
+              fill="none" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" stroke-dasharray="6 6"
+              pointer-events="none"/>
+        <path d="M 757.24 480 L 763.24 477 L 761.74 480 L 763.24 483 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 850.74 500 L 912 500 Q 922 500 922 490 L 922 453" fill="none"
+              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+              stroke-dasharray="6 6" pointer-events="none"/>
+        <path d="M 846.24 500 L 852.24 497 L 850.74 500 L 852.24 503 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 659.26 500 L 589 500 Q 579 500 579 490 L 579 454" fill="none"
+              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+              stroke-dasharray="6 6" pointer-events="none"/>
+        <path d="M 663.76 500 L 657.76 503 L 659.26 500 L 657.76 497 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 623.26 550 L 570 550 Q 560 550 560 560 L 560 635" fill="none"
+              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+              stroke-dasharray="6 6" pointer-events="none"/>
+        <path d="M 627.76 550 L 621.76 553 L 623.26 550 L 621.76 547 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 886.74 550 L 940 550 Q 950 550 950 560 L 950 630" fill="none"
+              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
+              stroke-dasharray="6 6" pointer-events="none"/>
+        <path d="M 882.24 550 L 888.24 547 L 886.74 550 L 888.24 553 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 659.26 600 L 655.63 600 Q 652 600 652 610 L 652 787"
+              fill="none" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" stroke-dasharray="6 6"
+              pointer-events="none"/>
+        <path d="M 663.76 600 L 657.76 603 L 659.26 600 L 657.76 597 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+        <path d="M 850.74 600 L 859.87 600 Q 869 600 869 610 L 869 777"
+              fill="none" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" stroke-dasharray="6 6"
+              pointer-events="none"/>
+        <path d="M 846.24 600 L 852.24 597 L 850.74 600 L 852.24 603 Z"
+              fill="#000000" stroke="#000000" stroke-width="2"
+              stroke-miterlimit="10" pointer-events="none"/>
+    </g>
+</svg>

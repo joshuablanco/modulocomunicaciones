@@ -1,0 +1,4 @@
+* source SIMULACIONADCRUIDOSCHEMA
+R_R1         0 N00067  1k TC=0,0 
+V_V1         N00067 N00278 0.5
+V_V2         N00278 0 5

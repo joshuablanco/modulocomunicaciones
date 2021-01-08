@@ -1,0 +1,172 @@
+
+**** 08/05/20 10:41:56 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulacionPrueba"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionDePrueba
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simulacionPrueba.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 33ms 0 0.1m 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMULACIONDEPRUEBA
+V_V1         VCC 0 5
+X_U1A         N00334 N00276 VCC VEE} N00276 LM324/NS
+V_V2         0 VEE 5
+V_V3         N00334 0  AC 0
++SIN 0 1 60 0 0 0
+
+**** RESUMING simulacionPrueba.cir ****
+.END
+
+**** 08/05/20 10:41:56 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulacionPrueba"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionDePrueba
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.DX        
+          IS    1.000000E-15 
+
+
+**** 08/05/20 10:41:56 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulacionPrueba"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionDePrueba
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.QX        
+               PNP             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF    1.111000E+03 
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+**** 08/05/20 10:41:56 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulacionPrueba"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionDePrueba
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VCC)    5.0000  (  VEE)   -5.0000  ( VEE})   -5.5738  (N00276)     .0020     
+
+(N00334)    0.0000 (X_U1A.3)     .0010                   (X_U1A.4)     .6987    
+
+(X_U1A.5)   -5.5479                   (X_U1A.6)   -5.5479                       
+
+(X_U1A.7)     .0020                   (X_U1A.8)    3.3700                       
+
+(X_U1A.9)     .0020                   (X_U1A.10)   -4.9388                      
+
+(X_U1A.15)     .0020                  (X_U1A.16)    -.2869                      
+
+(X_U1A.17)    -.2869                  (X_U1A.20)     .2720                      
+
+(X_U1A.21)    -.2680                  (X_U1A.22)     .0020                      
+
+(X_U1A.23)     .0020                  (X_U1A.24)     .0026                      
+
+(X_U1A.25)     .0014                  (X_U1A.26)     .6320                      
+
+(X_U1A.27)    -.6280                  (X_U1A.49)    -.2869                      
+
+(X_U1A.98)    -.2869                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.197E-08
+    V_V2         0.000E+00
+    V_V3         5.197E-08
+    X_U1A.V2     3.369E-12
+    X_U1A.V3     4.942E-12
+    X_U1A.V6    -3.698E-05
+    X_U1A.V7    -3.694E-05
+    X_U1A.V5    -2.710E-13
+    X_U1A.V4    -2.710E-13
+
+    TOTAL POWER DISSIPATION   4.68E-05  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/05/20 10:41:56 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simulacionPrueba"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionDePrueba
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .23
+

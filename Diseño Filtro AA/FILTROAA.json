@@ -1,0 +1,29 @@
+{
+	"Name": "FILTROAA",
+	"Description": "FILTRO ANTIALIASING ",
+	"Tool": "FW",
+	"Version": "1.1",
+	"Design": {
+		"visitedTabs": [
+			"filter-type",
+			"specifications"
+		],
+		"filterType": "lowPass",
+		"specifications": {
+			"gain": 0,
+			"gainUnit": "dB",
+			"passbandAttenuation": -3,
+			"passbandFrequency": 1500,
+			"stopbandAttenuation": -40,
+			"stopbandFrequency": 150000,
+			"filterResponseValue": 0.9,
+			"filterResponseSlider": "58",
+			"centerFrequency": null
+		},
+		"components": {},
+		"tolerances": {},
+		"nextSteps": {}
+	},
+	"CreatedDate": "2020-11-24 10:22:08 AM",
+	"UpdatedDate": "2020-11-24 10:22:08 AM"
+}

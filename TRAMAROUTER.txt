@@ -1,0 +1,24 @@
+HEADER
+1		-> Primer indicador
+Tint		-> Parte entera de la temperatua
+Tdecimal	-> PArte decimal de la temperatura
+2		-> indicador
+Hint		-> Parte entera humedad
+Hdecimal	-> Parte decimal humedad
+ShuntInt	-> Parte entera voltaje baterias
+ShuntDecimal	-> Parte decimal voltaje baterias
+CurrentInt 	-> Parte entera corriente
+CurrentDecimal 	-> Parte decimal corriente
+Water -> 1/0	-> Agua
+[se envia el dato directamente leido hasta las condiciones]	-> Senal voltaje
+VTCint parte entera del valor RMS	-> Parte entera Voltaje RMS
+VTCdecimal MSB	-> Parte decimal Valor RMS MSB
+VTCdecimal LSB	-> Parte decimal valor RMS LSB
+MaxCurrent 	-> Maxima corriente para la pantalla
+Num_Samples	-> Numero de muestras
+TAIL
+0
+0
+0
+
+delay de dos segundos...

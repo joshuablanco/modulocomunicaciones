@@ -1,0 +1,86 @@
+
+**** 08/05/20 12:19:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SimuRuidoDC"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionADCConRuido\S
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "SimuRuidoDC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMULACIONADCRUIDOSCHEMA
+R_R1         0 N00067  1k TC=0,0 
+V_V1         N00067 N00278 0.5
+V_V2         N00278 0 5
+
+**** RESUMING SimuRuidoDC.cir ****
+.END
+
+**** 08/05/20 12:19:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SimuRuidoDC"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionADCConRuido\S
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00067)    5.5000 (N00278)    5.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.500E-03
+    V_V2        -5.500E-03
+
+    TOTAL POWER DISSIPATION   3.03E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 08/05/20 12:19:52 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-SimuRuidoDC"  [ C:\Users\joshu\OneDrive\Escritorio\ModComT\ModCom\SimulaicionesOrcad\SimulacionADCConRuido\S
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+
