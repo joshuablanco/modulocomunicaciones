@@ -1,4 +1,5 @@
 Temperature TempHum(){
+    
     /********************** Temperature code **************************/
     float T = sht31.readTemperature(); delay(5);
     float H = sht31.readHumidity();
