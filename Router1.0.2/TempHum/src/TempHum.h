@@ -1,5 +1,5 @@
 /*
-  TempHum.h - Library for reading temperature and humidity using the.
+  TempHum.h - Library for reading temperature and humidity using the DHT22NEW lib.
   Created by Joshua B. Jerez, Enero 9, 2021.
   Released into the public domain.
   This library works with dhtnewlib, its output is set in a structure Temperature
