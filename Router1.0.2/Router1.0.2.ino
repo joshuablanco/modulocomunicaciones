@@ -87,12 +87,11 @@ Adafruit_INA219 ina219;
 
 //using fgvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvd<<<<<<<<<<<<<<<<<<<<<<<<<<<<<.{-v          p'0´      ,mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmgf7 ------
 
-void setup() {
-    /* Current Rms */
+void setup() {    
     adc.begin();  
     Serial.begin(9600);   /// for programming
     Xbee_Serial.begin(9600);   /// Xbee serial output
-  
+    /* Current Rms */
     readRms.begin(VoltRange, RMS_WINDOW, ADC_12BIT, BLR_ON, CNT_SCAN);
     readRms.start(); //start measuring
     
