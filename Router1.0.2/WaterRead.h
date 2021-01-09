@@ -15,8 +15,7 @@ Water WaterReads(int ADC_INPUT1, int ADC_INPUT2, int ADC_INPUT3){
     delay(10);
     uint8_t sensorValue = analogRead(ADC_INPUT3);
     delay(10);
-    
-    
+        
     
     if (sensorValue >= 300){
         //Serial.print("Water : ");Serial.println(1);
