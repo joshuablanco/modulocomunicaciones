@@ -2,6 +2,7 @@ CurrentData Read_RMS(){
     
     CurrentData currentdata = CurrentData();
  
+ 
     ////// Find Rms value Average     
     unsigned int adcVal_0;
     int cnt=0;
