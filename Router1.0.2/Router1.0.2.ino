@@ -10,6 +10,7 @@
 #include <XBee.h>
 #include <plot.h>
 
+#include "WR.h"
 /********* VALUES TO SET (INPUTS) *********/
 float Sensitivity = 0.1;  // Parameter to INPUT related with the current sensor characterizing
 float VoltRange = 4.8;    // ADC full scale peak-to-peak is 5.00Volts measure in full operation
@@ -114,7 +115,7 @@ void setup() {
 void loop() {
     Temperature temperatureH = Temperature();
     Battery battery = Battery();
-    Water water = waterRead.WaterReads(3);
+    //Water water = waterRead.WaterReads(3);
     CurrentData currentData = CurrentData();
     Plotting plotting = Plotting();
     

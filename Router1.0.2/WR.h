@@ -1,14 +1,11 @@
-/*
-*/
-#ifndef WaterRead_H
-
-#define WaterReada_H
+#ifndef WR_h
+#define WR_h
 
 #include "Arduino.h"
-
-class WaterRead {
+ 
+class WR{
     public:
-        WaterRead(uint8_t ADC_PIN){ _ADC_PIN = ADC_PIN;};    
+        WR(uint8_t ADC_PIN){ _ADC_PIN = ADC_PIN;};    
 
         struct Water{
             int WaterState;
@@ -33,8 +30,9 @@ class WaterRead {
                 wateread.WaterState = 0;
             }
             return wateread;
-        }
+        };
     private:
         int _ADC_PIN = 0;
 };
+
 #endif
