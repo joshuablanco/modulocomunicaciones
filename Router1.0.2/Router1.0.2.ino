@@ -114,10 +114,10 @@ void setup() {
 void loop() {
     Temperature temperatureH = Temperature();
     Battery battery = Battery();
-    Water water = Water();
+    Water water = waterRead.WaterReads(3);
     CurrentData currentData = CurrentData();
     Plotting plotting = Plotting();
-
+    
     temperatureH = TempHum();
     battery = EnergyBat();
     water = WaterRead();
