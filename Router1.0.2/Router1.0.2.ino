@@ -83,7 +83,6 @@ DHTNEW dhtpin1(4);
 /**** WATER SETUP ****/
 #define WATER_1 A1
 
-
 /****** CURRENT MONITOR ******/
 Adafruit_INA219 ina219;
 
