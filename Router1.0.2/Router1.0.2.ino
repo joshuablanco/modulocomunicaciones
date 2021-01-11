@@ -1,16 +1,14 @@
 /****************** Router       ******************/
 /****************** Lybraries    ******************/
 #include <Arduino.h>
-#include "Adafruit_SHT31.h"
+#include <dhtnew.h>
 #include <Adafruit_INA219.h>
 #include <MCP3202.h>
 #include "SPI.h"
 #include <TrueRMS.h>
 #include <SoftwareSerial.h>
 #include <XBee.h>
-#include <plot.h>
 
-#include "WR.h"
 /********* VALUES TO SET (INPUTS) *********/
 float Sensitivity = 0.1;  // Parameter to INPUT related with the current sensor characterizing
 float VoltRange = 4.8;    // ADC full scale peak-to-peak is 5.00Volts measure in full operation
@@ -18,11 +16,11 @@ float ADC_Gain = 1;       // 1.05 related with the trigger
 float Scale_Plot_Axis = 1;// Scale Data to plot in the screen y-axis
  
 /* STRUCTS */
-struct Temperature{
-    int Tint;
-    int Tdecimal;
-    int Hint;
-    int Hdecimal;
+struct TemperatureStruct{
+    int Tint = 0;
+    int Tdecimal = 0;
+    int Hint = 0;
+    int Hdecimal = 0;
 };
 
 struct Battery{
@@ -65,6 +63,7 @@ SoftwareSerial Xbee_Serial(4,3);
 #define RMS_WINDOW 500  // rms window of 50 samples, means 3 periods @60Hz
 #define AVG_WINDOW 500  // window of 500 samples.  
 
+
 MCP3202 adc = MCP3202(10);
 Rms2 readRms ;// create an instance of
 Average MeasAvg; // 
@@ -79,9 +78,11 @@ double VTC_mean;
 /**** PLOTTING *****/
 
 /****** TEMPERATURE SETUP *****/
-Adafruit_SHT31 sht31 = Adafruit_SHT31();
+DHTNEW dhtpin1(4);
 
 /**** WATER SETUP ****/
+#define WATER_1 A1
+
 
 /****** CURRENT MONITOR ******/
 Adafruit_INA219 ina219;
@@ -109,19 +110,18 @@ void setup() {
     /*****CURRENT MONITOR*****/
     ina219.begin();
     ina219.setCalibration_16V_400mA(); 
-
 }
 
 void loop() {
-    Temperature temperatureH = Temperature();
+    TemperatureStruct temperatureH = TemperatureStruct();
     Battery battery = Battery();
-    //Water water = waterRead.WaterReads(3);
+    Water water = Water();
     CurrentData currentData = CurrentData();
     Plotting plotting = Plotting();
     
     temperatureH = TempHum();
     battery = EnergyBat();
-    water = WaterRead();
+    water = WaterReads();
     currentData = Read_RMS();
     //plotting = rms_Plot();
 
