@@ -1,4 +1,10 @@
-void rms_Plot(int ADC_INPUT, int ADC_Gain, int VoltRange){   
+// ADC input is tented to change cause depends on the new librarym ADCGain
+// ADCGain by default 1
+// Sensitivity.  Parameter to INPUT related with the current sensor characterizing
+// VoltRange. ADC full scale peak-to-peak is 5.00Volts measure in full operation
+// ADC_Gain.        1.05 related with the trigger
+// Scale_Plot_Axis. Scale Data to plot in the screen y-axis in Coordinator
+void rms_Plot(){   
     
     unsigned int Edge_Counter_L = 0; // using
     bool Comp_State_Low = false;//using
@@ -88,5 +94,6 @@ void rms_Plot(int ADC_INPUT, int ADC_Gain, int VoltRange){
       delay(1);   
     }
 }
+
 
     

@@ -1,12 +1,12 @@
-CurrentData Read_RMS(){
+CurrentData Read_RMS(Rms2 readRms, Average MeasAvg , MCP3202 adc){
     
-    CurrentData currentdata = CurrentData();
- 
- 
+    CurrentData currentdata = CurrentData(); 
+    
     ////// Find Rms value Average     
     unsigned int adcVal_0;
-    int cnt=0;
-
+    int cnt = 0;
+    float VTC_mean = 0.0;
+    
     float VTC; //using
 
     boolean FlagNo = false;
@@ -25,7 +25,7 @@ CurrentData Read_RMS(){
             MeasAvg.publish();
             
             VTC = readRms.rmsVal;
-            VTC_mean = (double)MeasAvg.average;
+            VTC_mean = MeasAvg.average;//change this to double to increase accuracy, probably
             
             VTC = Fit_Rms(VTC); // Fitted Value   
             cnt=0;        
@@ -39,7 +39,7 @@ CurrentData Read_RMS(){
     byte LowByte = (VTCdec & 0x00FF);
     byte HighByte = ((VTCdec & 0xFF00) >> 8);
 
-    currentdata.VTCAvg = VTC_mean;
+    currentdata.VTC_Mean = VTC_mean;
     currentdata.VTCComplete = VTC;
     currentdata.VTCint = (int)VTC;
     currentdata.VTCDecLSB = (int)LowByte;

@@ -1,8 +1,5 @@
-TemperatureStruct TempHum(DHTNEW dhtpin1){
-    
-    //delay because this sensor has a minimum of 2 s to be sensed
-    delay(500);
-    
+TemperatureStruct TempHum(DHTNEW dhtpin1){    
+        
     /********************** Temperature code **************************/
     int dhtread = dhtpin1.read();
 
@@ -25,8 +22,7 @@ TemperatureStruct TempHum(DHTNEW dhtpin1){
             //Serial.println("Failed to read Temperature");
             temperature.Tint = 0;
             temperature.Tdecimal = 0;
-        }
-        
+        }        
         if (! isnan(H)) {
             temperature.Hint = (int)H;
             float valueTemp = (HintTemp - H)*-100;    
@@ -37,6 +33,8 @@ TemperatureStruct TempHum(DHTNEW dhtpin1){
             temperature.Hint = 0;
             temperature.Hdecimal = 0; 
         }
+        //delay because this sensor has a minimum of 2 s to be sensed
+        delay(500);
         return temperature;
     }
     else{
@@ -44,7 +42,8 @@ TemperatureStruct TempHum(DHTNEW dhtpin1){
         temperature.Tdecimal = 0;
         temperature.Hint = 0;
         temperature.Hdecimal = 0; 
-    }
-
-    
+        //delay because this sensor has a minimum of 2 s to be sensed
+        delay(500);
+        return temperature;
+    }    
 }
