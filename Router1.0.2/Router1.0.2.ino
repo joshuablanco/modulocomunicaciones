@@ -4,12 +4,11 @@
 #include <dhtnew.h>
 #include <Adafruit_INA219.h>
 #include <MCP3202.h>
-#include "SPI.h"
 #include <TrueRMS.h>
 #include <SoftwareSerial.h>
 #include <XBee.h>
-
-
+#include <MCP331.h>
+#include <SPI.h>
 /* STRUCTS */
 struct TemperatureStruct{
     int Tint = 0;
@@ -64,8 +63,9 @@ SoftwareSerial Xbee_Serial(4,3);
 #define ADC_INPUT A2     // define the used ADC input channel
 #define RMS_WINDOW 500  // rms window of 50 samples, means 3 periods @60Hz
 #define AVG_WINDOW 500  // window of 500 samples.  
-
-MCP3202 adc = MCP3202(10);
+#define CLOCK_DIVISION 2
+#define NUM_BITS 14
+MCP331 adc = MCP331(10,CLOCK_DIVISION,NUM_BITS);
 Rms2 readRms ;// create an instance of
 Average MeasAvg; // 
 

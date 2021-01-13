@@ -1,18 +1,16 @@
-CurrentData Read_RMS(Rms2 readRms, Average MeasAvg , MCP3202 adc){
+CurrentData Read_RMS(Rms2 readRms, Average MeasAvg , MCP331 adc){
     
     CurrentData currentdata = CurrentData(); 
     
     ////// Find Rms value Average     
-    unsigned int adcVal_0;
+    uint16_t adcVal_0;
     int cnt = 0;
-    float VTC_mean = 0.0;
-    
+    float VTC_mean = 0.0;    
     float VTC; //using
-
     boolean FlagNo = false;
 
     while(FlagNo == false){  // 500 samples
-        adcVal_0 = adc.readChannel(0);
+        adcVal_0 = adc.readMCP331();
         
         readRms.update(adcVal_0);
         MeasAvg.update(adcVal_0);
