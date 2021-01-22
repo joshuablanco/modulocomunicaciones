@@ -15296,8 +15296,8 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <part name="C16" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
 <part name="SUPPLY22" library="supply2" deviceset="GND" device=""/>
 <part name="Q1" library="crystal" deviceset="CSM-7X-DU" device=""/>
-<part name="U2" library="NCP699SN33T1G" deviceset="NCP699SN33T1G" device=""/>
-<part name="U3" library="NCP699SN33T1G" deviceset="NCP699SN33T1G" device=""/>
+<part name="U2_VCC" library="NCP699SN33T1G" deviceset="NCP699SN33T1G" device=""/>
+<part name="U3_VDD" library="NCP699SN33T1G" deviceset="NCP699SN33T1G" device=""/>
 <part name="TR_TRG0" library="rcl" deviceset="R-TRIMM" device="64W" value="20k"/>
 <part name="TR_TRG1" library="rcl" deviceset="R-TRIMM" device="64W" value="20K"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
@@ -15341,6 +15341,10 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <part name="C4" library="rcl" deviceset="C-US" device="C0805"/>
 <part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="10n"/>
+<part name="C13" library="rcl" deviceset="C-US" device="C0805"/>
+<part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
+<part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
+<part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -15419,9 +15423,9 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="93.98" y1="-99.06" x2="93.98" y2="-20.32" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="-20.32" x2="-129.54" y2="-20.32" width="0.1524" layer="97"/>
 <text x="154.94" y="-96.52" size="1.778" layer="97" rot="R90">must be less than 10k</text>
-<wire x1="0" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="97"/>
-<wire x1="12.7" y1="83.82" x2="12.7" y2="60.96" width="0.1524" layer="97"/>
-<wire x1="12.7" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="97"/>
+<wire x1="0" y1="83.82" x2="20.32" y2="83.82" width="0.1524" layer="97"/>
+<wire x1="20.32" y1="83.82" x2="20.32" y2="60.96" width="0.1524" layer="97"/>
+<wire x1="20.32" y1="60.96" x2="0" y2="60.96" width="0.1524" layer="97"/>
 <wire x1="0" y1="60.96" x2="0" y2="83.82" width="0.1524" layer="97"/>
 <text x="0" y="83.82" size="1.778" layer="97">Cin</text>
 <wire x1="88.9" y1="83.82" x2="101.6" y2="83.82" width="0.1524" layer="97"/>
@@ -15494,8 +15498,8 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <instance part="C16" gate="G$1" x="-25.4" y="-129.54" rot="R180"/>
 <instance part="SUPPLY22" gate="GND" x="-25.4" y="-137.16"/>
 <instance part="Q1" gate="P" x="114.3" y="-33.02" rot="R270"/>
-<instance part="U2" gate="A" x="50.8" y="76.2"/>
-<instance part="U3" gate="A" x="142.24" y="76.2"/>
+<instance part="U2_VCC" gate="A" x="50.8" y="76.2"/>
+<instance part="U3_VDD" gate="A" x="142.24" y="76.2"/>
 <instance part="TR_TRG0" gate="G$1" x="-104.14" y="-71.12"/>
 <instance part="TR_TRG1" gate="G$1" x="-71.12" y="-121.92"/>
 <instance part="C5" gate="G$1" x="-73.66" y="-33.02"/>
@@ -15539,6 +15543,10 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <instance part="C4" gate="G$1" x="193.04" y="73.66"/>
 <instance part="C6" gate="G$1" x="-10.16" y="-22.86" rot="R270"/>
 <instance part="C7" gate="G$1" x="-27.94" y="-68.58"/>
+<instance part="C13" gate="G$1" x="12.7" y="73.66"/>
+<instance part="C21" gate="G$1" x="-63.5" y="-114.3" rot="R90"/>
+<instance part="SUPPLY6" gate="GND" x="-53.34" y="-114.3" rot="R90"/>
+<instance part="C23" gate="G$1" x="-68.58" y="-33.02"/>
 </instances>
 <busses>
 </busses>
@@ -15637,6 +15645,9 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="-96.52" y1="-35.56" x2="-88.9" y2="-35.56" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="-35.56" x2="-88.9" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-88.9" y1="-38.1" x2="-73.66" y2="-38.1" width="0.1524" layer="91"/>
+<pinref part="C23" gate="G$1" pin="2"/>
+<wire x1="-68.58" y1="-38.1" x2="-73.66" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-73.66" y="-38.1"/>
 </segment>
 <segment>
 <wire x1="-109.22" y1="-43.18" x2="-109.22" y2="-38.1" width="0.1524" layer="91"/>
@@ -15667,6 +15678,9 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="5.08" y1="68.58" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 <label x="5.08" y="63.5" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="68.58" x2="12.7" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="63.5" x2="5.08" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="93.98" y1="68.58" x2="93.98" y2="63.5" width="0.1524" layer="91"/>
@@ -15679,12 +15693,12 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="GND"/>
+<pinref part="U2_VCC" gate="A" pin="GND"/>
 <wire x1="33.02" y1="66.04" x2="27.94" y2="66.04" width="0.1524" layer="91"/>
 <label x="27.94" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="GND"/>
+<pinref part="U3_VDD" gate="A" pin="GND"/>
 <wire x1="124.46" y1="66.04" x2="119.38" y2="66.04" width="0.1524" layer="91"/>
 <label x="119.38" y="66.04" size="1.778" layer="95"/>
 </segment>
@@ -15793,6 +15807,11 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="MCP_4" gate="A" pin="VSS"/>
 <wire x1="50.8" y1="-5.08" x2="48.26" y2="-5.08" width="0.1524" layer="91"/>
 <label x="45.72" y="-5.08" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C21" gate="G$1" pin="2"/>
+<pinref part="SUPPLY6" gate="GND" pin="GND"/>
+<wire x1="-58.42" y1="-114.3" x2="-55.88" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="DT" class="0">
@@ -16196,7 +16215,7 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 </net>
 <net name="VCC33" class="0">
 <segment>
-<pinref part="U2" gate="A" pin="VOUT"/>
+<pinref part="U2_VCC" gate="A" pin="VOUT"/>
 <wire x1="68.58" y1="81.28" x2="73.66" y2="81.28" width="0.1524" layer="91"/>
 <label x="71.12" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -16243,7 +16262,7 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 </net>
 <net name="VDD33" class="0">
 <segment>
-<pinref part="U3" gate="A" pin="VOUT"/>
+<pinref part="U3_VDD" gate="A" pin="VOUT"/>
 <wire x1="160.02" y1="81.28" x2="165.1" y2="81.28" width="0.1524" layer="91"/>
 <label x="162.56" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -16320,20 +16339,23 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="5.08" y1="76.2" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
 <label x="5.08" y="81.28" size="1.778" layer="95"/>
 <pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="12.7" y1="76.2" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="12.7" y1="81.28" x2="5.08" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U2" gate="A" pin="EN"/>
+<pinref part="U2_VCC" gate="A" pin="EN"/>
 <wire x1="33.02" y1="76.2" x2="27.94" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="U2" gate="A" pin="VIN"/>
+<pinref part="U2_VCC" gate="A" pin="VIN"/>
 <wire x1="33.02" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="76.2" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
 <label x="27.94" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U3" gate="A" pin="EN"/>
+<pinref part="U3_VDD" gate="A" pin="EN"/>
 <wire x1="124.46" y1="76.2" x2="119.38" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="76.2" x2="119.38" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U3" gate="A" pin="VIN"/>
+<pinref part="U3_VDD" gate="A" pin="VIN"/>
 <wire x1="119.38" y1="81.28" x2="124.46" y2="81.28" width="0.1524" layer="91"/>
 <label x="119.38" y="81.28" size="1.778" layer="95"/>
 </segment>
@@ -16344,8 +16366,12 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 </segment>
 <segment>
 <pinref part="TR_TRG1" gate="G$1" pin="E"/>
-<wire x1="-71.12" y1="-116.84" x2="-71.12" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-71.12" y1="-116.84" x2="-71.12" y2="-114.3" width="0.1524" layer="91"/>
 <label x="-71.12" y="-114.3" size="1.778" layer="95"/>
+<pinref part="C21" gate="G$1" pin="1"/>
+<wire x1="-71.12" y1="-114.3" x2="-71.12" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="-114.3" x2="-71.12" y2="-114.3" width="0.1524" layer="91"/>
+<junction x="-71.12" y="-114.3"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -16390,6 +16416,9 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="-96.52" y1="-30.48" x2="-73.66" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-78.74" y="-30.48" size="1.778" layer="95" rot="R180"/>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="-68.58" y1="-30.48" x2="-73.66" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-73.66" y="-30.48"/>
 </segment>
 </net>
 <net name="BATL" class="0">

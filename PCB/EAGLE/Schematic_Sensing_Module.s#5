@@ -15718,6 +15718,9 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="175.26" y1="15.24" x2="175.26" y2="12.7" width="0.1524" layer="91"/>
 <label x="175.26" y="10.16" size="1.778" layer="95" rot="R90"/>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="15.24" x2="167.64" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="12.7" x2="175.26" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="2"/>
@@ -15918,11 +15921,6 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 </net>
 <net name="SDA" class="0">
 <segment>
-<pinref part="TEMP_PIN" gate="1" pin="3"/>
-<wire x1="-116.84" y1="7.62" x2="-116.84" y2="0" width="0.1524" layer="91"/>
-<label x="-116.84" y="-5.08" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <wire x1="-104.14" y1="2.54" x2="-104.14" y2="0" width="0.1524" layer="91"/>
 <label x="-104.14" y="-2.54" size="1.778" layer="95" rot="R180"/>
 <pinref part="R20" gate="G$1" pin="1"/>
@@ -15937,13 +15935,13 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="-30.48" y1="5.08" x2="-25.4" y2="5.08" width="0.1524" layer="91"/>
 <label x="-25.4" y="5.08" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="SCL" class="0">
 <segment>
 <pinref part="TEMP_PIN" gate="1" pin="4"/>
 <wire x1="-114.3" y1="7.62" x2="-114.3" y2="0" width="0.1524" layer="91"/>
 <label x="-114.3" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
+</net>
+<net name="SCL" class="0">
 <segment>
 <wire x1="-96.52" y1="2.54" x2="-96.52" y2="0" width="0.1524" layer="91"/>
 <label x="-96.52" y="-2.54" size="1.778" layer="95" rot="R180"/>
@@ -15958,6 +15956,11 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="U$4" gate="G$1" pin="SCL"/>
 <wire x1="-30.48" y1="10.16" x2="-25.4" y2="10.16" width="0.1524" layer="91"/>
 <label x="-25.4" y="10.16" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEMP_PIN" gate="1" pin="3"/>
+<wire x1="-116.84" y1="7.62" x2="-116.84" y2="0" width="0.1524" layer="91"/>
+<label x="-116.84" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="A2" class="0">
@@ -16279,6 +16282,10 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <pinref part="C17" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="22.86" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
 <label x="185.42" y="25.4" size="1.778" layer="95"/>
+<pinref part="C24" gate="G$1" pin="1"/>
+<wire x1="167.64" y1="22.86" x2="167.64" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="25.4" x2="175.26" y2="25.4" width="0.1524" layer="91"/>
+<junction x="175.26" y="25.4"/>
 </segment>
 </net>
 <net name="B+" class="0">

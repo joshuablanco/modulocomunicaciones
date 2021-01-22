@@ -79,7 +79,7 @@ double VTC_mean;
 /**** PLOTTING *****/
 
 /****** TEMPERATURE SETUP *****/
-DHTNEW dhtpin1(4);
+DHTNEW dhtpin1(8);
 
 /**** WATER SETUP ****/
 #define WATER_1 A1
@@ -93,6 +93,11 @@ void setup() {
     adc.begin();  
     Serial.begin(9600);   /// for programming
     Xbee_Serial.begin(9600);   /// Xbee serial output
+
+    /*****CURRENT MONITOR*****/
+    ina219.begin();
+    ina219.setCalibration_16V_400mA(); 
+    
     /* Current Rms */
     readRms.begin(VoltRange, RMS_WINDOW, ADC_12BIT, BLR_ON, CNT_SCAN);
     readRms.start(); //start measuring
@@ -100,9 +105,7 @@ void setup() {
     MeasAvg.begin(VoltRange, AVG_WINDOW, ADC_10BIT, CNT_SCAN); // 
     MeasAvg.start(); //start measuring      
     
-    /*****CURRENT MONITOR*****/
-    ina219.begin();
-    ina219.setCalibration_16V_400mA(); 
+    
 }
 
 void loop() {
@@ -110,9 +113,10 @@ void loop() {
     TemperatureStruct temperatureH = TemperatureStruct();
     Battery battery = Battery();
     Water water1 = Water();
+    /*
     CurrentData currentData = CurrentData();
     GraficaStruct graf = GraficaStruct();
-    float a =9.0;
+    */float a =9.0;
     // Reading sensors
     
     temperatureH = TempHum(dhtpin1);
@@ -120,25 +124,27 @@ void loop() {
     battery = EnergyBat(ina219);
     delay(5);
     water1 = WaterReads(WATER_1);
+    /*
     delay(5);
     currentData = Read_RMS(readRms,MeasAvg, adc);
-    rms_Plot();
+    rms_Plot();*/
     //Transmission PayLoad
-    uint8_t payload[] = {
+    /*uint8_t payload[] = {
         temperatureH.Tint,temperatureH.Tdecimal,
-        temperatureH.Hint,temperatureH.Hdecimal,battery.ShuntVoltageInt,
+        temperatureH.Hint,temperatureH.Hdecimal/*,battery.ShuntVoltageInt,
         battery.ShuntVoltageDecimal,battery.CurrentmaInt,battery.CurrentmaDecimal,
         water1.WaterState,
         currentData.VTCint,currentData.VTCDecMSB,currentData.VTCDecLSB
-    };
+    };*/
     
     //Addressing Xbee
-    XBeeAddress64 addr64 = XBeeAddress64(0x0013a200, 0x41553D44);
+    /*XBeeAddress64 addr64 = XBeeAddress64(0x0013a200, 0x41553D44);
     ZBTxRequest zbTx = ZBTxRequest(addr64, payload, sizeof(payload));   
-    xbee.send(zbTx);
+    xbee.send(zbTx)*/;
 
     delay(1000);
     //ZBTxRequest zbTx2 = ZBTxRequest(addr64, payload2, sizeof(payload2)); 
     //xbee.send(zbTx2);
     delay(4000);
+    Serial.println("Termina programa");
 }
