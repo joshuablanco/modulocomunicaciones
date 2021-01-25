@@ -15345,6 +15345,7 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <part name="C21" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
+<part name="C24" library="rcl" deviceset="C-US" device="C0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -15547,6 +15548,7 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <instance part="C21" gate="G$1" x="-63.5" y="-114.3" rot="R90"/>
 <instance part="SUPPLY6" gate="GND" x="-53.34" y="-114.3" rot="R90"/>
 <instance part="C23" gate="G$1" x="-68.58" y="-33.02"/>
+<instance part="C24" gate="G$1" x="167.64" y="20.32"/>
 </instances>
 <busses>
 </busses>
