@@ -96,17 +96,12 @@ void loop() {
         Serial.println(xbee.getResponse().getFrameData()[i], HEX);
       }
       Serial.print("Address:");
-      for (int i = 0; i < xbee.getResponse().getFrameDataLength(); i++) {
-        
+      for (int i = 0; i < xbee.getResponse().getFrameDataLength(); i++) {        
         if(i <= 7){
           Serial.print(xbee.getResponse().getFrameData()[i], HEX);
           }        
       }
       Serial.println();
-     
-      
-      
-      
       }
     } else if (xbee.getResponse().isError()) {
       nss.print("error code:");

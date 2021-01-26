@@ -8,7 +8,7 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,12 +23,12 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -158,42 +158,42 @@
 </layers>
 <board>
 <plain>
-<text x="5.40258125" y="8.049259375" size="1.016" layer="51">VCC</text>
-<text x="5.40258125" y="5.763259375" size="1.016" layer="51">VIN</text>
-<text x="5.14858125" y="3.477259375" size="1.016" layer="51">GND</text>
+<text x="6.03758125" y="8.049259375" size="1.016" layer="51">VCC</text>
+<text x="6.03758125" y="5.890259375" size="1.016" layer="51">VIN</text>
+<text x="5.78358125" y="3.477259375" size="1.016" layer="51">GND</text>
 <text x="47.31258125" y="7.033259375" size="1.016" layer="51">VCC</text>
 <text x="50.86858125" y="7.033259375" size="1.016" layer="51">S</text>
 <text x="52.64658125" y="7.033259375" size="1.016" layer="51">GND</text>
-<text x="78.24978125" y="12.6365" size="1.016" layer="51">VCC</text>
-<text x="78.252321875" y="10.251440625" size="1.016" layer="51">GND</text>
-<text x="78.4580625" y="4.83361875" size="1.016" layer="51">SDA</text>
+<text x="78.50378125" y="12.7635" size="1.016" layer="51">VCC</text>
+<text x="78.379321875" y="10.251440625" size="1.016" layer="51">GND</text>
+<text x="78.2040625" y="4.83361875" size="1.016" layer="51">SDA</text>
 <text x="78.22184375" y="7.434578125" size="1.016" layer="51">SCL</text>
 <rectangle x1="7.43458125" y1="51.127659375" x2="8.50138125" y2="51.788059375" layer="1"/>
 <rectangle x1="7.33298125" y1="51.000659375" x2="8.60298125" y2="51.889659375" layer="1"/>
 <rectangle x1="7.28218125" y1="51.127659375" x2="7.51078125" y2="51.940459375" layer="1"/>
-<text x="67.3455625" y="40.43171875" size="1.016" layer="51" rot="R270">VCC</text>
-<text x="67.31" y="37.495478125" size="1.016" layer="51" rot="R270">GND</text>
-<text x="67.2592" y="34.07918125" size="1.016" layer="51" rot="R270">SCL</text>
-<text x="67.251578125" y="31.178503125" size="1.016" layer="51" rot="R270">SDA</text>
-<text x="67.337940625" y="27.848559375" size="1.016" layer="51" rot="R270">V-</text>
-<text x="67.340478125" y="25.775921875" size="1.016" layer="51" rot="R270">V+</text>
+<text x="67.4725625" y="36.49471875" size="1.016" layer="51" rot="R270">VCC</text>
+<text x="67.564" y="33.304478125" size="1.016" layer="51" rot="R270">GND</text>
+<text x="67.5132" y="30.01518125" size="1.016" layer="51" rot="R270">SCL</text>
+<text x="67.505578125" y="27.114503125" size="1.016" layer="51" rot="R270">SDA</text>
+<text x="67.591940625" y="23.149559375" size="1.016" layer="51" rot="R270">V-</text>
+<text x="67.594478125" y="20.949921875" size="1.016" layer="51" rot="R270">V+</text>
 <text x="49.278540625" y="48.117759375" size="1.016" layer="51" rot="R90">VCC</text>
 <text x="51.4959625" y="47.78501875" size="1.016" layer="51" rot="R90">DOUT</text>
 <text x="53.583840625" y="47.81041875" size="1.016" layer="51" rot="R90">DIN</text>
-<text x="77.668121875" y="50.89651875" size="1.016" layer="51">GND</text>
-<text x="77.734159375" y="48.6054375" size="1.016" layer="51">TX</text>
-<text x="77.861159375" y="46.1645" size="1.016" layer="51">RX</text>
-<text x="77.917040625" y="43.451778125" size="1.016" layer="51">DTR</text>
+<text x="77.287121875" y="50.00751875" size="1.016" layer="51">GND</text>
+<text x="77.480159375" y="47.4624375" size="1.016" layer="51">TX</text>
+<text x="77.226159375" y="45.0215" size="1.016" layer="51">RX</text>
+<text x="77.282040625" y="42.308778125" size="1.016" layer="51">DTR</text>
 <rectangle x1="9.0043" y1="8.270240625" x2="10.4114625" y2="9.184640625" layer="1"/>
 <rectangle x1="12.67968125" y1="22.0091" x2="13.8963375" y2="22.86" layer="1"/>
 <rectangle x1="16.7741625" y1="21.465540625" x2="17.96541875" y2="22.189440625" layer="1"/>
 <rectangle x1="30.1853625" y1="6.329678125" x2="31.50108125" y2="6.888478125" layer="1"/>
 <rectangle x1="34.4424" y1="5.656578125" x2="35.3974375" y2="6.487159375" layer="1"/>
 <rectangle x1="34.3154" y1="5.77341875" x2="35.5752375" y2="6.329675" layer="1"/>
-<text x="6.162040625" y="31.2801" size="1.016" layer="51">B+</text>
-<text x="6.21791875" y="28.6258" size="1.016" layer="51">B-</text>
-<text x="6.2712625" y="39.728140625" size="1.016" layer="51">ON</text>
-<text x="6.2712625" y="36.1543625" size="1.016" layer="51">OFF</text>
+<text x="6.797040625" y="31.2801" size="1.016" layer="51">B+</text>
+<text x="6.72591875" y="28.4988" size="1.016" layer="51">B-</text>
+<text x="6.5252625" y="40.998140625" size="1.016" layer="51">ON</text>
+<text x="6.2712625" y="35.3923625" size="1.016" layer="51">OFF</text>
 <text x="10.6324375" y="62.268103125" size="1.016" layer="51" rot="R90">RST</text>
 <text x="4.2138625" y="14.475459375" size="1.016" layer="51">TRIGGER</text>
 <text x="67.553840625" y="47.81041875" size="1.016" layer="51" rot="R90">GND</text>
@@ -2922,10 +2922,6 @@ W = angled&lt;p&gt;
 <pad name="VIN+" x="6" y="-8" drill="1.1"/>
 <pad name="VIN1-" x="-2" y="8" drill="1.1"/>
 <pad name="VIN1+" x="2" y="8" drill="1.1"/>
-<hole x="-10.5" y="-9" drill="2"/>
-<hole x="10.5" y="-9" drill="2"/>
-<hole x="10.5" y="9" drill="2"/>
-<hole x="-10.5" y="9" drill="2"/>
 <text x="-4" y="-0.5" size="1.27" layer="51">INA219 DC</text>
 <text x="-12" y="11.5" size="1.27" layer="25">&gt;NAME</text>
 <text x="6.5" y="11.5" size="1.27" layer="27">&gt;VALUE</text>
