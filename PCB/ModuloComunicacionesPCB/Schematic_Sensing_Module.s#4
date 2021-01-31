@@ -17714,7 +17714,7 @@ REGULATED</text>
 </class>
 </classes>
 <parts>
-<part name="U1" library="Atmel_By_element14_Batch_1-00" deviceset="ATMEGA328P-PU" device=""/>
+<part name="ATMEGA328P" library="Atmel_By_element14_Batch_1-00" deviceset="ATMEGA328P-PU" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
@@ -17726,8 +17726,8 @@ REGULATED</text>
 <part name="C22" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
 <part name="SW2" library="button1825910-6" deviceset="1825910-6" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
-<part name="LED3" library="led" deviceset="LED" device="CHIPLED_1206"/>
-<part name="LED4" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="BAT-" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="BAT+" library="led" deviceset="LED" device="CHIPLED_1206"/>
 <part name="ON_OFF" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="560"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="560"/>
@@ -17747,7 +17747,7 @@ REGULATED</text>
 <part name="C7" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" value="2.2uF"/>
 <part name="C8" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" value="2.2uF"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="U$5" library="mcp33121" deviceset="MCP33121" device=""/>
+<part name="MCP33121" library="mcp33121" deviceset="MCP33121" device=""/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2" value="4.7k"/>
 <part name="IACT" library="TERMINAL-TB001" deviceset="TERMINAL-TB2" device="" value=""/>
 <part name="ACS723" library="ACS723LLCTR-05AB-T" deviceset="ACS723LLCTR-05AB-T" device=""/>
@@ -17787,7 +17787,7 @@ REGULATED</text>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
-<part name="U$4" library="INA219BB" deviceset="INABB" device=""/>
+<part name="INA219" library="INA219BB" deviceset="INABB" device=""/>
 <part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="2.2uF"/>
 <part name="JP1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="/90" package3d_urn="urn:adsk.eagle:package:22404/2"/>
 </parts>
@@ -17920,7 +17920,7 @@ inamovible
 <text x="-45.72" y="99.06" size="1.778" layer="97">cambiar por los de 10uF ceramicos de didacticas</text>
 </plain>
 <instances>
-<instance part="U1" gate="A" x="210.82" y="-78.74" smashed="yes">
+<instance part="ATMEGA328P" gate="A" x="210.82" y="-78.74" smashed="yes">
 <attribute name="NAME" x="205.2574" y="-57.2262" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="205.8416" y="-109.7788" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
@@ -17964,11 +17964,11 @@ inamovible
 <attribute name="NAME" x="115.824" y="25.781" size="1.778" layer="95"/>
 <attribute name="VALUE" x="115.824" y="20.701" size="1.778" layer="96"/>
 </instance>
-<instance part="LED3" gate="G$1" x="-12.7" y="15.24" smashed="yes">
+<instance part="BAT-" gate="G$1" x="-12.7" y="15.24" smashed="yes">
 <attribute name="NAME" x="-9.144" y="10.668" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-6.985" y="10.668" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="LED4" gate="G$1" x="7.62" y="15.24" smashed="yes">
+<instance part="BAT+" gate="G$1" x="7.62" y="15.24" smashed="yes">
 <attribute name="NAME" x="11.176" y="10.668" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="13.335" y="10.668" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -18044,7 +18044,7 @@ inamovible
 <attribute name="NAME" x="-67.5386" y="21.59" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="-62.738" y="21.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$5" gate="G$1" x="86.36" y="-101.6" smashed="yes">
+<instance part="MCP33121" gate="G$1" x="86.36" y="-101.6" smashed="yes">
 <attribute name="NAME" x="68.58" y="-91.44" size="1.27" layer="95"/>
 <attribute name="VALUE" x="68.58" y="-88.9" size="1.27" layer="95"/>
 </instance>
@@ -18200,7 +18200,7 @@ inamovible
 <attribute name="NAME" x="80.899" y="-31.496" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="78.359" y="-36.576" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U$4" gate="G$1" x="111.76" y="-33.02" smashed="yes"/>
+<instance part="INA219" gate="G$1" x="111.76" y="-33.02" smashed="yes"/>
 <instance part="C35" gate="G$1" x="162.56" y="33.02" smashed="yes" rot="MR0">
 <attribute name="NAME" x="161.036" y="33.401" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="162.179" y="28.956" size="1.778" layer="96" rot="MR270"/>
@@ -18215,7 +18215,7 @@ inamovible
 <nets>
 <net name="OSC+" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PB6"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB6"/>
 <wire x1="193.04" y1="-91.44" x2="190.5" y2="-91.44" width="0.1524" layer="91"/>
 <label x="185.42" y="-91.44" size="1.778" layer="95"/>
 </segment>
@@ -18231,7 +18231,7 @@ inamovible
 </net>
 <net name="OSC-" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PB7"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB7"/>
 <wire x1="193.04" y1="-93.98" x2="190.5" y2="-93.98" width="0.1524" layer="91"/>
 <label x="185.42" y="-93.98" size="1.778" layer="95"/>
 </segment>
@@ -18247,10 +18247,10 @@ inamovible
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="GND_2"/>
+<pinref part="ATMEGA328P" gate="A" pin="GND_2"/>
 <wire x1="193.04" y1="-99.06" x2="190.5" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="-99.06" x2="190.5" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="GND"/>
+<pinref part="ATMEGA328P" gate="A" pin="GND"/>
 <wire x1="190.5" y1="-101.6" x2="193.04" y2="-101.6" width="0.1524" layer="91"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
 <wire x1="190.5" y1="-101.6" x2="190.5" y2="-104.14" width="0.1524" layer="91"/>
@@ -18259,12 +18259,12 @@ inamovible
 <segment>
 <pinref part="SUPPLY16" gate="GND" pin="GND"/>
 <wire x1="-12.7" y1="10.16" x2="-12.7" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="BAT-" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="SUPPLY17" gate="GND" pin="GND"/>
 <wire x1="7.62" y1="10.16" x2="7.62" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="BAT+" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
@@ -18376,7 +18376,7 @@ inamovible
 <label x="33.02" y="-114.3" size="2.1844" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="GND"/>
+<pinref part="MCP33121" gate="G$1" pin="GND"/>
 <wire x1="86.36" y1="-116.84" x2="86.36" y2="-121.92" width="0.1524" layer="91"/>
 <label x="86.36" y="-121.92" size="2.1844" layer="95"/>
 </segment>
@@ -18481,16 +18481,6 @@ inamovible
 <label x="-86.36" y="-40.64" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="TS1" gate="G$1" pin="3"/>
-<wire x1="-7.62" y1="-38.1" x2="-7.62" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-7.62" y="-48.26" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="TS2" gate="G$1" pin="3"/>
-<wire x1="10.16" y1="-38.1" x2="10.16" y2="-43.18" width="0.1524" layer="91"/>
-<label x="10.16" y="-48.26" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="C27" gate="G$1" pin="2"/>
 <wire x1="20.32" y1="-35.56" x2="20.32" y2="-40.64" width="0.1524" layer="91"/>
 <label x="20.32" y="-40.64" size="1.778" layer="95" rot="R90"/>
@@ -18536,22 +18526,22 @@ inamovible
 <label x="-81.28" y="66.04" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="GND"/>
+<pinref part="INA219" gate="G$1" pin="GND"/>
 <wire x1="111.76" y1="-43.18" x2="111.76" y2="-45.72" width="0.1524" layer="91"/>
 <label x="111.76" y="-45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PC2"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC2"/>
 <wire x1="228.6" y1="-91.44" x2="233.68" y2="-91.44" width="0.1524" layer="91"/>
 <label x="231.14" y="-91.44" size="2.032" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PC3"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC3"/>
 <wire x1="228.6" y1="-93.98" x2="233.68" y2="-93.98" width="0.1524" layer="91"/>
 <label x="231.14" y="-93.98" size="2.032" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PD4"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD4"/>
 <wire x1="228.6" y1="-73.66" x2="233.68" y2="-73.66" width="0.1524" layer="91"/>
 <label x="231.14" y="-73.66" size="2.032" layer="95"/>
 </segment>
@@ -18581,18 +18571,28 @@ inamovible
 <junction x="231.14" y="12.7"/>
 <label x="231.14" y="10.16" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="TS1" gate="G$1" pin="1"/>
+<wire x1="-12.7" y1="-38.1" x2="-12.7" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-12.7" y="-48.26" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="TS2" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="-38.1" x2="5.08" y2="-43.18" width="0.1524" layer="91"/>
+<label x="5.08" y="-48.26" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <wire x1="-12.7" y1="20.32" x2="-12.7" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="BAT-" gate="G$1" pin="A"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
 <wire x1="7.62" y1="20.32" x2="7.62" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="BAT+" gate="G$1" pin="A"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -18600,10 +18600,10 @@ inamovible
 <segment>
 <wire x1="124.46" y1="-38.1" x2="129.54" y2="-38.1" width="0.1524" layer="91"/>
 <label x="129.54" y="-38.1" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="SDA"/>
+<pinref part="INA219" gate="G$1" pin="SDA"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PC4"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC4"/>
 <wire x1="228.6" y1="-96.52" x2="233.68" y2="-96.52" width="0.1524" layer="91"/>
 <label x="231.14" y="-96.52" size="1.778" layer="95"/>
 </segment>
@@ -18612,17 +18612,17 @@ inamovible
 <segment>
 <wire x1="124.46" y1="-27.94" x2="129.54" y2="-27.94" width="0.1524" layer="91"/>
 <label x="129.54" y="-27.94" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="SCL"/>
+<pinref part="INA219" gate="G$1" pin="SCL"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PC5"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC5"/>
 <wire x1="228.6" y1="-99.06" x2="233.68" y2="-99.06" width="0.1524" layer="91"/>
 <label x="231.14" y="-99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PC6"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC6"/>
 <wire x1="228.6" y1="-101.6" x2="233.68" y2="-101.6" width="0.1524" layer="91"/>
 <label x="231.14" y="-101.6" size="1.778" layer="95"/>
 </segment>
@@ -18648,48 +18648,48 @@ inamovible
 </net>
 <net name="ASCK" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PB5"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB5"/>
 <wire x1="193.04" y1="-88.9" x2="190.5" y2="-88.9" width="0.1524" layer="91"/>
 <label x="185.42" y="-88.9" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="CLK"/>
+<pinref part="MCP33121" gate="G$1" pin="CLK"/>
 <wire x1="104.14" y1="-104.14" x2="111.76" y2="-104.14" width="0.1524" layer="91"/>
 <label x="111.76" y="-104.14" size="2.1844" layer="95"/>
 </segment>
 </net>
 <net name="AMISO" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PB4"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB4"/>
 <wire x1="193.04" y1="-86.36" x2="190.5" y2="-86.36" width="0.1524" layer="91"/>
 <label x="185.42" y="-86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="SDO"/>
+<pinref part="MCP33121" gate="G$1" pin="SDO"/>
 <wire x1="104.14" y1="-101.6" x2="111.76" y2="-101.6" width="0.1524" layer="91"/>
 <label x="111.76" y="-101.6" size="2.1844" layer="95"/>
 </segment>
 </net>
 <net name="AMOSI" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PB3"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB3"/>
 <wire x1="193.04" y1="-83.82" x2="190.5" y2="-83.82" width="0.1524" layer="91"/>
 <label x="185.42" y="-83.82" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="SDI"/>
+<pinref part="MCP33121" gate="G$1" pin="SDI"/>
 <wire x1="104.14" y1="-99.06" x2="111.76" y2="-99.06" width="0.1524" layer="91"/>
 <label x="111.76" y="-99.06" size="2.1844" layer="95"/>
 </segment>
 </net>
 <net name="ASS" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PB2"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB2"/>
 <wire x1="193.04" y1="-81.28" x2="190.5" y2="-81.28" width="0.1524" layer="91"/>
 <label x="185.42" y="-81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="CNVST"/>
+<pinref part="MCP33121" gate="G$1" pin="CNVST"/>
 <wire x1="104.14" y1="-106.68" x2="111.76" y2="-106.68" width="0.1524" layer="91"/>
 <label x="111.76" y="-106.68" size="2.1844" layer="95"/>
 </segment>
@@ -18701,14 +18701,14 @@ inamovible
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PD6"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD6"/>
 <wire x1="228.6" y1="-78.74" x2="233.68" y2="-78.74" width="0.1524" layer="91"/>
 <label x="231.14" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="TX0" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PD1"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD1"/>
 <wire x1="228.6" y1="-66.04" x2="233.68" y2="-66.04" width="0.1524" layer="91"/>
 <label x="231.14" y="-66.04" size="1.778" layer="95"/>
 </segment>
@@ -18720,7 +18720,7 @@ inamovible
 </net>
 <net name="RX0" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PD0"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD0"/>
 <wire x1="228.6" y1="-63.5" x2="233.68" y2="-63.5" width="0.1524" layer="91"/>
 <label x="231.14" y="-63.5" size="1.778" layer="95"/>
 </segment>
@@ -18732,7 +18732,7 @@ inamovible
 </net>
 <net name="RX1" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PD2"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD2"/>
 <wire x1="228.6" y1="-68.58" x2="233.68" y2="-68.58" width="0.1524" layer="91"/>
 <label x="231.14" y="-68.58" size="1.778" layer="95"/>
 </segment>
@@ -18744,7 +18744,7 @@ inamovible
 </net>
 <net name="TX1" class="0">
 <segment>
-<pinref part="U1" gate="A" pin="PD3"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD3"/>
 <wire x1="228.6" y1="-71.12" x2="233.68" y2="-71.12" width="0.1524" layer="91"/>
 <label x="231.14" y="-71.12" size="1.778" layer="95"/>
 </segment>
@@ -18770,14 +18770,14 @@ inamovible
 <wire x1="81.28" y1="-27.94" x2="81.28" y2="-30.48" width="0.1524" layer="91"/>
 <label x="83.82" y="-27.94" size="1.778" layer="95"/>
 <pinref part="C29" gate="G$1" pin="1"/>
-<pinref part="U$4" gate="G$1" pin="VCC"/>
+<pinref part="INA219" gate="G$1" pin="VCC"/>
 </segment>
 </net>
 <net name="B-INA" class="0">
 <segment>
 <wire x1="99.06" y1="-38.1" x2="91.44" y2="-38.1" width="0.1524" layer="91"/>
 <label x="88.9" y="-38.1" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="VIN-"/>
+<pinref part="INA219" gate="G$1" pin="VIN-"/>
 </segment>
 </net>
 <net name="BATL" class="0">
@@ -18787,7 +18787,7 @@ inamovible
 <pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PD7"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD7"/>
 <wire x1="228.6" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
 <label x="231.14" y="-81.28" size="1.778" layer="95"/>
 </segment>
@@ -18810,7 +18810,7 @@ inamovible
 <segment>
 <wire x1="99.06" y1="-33.02" x2="91.44" y2="-33.02" width="0.1524" layer="91"/>
 <label x="88.9" y="-33.02" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="VIN+"/>
+<pinref part="INA219" gate="G$1" pin="VIN+"/>
 </segment>
 </net>
 <net name="VOUT+" class="0">
@@ -18869,7 +18869,7 @@ inamovible
 <wire x1="12.7" y1="86.36" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="DVIO"/>
+<pinref part="MCP33121" gate="G$1" pin="DVIO"/>
 <wire x1="91.44" y1="-88.9" x2="91.44" y2="-76.2" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="-76.2" x2="104.14" y2="-76.2" width="0.1524" layer="91"/>
 <label x="91.44" y="-76.2" size="2.1844" layer="95"/>
@@ -18889,9 +18889,9 @@ inamovible
 <label x="119.38" y="33.02" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="VCC"/>
+<pinref part="ATMEGA328P" gate="A" pin="VCC"/>
 <wire x1="193.04" y1="-63.5" x2="193.04" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="A" pin="AVCC"/>
+<pinref part="ATMEGA328P" gate="A" pin="AVCC"/>
 <label x="182.88" y="-60.96" size="1.778" layer="95"/>
 <pinref part="C22" gate="G$1" pin="1"/>
 <wire x1="175.26" y1="-68.58" x2="175.26" y2="-63.5" width="0.1524" layer="91"/>
@@ -18902,7 +18902,7 @@ inamovible
 <wire x1="165.1" y1="-68.58" x2="165.1" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="-63.5" x2="175.26" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="175.26" y="-63.5"/>
-<pinref part="U1" gate="A" pin="AREF"/>
+<pinref part="ATMEGA328P" gate="A" pin="AREF"/>
 <wire x1="193.04" y1="-71.12" x2="187.96" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="187.96" y1="-71.12" x2="187.96" y2="-63.5" width="0.1524" layer="91"/>
 <junction x="187.96" y="-63.5"/>
@@ -18926,16 +18926,6 @@ inamovible
 <label x="-109.22" y="-45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TS1" gate="G$1" pin="1"/>
-<wire x1="-12.7" y1="-38.1" x2="-12.7" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-12.7" y="-48.26" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="TS2" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="-38.1" x2="5.08" y2="-43.18" width="0.1524" layer="91"/>
-<label x="5.08" y="-48.26" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="-27.94" x2="40.64" y2="-22.86" width="0.1524" layer="91"/>
 <label x="43.18" y="-25.4" size="1.778" layer="95" rot="R90"/>
@@ -18944,6 +18934,16 @@ inamovible
 <pinref part="C32" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-27.94" x2="50.8" y2="-22.86" width="0.1524" layer="91"/>
 <label x="53.34" y="-25.4" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="TS1" gate="G$1" pin="3"/>
+<wire x1="-7.62" y1="-38.1" x2="-7.62" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-7.62" y="-48.26" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="TS2" gate="G$1" pin="3"/>
+<wire x1="10.16" y1="-38.1" x2="10.16" y2="-43.18" width="0.1524" layer="91"/>
+<label x="10.16" y="-48.26" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -19020,7 +19020,7 @@ inamovible
 <junction x="-2.54" y="-83.82"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="VREF"/>
+<pinref part="MCP33121" gate="G$1" pin="VREF"/>
 <wire x1="81.28" y1="-88.9" x2="81.28" y2="-71.12" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-71.12" x2="71.12" y2="-71.12" width="0.1524" layer="91"/>
 <label x="58.42" y="-71.12" size="2.1844" layer="95"/>
@@ -19043,7 +19043,7 @@ inamovible
 <label x="-50.8" y="22.86" size="2.1844" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$5" gate="G$1" pin="AVDD"/>
+<pinref part="MCP33121" gate="G$1" pin="AVDD"/>
 <wire x1="86.36" y1="-88.9" x2="86.36" y2="-68.58" width="0.1524" layer="91"/>
 <label x="78.74" y="-63.5" size="2.1844" layer="95"/>
 <pinref part="C21" gate="G$1" pin="2"/>
@@ -19145,28 +19145,30 @@ inamovible
 <label x="-15.24" y="-109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="IN+" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="50.8" y1="-96.52" x2="53.34" y2="-96.52" width="0.1524" layer="91"/>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="-96.52" x2="53.34" y2="-101.6" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="IN+"/>
+<pinref part="MCP33121" gate="G$1" pin="IN+"/>
 <wire x1="68.58" y1="-99.06" x2="68.58" y2="-96.52" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-96.52" x2="53.34" y2="-96.52" width="0.1524" layer="91"/>
 <junction x="53.34" y="-96.52"/>
+<label x="63.5" y="-96.52" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="IN-" class="0">
 <segment>
 <pinref part="C13" gate="G$1" pin="1"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="-109.22" x2="53.34" y2="-114.3" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="-114.3" x2="50.8" y2="-114.3" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="IN-"/>
+<pinref part="MCP33121" gate="G$1" pin="IN-"/>
 <wire x1="68.58" y1="-106.68" x2="68.58" y2="-114.3" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-114.3" x2="53.34" y2="-114.3" width="0.1524" layer="91"/>
 <junction x="53.34" y="-114.3"/>
+<label x="63.5" y="-114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VACS" class="0">
@@ -19206,7 +19208,7 @@ inamovible
 <label x="-71.12" y="-30.48" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PC0"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC0"/>
 <wire x1="228.6" y1="-86.36" x2="233.68" y2="-86.36" width="0.1524" layer="91"/>
 <label x="231.14" y="-86.36" size="1.778" layer="95"/>
 </segment>
@@ -19223,7 +19225,7 @@ inamovible
 <label x="-71.12" y="-40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PC1"/>
+<pinref part="ATMEGA328P" gate="A" pin="PC1"/>
 <wire x1="228.6" y1="-88.9" x2="233.68" y2="-88.9" width="0.1524" layer="91"/>
 <label x="231.14" y="-88.9" size="1.778" layer="95"/>
 </segment>
@@ -19273,7 +19275,7 @@ inamovible
 <label x="22.86" y="-27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PB0"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB0"/>
 <wire x1="193.04" y1="-76.2" x2="190.5" y2="-76.2" width="0.1524" layer="91"/>
 <label x="185.42" y="-76.2" size="1.778" layer="95"/>
 </segment>
@@ -19290,7 +19292,7 @@ inamovible
 <label x="33.02" y="-27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="U1" gate="A" pin="PB1"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB1"/>
 <wire x1="193.04" y1="-78.74" x2="190.5" y2="-78.74" width="0.1524" layer="91"/>
 <label x="185.42" y="-78.74" size="1.778" layer="95"/>
 </segment>

@@ -17735,13 +17735,13 @@ REGULATED</text>
 <part name="R3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1"/>
 <part name="MCP6002" library="MCP6002-E_MS" deviceset="MCP6002-E/MS" device=""/>
 <part name="LP38692" library="LP38692MP-5.0" deviceset="LP38692MP-5.0" device=""/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="cambiar por los de 10uF ceramicos de didacticas"/>
-<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="cambiar por los de 10uF ceramicos de didacticas"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF "/>
+<part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF "/>
 <part name="2N2222" library="MMBT2222A" deviceset="MMBT2222A" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="4.7k"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="2.2uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1u"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1u"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="MCP18" library="MCP1501T-18E_SN" deviceset="MCP1501T-18E/SN" device=""/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10"/>
 <part name="C7" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" value="2.2uF"/>
@@ -17765,7 +17765,7 @@ REGULATED</text>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
 <part name="REF3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1"/>
-<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1u"/>
+<part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="U$8" library="XBEE_REG" deviceset="XBEE_REG_MODULE" device=""/>
 <part name="WS1" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
 <part name="WS2" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
@@ -17871,8 +17871,9 @@ REGULATED</text>
 <wire x1="-55.88" y1="58.42" x2="-129.54" y2="58.42" width="0.1524" layer="97"/>
 <wire x1="-129.54" y1="58.42" x2="-129.54" y2="101.6" width="0.1524" layer="97"/>
 <text x="-111.76" y="104.14" size="2.54" layer="97">MODULO DE CARGA</text>
-<text x="-50.8" y="83.82" size="2.1844" layer="97">1206 
-10V</text>
+<text x="-50.8" y="68.58" size="2.1844" layer="97">1206 
+10V
+CERAMICO</text>
 <text x="35.56" y="76.2" size="2.1844" layer="97">1206</text>
 <text x="45.72" y="71.12" size="2.1844" layer="97">1206 
 10V</text>
@@ -17998,7 +17999,7 @@ inamovible
 </instance>
 <instance part="C2" gate="G$1" x="-43.18" y="83.82" smashed="yes">
 <attribute name="NAME" x="-41.656" y="84.201" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-46.736" y="61.341" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-49.276" y="84.201" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="12.7" y="83.82" smashed="yes">
 <attribute name="NAME" x="14.224" y="84.201" size="1.778" layer="95"/>
