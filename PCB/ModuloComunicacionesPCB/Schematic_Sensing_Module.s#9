@@ -18937,14 +18937,6 @@ inamovible
 <wire x1="-68.58" y1="93.98" x2="-68.58" y2="88.9" width="0.1524" layer="91"/>
 <label x="-68.58" y="76.2" size="1.778" layer="95" rot="R90"/>
 </segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="35.56" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="35.56" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
-<label x="165.1" y="38.1" size="1.778" layer="95"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-</segment>
 </net>
 <net name="VSUPPLY" class="0">
 <segment>
@@ -18971,6 +18963,19 @@ inamovible
 <pinref part="2N2222" gate="&gt;NAME" pin="C"/>
 <wire x1="33.02" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
 <label x="30.48" y="91.44" size="2.1844" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="5V"/>
+<wire x1="182.88" y1="20.32" x2="177.8" y2="20.32" width="0.1524" layer="91"/>
+<label x="172.72" y="20.32" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="35.56" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="35.56" x2="162.56" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="38.1" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
+<label x="165.1" y="38.1" size="1.778" layer="95"/>
+<pinref part="C35" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VLP5" class="0">
@@ -19066,7 +19071,7 @@ inamovible
 <label x="68.58" y="-25.4" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="BASE" class="0">
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="2N2222" gate="&gt;NAME" pin="B"/>
@@ -19075,6 +19080,7 @@ inamovible
 <wire x1="55.88" y1="81.28" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="81.28" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
 <junction x="55.88" y="81.28"/>
+<label x="53.34" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VOREG" class="0">
@@ -19392,9 +19398,9 @@ inamovible
 <label x="40.64" y="-27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ATMEGA328P" gate="A" pin="PB0"/>
-<wire x1="193.04" y1="-76.2" x2="190.5" y2="-76.2" width="0.1524" layer="91"/>
-<label x="185.42" y="-76.2" size="1.778" layer="95"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB1"/>
+<wire x1="193.04" y1="-78.74" x2="190.5" y2="-78.74" width="0.1524" layer="91"/>
+<label x="185.42" y="-78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATAT2" class="0">
@@ -19409,9 +19415,9 @@ inamovible
 <label x="50.8" y="-27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ATMEGA328P" gate="A" pin="PB1"/>
-<wire x1="193.04" y1="-78.74" x2="190.5" y2="-78.74" width="0.1524" layer="91"/>
-<label x="185.42" y="-78.74" size="1.778" layer="95"/>
+<pinref part="ATMEGA328P" gate="A" pin="PD7"/>
+<wire x1="228.6" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
+<label x="231.14" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATAT3" class="0">
@@ -19426,9 +19432,9 @@ inamovible
 <label x="60.96" y="-27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="ATMEGA328P" gate="A" pin="PD7"/>
-<wire x1="228.6" y1="-81.28" x2="233.68" y2="-81.28" width="0.1524" layer="91"/>
-<label x="231.14" y="-81.28" size="1.778" layer="95"/>
+<pinref part="ATMEGA328P" gate="A" pin="PB0"/>
+<wire x1="193.04" y1="-76.2" x2="190.5" y2="-76.2" width="0.1524" layer="91"/>
+<label x="185.42" y="-76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
