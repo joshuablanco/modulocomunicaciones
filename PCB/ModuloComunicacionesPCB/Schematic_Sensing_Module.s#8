@@ -19031,16 +19031,6 @@ inamovible
 <junction x="-48.26" y="-17.78"/>
 </segment>
 <segment>
-<pinref part="WS1" gate="G$1" pin="2"/>
-<wire x1="-111.76" y1="-27.94" x2="-109.22" y2="-27.94" width="0.1524" layer="91"/>
-<label x="-109.22" y="-27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="WS2" gate="G$1" pin="2"/>
-<wire x1="-111.76" y1="-45.72" x2="-109.22" y2="-45.72" width="0.1524" layer="91"/>
-<label x="-109.22" y="-45.72" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="C31" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="-27.94" x2="76.2" y2="-22.86" width="0.1524" layer="91"/>
 <label x="78.74" y="-25.4" size="1.778" layer="95" rot="R90"/>
@@ -19069,6 +19059,16 @@ inamovible
 <pinref part="C19" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="-27.94" x2="66.04" y2="-22.86" width="0.1524" layer="91"/>
 <label x="68.58" y="-25.4" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="WS1" gate="G$1" pin="3"/>
+<wire x1="-111.76" y1="-25.4" x2="-109.22" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-109.22" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="WS2" gate="G$1" pin="3"/>
+<wire x1="-111.76" y1="-43.18" x2="-109.22" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-109.22" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BASE" class="0">
@@ -19355,11 +19355,6 @@ inamovible
 </net>
 <net name="DATAW2" class="0">
 <segment>
-<pinref part="WS2" gate="G$1" pin="3"/>
-<wire x1="-111.76" y1="-43.18" x2="-109.22" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-109.22" y="-43.18" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="MCP6002" gate="A" pin="VINB+"/>
 <pinref part="R18" gate="G$1" pin="1"/>
 <wire x1="-66.04" y1="-35.56" x2="-76.2" y2="-35.56" width="0.1524" layer="91"/>
@@ -19368,13 +19363,13 @@ inamovible
 <junction x="-76.2" y="-35.56"/>
 <label x="-76.2" y="-35.56" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="WS2" gate="G$1" pin="2"/>
+<wire x1="-111.76" y1="-45.72" x2="-109.22" y2="-45.72" width="0.1524" layer="91"/>
+<label x="-109.22" y="-45.72" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="DATAW1" class="0">
-<segment>
-<pinref part="WS1" gate="G$1" pin="3"/>
-<wire x1="-111.76" y1="-25.4" x2="-109.22" y2="-25.4" width="0.1524" layer="91"/>
-<label x="-109.22" y="-25.4" size="1.778" layer="95"/>
-</segment>
 <segment>
 <pinref part="MCP6002" gate="A" pin="VINA+"/>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -19384,6 +19379,11 @@ inamovible
 <pinref part="C25" gate="G$1" pin="1"/>
 <wire x1="-76.2" y1="-17.78" x2="-78.74" y2="-17.78" width="0.1524" layer="91"/>
 <label x="-76.2" y="-22.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="WS1" gate="G$1" pin="2"/>
+<wire x1="-111.76" y1="-27.94" x2="-109.22" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-109.22" y="-27.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DATAT1" class="0">
