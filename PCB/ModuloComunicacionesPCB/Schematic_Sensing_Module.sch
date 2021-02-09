@@ -8703,8 +8703,8 @@ Source: www.ecsxtal.com .. Crystal 3.6864MHz CSM_7X_DU.PDF</description>
 <wire x1="-16.5" y1="-12.3" x2="-16.5" y2="12.2" width="0.127" layer="21"/>
 <text x="-16.51" y="13.97" size="1.27" layer="25">&gt;NAME</text>
 <text x="-16.51" y="16.51" size="1.27" layer="27">&gt;VALUE</text>
-<smd name="IN-" x="-14.95" y="10.65" dx="3" dy="3" layer="1"/>
-<smd name="IN+" x="0.5" y="10.75" dx="3" dy="3" layer="1"/>
+<pad name="IN-" x="-14.95" y="10.65" drill="1.8" diameter="3" shape="square"/>
+<pad name="IN+" x="0.5" y="10.75" drill="1.8" diameter="3" shape="square"/>
 </package>
 </packages>
 <symbols>
@@ -17949,15 +17949,15 @@ REGULATED</text>
 <part name="Q1" library="crystal" deviceset="CSM-7X-DU" device="" override_package3d_urn="urn:adsk.eagle:package:26644023/2" override_package_urn="urn:adsk.eagle:footprint:26644024/1"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0805" value="18pF"/>
 <part name="D1" library="1N4148WS" deviceset="1N4148WS" device=""/>
-<part name="C22" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
+<part name="C22" library="rcl" deviceset="C-US" device="C1206" override_package3d_urn="urn:adsk.eagle:package:26730656/2" override_package_urn="urn:adsk.eagle:footprint:26730658/1" value="0.1uF"/>
 <part name="RESET" library="button1825910-6" deviceset="1825910-6" device="" override_package3d_urn="urn:adsk.eagle:package:26644749/2" override_package_urn="urn:adsk.eagle:footprint:26644750/1"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0805" override_package3d_urn="urn:adsk.eagle:package:26644817/2" override_package_urn="urn:adsk.eagle:footprint:26644819/1" value="0.1u"/>
 <part name="BAT-" library="led" deviceset="LED" device="CHIPLED_1206" override_package3d_urn="urn:adsk.eagle:package:26644263/3" override_package_urn="urn:adsk.eagle:footprint:26644264/1"/>
 <part name="BAT+" library="led" deviceset="LED" device="CHIPLED_1206" override_package3d_urn="urn:adsk.eagle:package:26644260/3" override_package_urn="urn:adsk.eagle:footprint:26644261/1"/>
-<part name="ON/OFF" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="ON/OFF" library="pinhead" deviceset="PINHD-1X3" device="" override_package3d_urn="urn:adsk.eagle:package:26730573/2" override_package_urn="urn:adsk.eagle:footprint:26730574/1"/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644251/2" override_package_urn="urn:adsk.eagle:footprint:26644252/1" value="560"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644249/2" override_package_urn="urn:adsk.eagle:footprint:26644250/1" value="560"/>
-<part name="POWER-SUPP" library="Modulo_Carga" deviceset="MODULO_CARGA_DEVICE" device="" override_package3d_urn="urn:adsk.eagle:package:26648523/3" override_package_urn="urn:adsk.eagle:footprint:26648524/1"/>
+<part name="POWER-SUPP" library="Modulo_Carga" deviceset="MODULO_CARGA_DEVICE" device="" override_package3d_urn="urn:adsk.eagle:package:26648523/3" override_package_urn="urn:adsk.eagle:footprint:26648524/1" override_locally_modified="yes"/>
 <part name="R3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1" override_package3d_urn="urn:adsk.eagle:package:26643211/2" override_package_urn="urn:adsk.eagle:footprint:26233899/1"/>
 <part name="MCP6002" library="MCP6002-E_MS" deviceset="MCP6002-E/MS" device="" override_package3d_urn="urn:adsk.eagle:package:26644269/2" override_package_urn="urn:adsk.eagle:footprint:26644270/1"/>
 <part name="LP38692" library="LP38692MP-5.0" deviceset="LP38692MP-5.0" device="" override_package3d_urn="urn:adsk.eagle:package:26644014/2" override_package_urn="urn:adsk.eagle:footprint:26644015/1"/>
