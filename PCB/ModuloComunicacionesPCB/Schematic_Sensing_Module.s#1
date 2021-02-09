@@ -18042,7 +18042,7 @@ REGULATED</text>
 <wire x1="-25.4" y1="43.18" x2="22.86" y2="43.18" width="0.1524" layer="97"/>
 <text x="-15.24" y="45.72" size="3.81" layer="97">INDICATORS</text>
 <wire x1="-134.62" y1="116.84" x2="-134.62" y2="-132.08" width="0.1524" layer="97"/>
-<text x="-134.62" y="119.38" size="6.4516" layer="97">TRANSMITTER</text>
+<text x="-132.08" y="119.38" size="6.4516" layer="97">TRANSMITTER</text>
 <wire x1="246.38" y1="116.84" x2="246.38" y2="-132.08" width="0.1524" layer="97"/>
 <wire x1="93.98" y1="-53.34" x2="147.32" y2="-53.34" width="0.1524" layer="97"/>
 <wire x1="147.32" y1="-53.34" x2="147.32" y2="-10.16" width="0.1524" layer="97"/>

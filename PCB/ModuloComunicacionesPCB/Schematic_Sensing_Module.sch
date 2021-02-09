@@ -17936,6 +17936,8 @@ REGULATED</text>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="gnd" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="ATMEGA328P" library="Atmel_By_element14_Batch_1-00" deviceset="ATMEGA328P-PU" device="" override_package3d_urn="urn:adsk.eagle:package:26643912/2" override_package_urn="urn:adsk.eagle:footprint:26643913/1"/>
@@ -18478,7 +18480,7 @@ inamovible
 <pinref part="C11" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="ATMEGA328P" gate="A" pin="GND_2"/>
 <wire x1="193.04" y1="-99.06" x2="190.5" y2="-99.06" width="0.1524" layer="91"/>

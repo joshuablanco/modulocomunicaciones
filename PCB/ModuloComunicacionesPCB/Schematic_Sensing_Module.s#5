@@ -158,6 +158,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="no" active="no"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
+<fusionteam huburn="a.cGVyc29uYWw6dWUyYTNiOGU2" projecturn="a.cGVyc29uYWw6dWUyYTNiOGU2IzIwMTgwNDAxMTI1NDg3NDAx" folderUrn="urn:adsk.wipprod:fs.folder:co.YSJK5EOYSvu1o9x3XtZziA" urn="urn:adsk.wipprod:dm.lineage:cSfts8YcSqa2MQB0EvmCEQ"  versionUrn="urn:adsk.wipprod:fs.file:vf.cSfts8YcSqa2MQB0EvmCEQ?version=1" camFileUrn="" camFileVersionUrn="" lastpublishedchangeguid="73c624f4-5e79-6fea-4692-91aeee1fd542"/>
 <libraries>
 <library name="Atmel_By_element14_Batch_1-00">
 <description>Developed by element14 :&lt;br&gt;
@@ -17937,45 +17938,45 @@ REGULATED</text>
 </class>
 </classes>
 <parts>
-<part name="ATMEGA328P" library="Atmel_By_element14_Batch_1-00" deviceset="ATMEGA328P-PU" device=""/>
+<part name="ATMEGA328P" library="Atmel_By_element14_Batch_1-00" deviceset="ATMEGA328P-PU" device="" override_package3d_urn="urn:adsk.eagle:package:26643912/2" override_package_urn="urn:adsk.eagle:footprint:26643913/1"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY16" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="supply2" deviceset="GND" device=""/>
-<part name="R2" library="rcl" deviceset="R-US_" device="R1206" value="10k"/>
-<part name="Q1" library="crystal" deviceset="CSM-7X-DU" device=""/>
+<part name="R2" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644824/2" override_package_urn="urn:adsk.eagle:footprint:26644825/1" value="10k"/>
+<part name="Q1" library="crystal" deviceset="CSM-7X-DU" device="" override_package3d_urn="urn:adsk.eagle:package:26644023/2" override_package_urn="urn:adsk.eagle:footprint:26644024/1"/>
 <part name="C17" library="rcl" deviceset="C-EU" device="C0805" value="18pF"/>
 <part name="D1" library="1N4148WS" deviceset="1N4148WS" device=""/>
 <part name="C22" library="rcl" deviceset="C-US" device="C1206" value="0.1uF"/>
-<part name="RESET" library="button1825910-6" deviceset="1825910-6" device=""/>
-<part name="C1" library="rcl" deviceset="C-EU" device="C0805" value="0.1u"/>
-<part name="BAT-" library="led" deviceset="LED" device="CHIPLED_1206"/>
-<part name="BAT+" library="led" deviceset="LED" device="CHIPLED_1206"/>
+<part name="RESET" library="button1825910-6" deviceset="1825910-6" device="" override_package3d_urn="urn:adsk.eagle:package:26644749/2" override_package_urn="urn:adsk.eagle:footprint:26644750/1"/>
+<part name="C1" library="rcl" deviceset="C-EU" device="C0805" override_package3d_urn="urn:adsk.eagle:package:26644817/2" override_package_urn="urn:adsk.eagle:footprint:26644819/1" value="0.1u"/>
+<part name="BAT-" library="led" deviceset="LED" device="CHIPLED_1206" override_package3d_urn="urn:adsk.eagle:package:26644263/3" override_package_urn="urn:adsk.eagle:footprint:26644264/1"/>
+<part name="BAT+" library="led" deviceset="LED" device="CHIPLED_1206" override_package3d_urn="urn:adsk.eagle:package:26644260/3" override_package_urn="urn:adsk.eagle:footprint:26644261/1"/>
 <part name="ON/OFF" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="R7" library="rcl" deviceset="R-US_" device="R1206" value="560"/>
-<part name="R8" library="rcl" deviceset="R-US_" device="R1206" value="560"/>
+<part name="R7" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644251/2" override_package_urn="urn:adsk.eagle:footprint:26644252/1" value="560"/>
+<part name="R8" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644249/2" override_package_urn="urn:adsk.eagle:footprint:26644250/1" value="560"/>
 <part name="POWER-SUPP" library="Modulo_Carga" deviceset="MODULO_CARGA_DEVICE" device=""/>
-<part name="R3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1"/>
-<part name="MCP6002" library="MCP6002-E_MS" deviceset="MCP6002-E/MS" device=""/>
-<part name="LP38692" library="LP38692MP-5.0" deviceset="LP38692MP-5.0" device=""/>
+<part name="R3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1" override_package3d_urn="urn:adsk.eagle:package:26643211/2" override_package_urn="urn:adsk.eagle:footprint:26233899/1"/>
+<part name="MCP6002" library="MCP6002-E_MS" deviceset="MCP6002-E/MS" device="" override_package3d_urn="urn:adsk.eagle:package:26644269/2" override_package_urn="urn:adsk.eagle:footprint:26644270/1"/>
+<part name="LP38692" library="LP38692MP-5.0" deviceset="LP38692MP-5.0" device="" override_package3d_urn="urn:adsk.eagle:package:26644014/2" override_package_urn="urn:adsk.eagle:footprint:26644015/1"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF "/>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10uF "/>
-<part name="2N2222" library="MMBT2222A" deviceset="MMBT2222A" device=""/>
+<part name="2N2222" library="MMBT2222A" deviceset="MMBT2222A" device="" override_package3d_urn="urn:adsk.eagle:package:26643098/2" override_package_urn="urn:adsk.eagle:footprint:26643099/1"/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="4.7k"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="2.2uF"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1u"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
-<part name="MCP18" library="MCP1501T-18E_SN" deviceset="MCP1501T-18E/SN" device=""/>
+<part name="MCP18" library="MCP1501T-18E_SN" deviceset="MCP1501T-18E/SN" device="" override_package3d_urn="urn:adsk.eagle:package:26643144/2" override_package_urn="urn:adsk.eagle:footprint:26643145/1"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10"/>
-<part name="C7" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" value="2.2uF"/>
-<part name="C8" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" value="2.2uF"/>
+<part name="C7" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" override_package3d_urn="urn:adsk.eagle:package:26644827/2" override_package_urn="urn:adsk.eagle:footprint:26644828/1" value="2.2uF"/>
+<part name="C8" library="T491A106K010AT7280" deviceset="T491A106K010AT7280" device="" override_package3d_urn="urn:adsk.eagle:package:26643981/2" override_package_urn="urn:adsk.eagle:footprint:26643982/1" value="2.2uF"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
-<part name="MCP33121" library="mcp33121" deviceset="MCP33121" device=""/>
+<part name="MCP33121" library="mcp33121" deviceset="MCP33121" device="" override_package3d_urn="urn:adsk.eagle:package:26643974/2" override_package_urn="urn:adsk.eagle:footprint:26643975/1"/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="M1206" package3d_urn="urn:adsk.eagle:package:23566/2" value="4.7k"/>
-<part name="IACT" library="TERMINAL-TB001" deviceset="TERMINAL-TB2" device="" value=""/>
-<part name="ACS723" library="ACS723LLCTR-05AB-T" deviceset="ACS723LLCTR-05AB-T" device=""/>
+<part name="IACT" library="TERMINAL-TB001" deviceset="TERMINAL-TB2" device="" override_package3d_urn="urn:adsk.eagle:package:26643611/3" override_package_urn="urn:adsk.eagle:footprint:26643612/1" value=""/>
+<part name="ACS723" library="ACS723LLCTR-05AB-T" deviceset="ACS723LLCTR-05AB-T" device="" override_package3d_urn="urn:adsk.eagle:package:26643163/2" override_package_urn="urn:adsk.eagle:footprint:26643167/1"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="75k"/>
-<part name="OPA320" library="OPA320AIDBVR" deviceset="OPA320AIDBVR" device=""/>
+<part name="OPA320" library="OPA320AIDBVR" deviceset="OPA320AIDBVR" device="" override_package3d_urn="urn:adsk.eagle:package:26643971/2" override_package_urn="urn:adsk.eagle:footprint:26643972/1"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1.43Meg"/>
 <part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100pF"/>
 <part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="1nF"/>
@@ -17987,17 +17988,17 @@ REGULATED</text>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
 <part name="C20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
-<part name="REF3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1"/>
+<part name="REF3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1" override_package3d_urn="urn:adsk.eagle:package:26643130/2" override_package_urn="urn:adsk.eagle:footprint:26233899/1"/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
 <part name="U$8" library="XBEE_REG" deviceset="XBEE_REG_MODULE" device=""/>
-<part name="WS1" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
-<part name="WS2" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
+<part name="WS1" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643393/3" override_package_urn="urn:adsk.eagle:footprint:26643394/1" value=""/>
+<part name="WS2" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643522/3" override_package_urn="urn:adsk.eagle:footprint:26643523/1" value=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="560"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="560"/>
 <part name="C25" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
 <part name="C26" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
-<part name="T1" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
-<part name="T2" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
+<part name="T1" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643581/3" override_package_urn="urn:adsk.eagle:footprint:26643582/1" value=""/>
+<part name="T2" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643589/3" override_package_urn="urn:adsk.eagle:footprint:26643590/1" value=""/>
 <part name="C27" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
 <part name="C28" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
 <part name="C30" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
@@ -18007,9 +18008,9 @@ REGULATED</text>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
-<part name="INA219" library="INA219BB" deviceset="INABB" device=""/>
+<part name="INA219" library="INA219BB" deviceset="INABB" device="" override_package3d_urn="urn:adsk.eagle:package:26645392/2" override_package_urn="urn:adsk.eagle:footprint:26645393/1"/>
 <part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="2.2uF"/>
-<part name="T3" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" value=""/>
+<part name="T3" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643656/3" override_package_urn="urn:adsk.eagle:footprint:26643657/1" value=""/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
 <part name="C19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
 <part name="FTDI" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
@@ -19597,6 +19598,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 

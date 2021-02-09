@@ -17955,7 +17955,7 @@ REGULATED</text>
 <part name="ON/OFF" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="R7" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644251/2" override_package_urn="urn:adsk.eagle:footprint:26644252/1" value="560"/>
 <part name="R8" library="rcl" deviceset="R-US_" device="R1206" override_package3d_urn="urn:adsk.eagle:package:26644249/2" override_package_urn="urn:adsk.eagle:footprint:26644250/1" value="560"/>
-<part name="POWER-SUPP" library="Modulo_Carga" deviceset="MODULO_CARGA_DEVICE" device=""/>
+<part name="POWER-SUPP" library="Modulo_Carga" deviceset="MODULO_CARGA_DEVICE" device="" override_package3d_urn="urn:adsk.eagle:package:26648523/3" override_package_urn="urn:adsk.eagle:footprint:26648524/1"/>
 <part name="R3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1" override_package3d_urn="urn:adsk.eagle:package:26643211/2" override_package_urn="urn:adsk.eagle:footprint:26233899/1"/>
 <part name="MCP6002" library="MCP6002-E_MS" deviceset="MCP6002-E/MS" device="" override_package3d_urn="urn:adsk.eagle:package:26644269/2" override_package_urn="urn:adsk.eagle:footprint:26644270/1"/>
 <part name="LP38692" library="LP38692MP-5.0" deviceset="LP38692MP-5.0" device="" override_package3d_urn="urn:adsk.eagle:package:26644014/2" override_package_urn="urn:adsk.eagle:footprint:26644015/1"/>
@@ -17990,7 +17990,7 @@ REGULATED</text>
 <part name="C21" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="100nF"/>
 <part name="REF3450" library="SOT95P280X145-6N" library_urn="urn:adsk.eagle:library:26233898" deviceset="REF3450" device="" package3d_urn="urn:adsk.eagle:package:26233900/1" override_package3d_urn="urn:adsk.eagle:package:26643130/2" override_package_urn="urn:adsk.eagle:footprint:26233899/1"/>
 <part name="C23" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="10u"/>
-<part name="U$8" library="XBEE_REG" deviceset="XBEE_REG_MODULE" device=""/>
+<part name="U$8" library="XBEE_REG" deviceset="XBEE_REG_MODULE" device="" override_package3d_urn="urn:adsk.eagle:package:26645691/4" override_package_urn="urn:adsk.eagle:footprint:26645696/1"/>
 <part name="WS1" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643393/3" override_package_urn="urn:adsk.eagle:footprint:26643394/1" value=""/>
 <part name="WS2" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643522/3" override_package_urn="urn:adsk.eagle:footprint:26643523/1" value=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R1206" package3d_urn="urn:adsk.eagle:package:23540/2" value="560"/>
@@ -18008,7 +18008,7 @@ REGULATED</text>
 <part name="C11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22pF"/>
 <part name="C29" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
-<part name="INA219" library="INA219BB" deviceset="INABB" device="" override_package3d_urn="urn:adsk.eagle:package:26645392/2" override_package_urn="urn:adsk.eagle:footprint:26645393/1"/>
+<part name="INA219" library="INA219BB" deviceset="INABB" device="" override_package3d_urn="urn:adsk.eagle:package:26645392/3" override_package_urn="urn:adsk.eagle:footprint:26645393/1"/>
 <part name="C35" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="2.2uF"/>
 <part name="T3" library="TERMINAL-TB001" deviceset="TERMINAL-TB3" device="" override_package3d_urn="urn:adsk.eagle:package:26643656/3" override_package_urn="urn:adsk.eagle:footprint:26643657/1" value=""/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C1206" package3d_urn="urn:adsk.eagle:package:23618/2" value="0.1uF"/>
