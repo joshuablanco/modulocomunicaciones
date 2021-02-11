@@ -5,14 +5,14 @@
 
 #include <math.h>
 #include <Nextion.h>
-#include <HardwareSerial.h>
+//#include <HardwareSerial.h>
 #include "ListLib.h"
-//#include <WiFi.h>
-#include <PubSubClient.h>
+#include <WiFi.h>
+//#include <PubSubClient.h>
 
 /* comment this if you dont use ubidots */
-#define WIFISSID "SAVI INGENIERIA " // Put your WifiSSID here "SAVI INGENIERIA "   ""   Familia Nena
-#define PASSWORD "1098634009" // Put your wifi password here 63485721  1098634009
+#define WIFISSID "FAMILIA JEREZ" // Put your WifiSSID here "SAVI INGENIERIA "   ""   Familia Nena
+#define PASSWORD "Familiaporrasjerez" // Put your wifi password here 63485721  1098634009
 #define TOKEN "A1E-ZcXtyZALrFheZNl2gcJL1vV7J2uPWT" // Put your Ubidots' TOKEN
 #define MQTT_CLIENT_NAME "EcoTic124" // MQTT client Name, please enter your own 8-12 alphanumeric character ASCII string;                                     //it should be a random and unique ascii string and different from all other devices
 #define VARIABLE_LABEL0 "temperature1" // Assing the variable label
@@ -42,8 +42,10 @@ char CTC1_Str[10];
 char Innun_Str[10];
 
 WiFiClient ubidots;   /// comment this if you dont use ubidots
-PubSubClient client(ubidots); /// comment this if you dont use ubidots
-HardwareSerial Serial2(2); // second serial port for the screen
+//PubSubClient client(ubidots); /// comment this if you dont use ubidots
+HardwareSerial SerialN(2); // second serial port for the screen
+#define RXD2 16
+#define TXD2 17
 
 /**********Global variables**************** 
  ******************************************/
@@ -785,21 +787,20 @@ void setup(void) {//// SET UP
   Up_Flag= false;
   nexInit();
   Serial.begin(9600);
-  Serial2.begin(9600);
+  SerialN.begin(9600,SERIAL_8N1,RXD2,TXD2);
   WiFi.begin(WIFISSID, PASSWORD);
   Serial.println();
   Serial.print("Wait for WiFi...");
   while (WiFi.status() != WL_CONNECTED) {
     Serial.print(".");
-    delay(500);
-   
+    delay(500);   
   }
   Serial.println("");
   Serial.println("WiFi Connected");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
-  client.setServer(mqttBroker, 1883);
-  client.setCallback(callback);
+  //client.setServer(mqttBroker, 1883);
+  //client.setCallback(callback);
   
   
   b0P0.attachPop(b0P0PopCallback);
@@ -874,7 +875,7 @@ void loop(void) {//// LOOOOOOOOP
       //requestURL(hostDomain, hostPort);
       //Serial.println(listsum);
       if((WiFi.status() != WL_CONNECTED) == 0){
-        Ubiupload();
+        //Ubiupload();
       }
       //if (client.connected()) {Ubiupload();Reconnect = 0;}
       //else{Reconnect = Reconnect + 1; Serial.println("WiFi Disconnected"); if (Reconnect > 10){reconnect();Reconnect = 0;}}
