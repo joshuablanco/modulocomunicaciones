@@ -137,13 +137,5 @@ TemperatureStruct TempHum(DHTNEW dhtpin1){
         delay(500);
         return temperature;
         break;
-    }
-
-    
-    if(dhtread == DHTLIB_OK){
-     
-    }
-    else{
-        
-    }    
+    }   
 }

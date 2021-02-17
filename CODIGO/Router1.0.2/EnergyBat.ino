@@ -23,9 +23,3 @@ Battery EnergyBat(Adafruit_INA219 ina219){
     return battery;
 }
 
-CurrentData Grafica(/*int ADC_INPUT, float VTC_Mean*/){
-    
-    CurrentData plott = CurrentData();
-
-    return plott;
-}

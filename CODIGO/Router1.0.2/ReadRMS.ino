@@ -42,6 +42,7 @@ CurrentData Read_RMS(Rms2 readRms, Average MeasAvg , MCP331 adc){
     currentdata.VTCint = (int)VTC;
     currentdata.VTCDecLSB = (int)LowByte;
     currentdata.VTCDecMSB = (int)HighByte;
+    return currentdata;
 }
 
 float Fit_Rms(float RmsVal){
