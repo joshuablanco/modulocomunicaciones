@@ -1,5 +1,5 @@
-/****************** Router       ******************/
-/****************** Lybraries    ******************/
+/******************   Router      ******************/
+/******************   Lybraries   ******************/
 #include <Arduino.h>
 #include <dhtnew.h>
 #include <Adafruit_INA219.h>
@@ -9,7 +9,8 @@
 #include <XBee.h>
 #include <MCP331.h>
 #include <SPI.h>
-/* STRUCTS */
+
+/******************   STRUCTS     ******************/
 struct TemperatureStruct{
     int Tint = 0;
     int Tdecimal = 0;
@@ -38,14 +39,14 @@ struct CurrentData{
 };
 
 struct GraficaStruct{
-    //uint8_t samples[300];
+    uint8_t samples[300];
     int Num_Samples = 0;
-    //int MaxCurrent  = 0;
+    int MaxCurrent  = 0;
 };
 
 const char HEADER = 'H';
 const char TAIL = 'T';
-
+ 
 /********* VALUES TO SET (INPUTS) *********/
 float Sensitivity = 0.1;  // Parameter to INPUT related with the current sensor characterizing
 float VoltRange = 4.8;    // ADC full scale peak-to-peak is 5.00Volts measure in full operation
@@ -113,10 +114,10 @@ void loop() {
     TemperatureStruct temperatureH = TemperatureStruct();
     Battery battery = Battery();
     Water water1 = Water();
-    /*
+    
     CurrentData currentData = CurrentData();
     GraficaStruct graf = GraficaStruct();
-    */float a =9.0;
+    float a =9.0;
     // Reading sensors
     
     temperatureH = TempHum(dhtpin1);
@@ -129,6 +130,9 @@ void loop() {
     currentData = Read_RMS(readRms,MeasAvg, adc);
     rms_Plot();*/
     //Transmission PayLoad
+
+    /* Dummy payload */
+    uint8_t payload[] = {}
     /*uint8_t payload[] = {
         temperatureH.Tint,temperatureH.Tdecimal,
         temperatureH.Hint,temperatureH.Hdecimal/*,battery.ShuntVoltageInt,

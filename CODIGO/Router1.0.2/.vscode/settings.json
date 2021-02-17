@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "adafruit_busio_register.h": "c",
+        "adafruit_spidevice.h": "c"
+    }
+}
