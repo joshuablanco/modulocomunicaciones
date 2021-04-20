@@ -26,7 +26,7 @@ Requerimientos
 
 Proceso de diseño
 	- Ciclo de diseño 
-	- Establecimiento de requerimientos
+	- Seleccion de componentes
 		° Temperatura y humedad
 		° Corriente AC
 		° Fugas líquidas
@@ -66,20 +66,7 @@ Proceso de diseño
 			* Indicadores
 			* Conexión a la Nube
 			* DashBoard
-	- Selección de componentes
-		° Temperatura y Humedad relativa				
-		° Autonomía		
-			* Polarización			
-			* Reguladores
-			* Sensores 			
-		° Corriente AC
-			* Sensores
-			* Amplificador			
-			* ADC
-		° Fugas líquidas
-			* Aspectos generales
-			* Sensores
-			*   	
+
 Implementacion y resultados
 	- Circuito impreso
 	- Toma de lecturas
@@ -94,8 +81,6 @@ Programacion
 	° Autonomía
 	° Comunicacion
 	° Alarmas
-
-
 
 
 

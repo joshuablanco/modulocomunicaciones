@@ -1,0 +1,876 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0074)https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#theanswer -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/headandfoot_with_ganal.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Test and Calibrate DHT22 / AM2302 / RHT03 hygrometers</title>
+<meta name="description" content="A detailed account of methodology and results for my accuracy test and calibration of 
+six DHT22 (AM2302, RHT03) hygrometers. I assess the manufacturer&#39;s data sheet claim of 2% absolute calibration
+and though my six devices do not all deliver that precision, they are impressive for such low cost devices.">
+<!-- InstanceEndEditable -->
+
+<link href="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/mainwhite.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/light.css" type="text/css" media="screen"> 
+
+<!-- For the fancy arrow menu bar -->
+<script type="text/javascript" async="" src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/ga.js.descarga"></script><script src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/jquery.min.js.descarga" type="text/javascript"></script><script data-dapp-detection="">!function(){let e=!1;function n(){if(!e){const n=document.createElement("meta");n.name="dapp-detected",document.head.appendChild(n),e=!0}}if(window.hasOwnProperty("ethereum")){if(window.__disableDappDetectionInsertion=!0,void 0===window.ethereum)return;n()}else{var t=window.ethereum;Object.defineProperty(window,"ethereum",{configurable:!0,enumerable:!1,set:function(e){window.__disableDappDetectionInsertion||n(),t=e},get:function(){if(!window.__disableDappDetectionInsertion){const e=arguments.callee;e&&e.caller&&e.caller.toString&&-1!==e.caller.toString().indexOf("getOwnPropertyNames")||n()}return t}})}}();</script>
+<script type="text/javascript" src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/jquery.easing.min.js.descarga"></script>
+<script type="text/javascript" src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/jquery.lavalamp.min.js.descarga"></script>
+<script type="text/javascript" src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/cufon.yui.js.descarga"></script><style type="text/css">cufon{text-indent:0!important;}@media screen,projection{cufon{display:inline!important;display:inline-block!important;position:relative!important;vertical-align:middle!important;font-size:1px!important;line-height:1px!important;}cufon cufontext{display:-moz-inline-box!important;display:inline-block!important;width:0!important;height:0!important;text-align:left!important;text-indent:-10000in!important;}cufon canvas{position:relative!important;}cufonshy.cufon-shy-disabled,.cufon-viewport-resizing cufonshy{display:none!important;}cufonglue{white-space:nowrap!important;display:inline-block!important;}.cufon-viewport-resizing cufonglue{white-space:normal!important;}}@media print{cufon{padding:0!important;}cufon canvas{display:none!important;}}</style>
+<script type="text/javascript" src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/myriad.js.descarga"></script>
+<script type="text/javascript">
+		$(function() {
+			 $("#one,#two,#three,#four,#five,#six,#seven,#eight").lavaLamp({
+				fx: "backout", 
+				speed: 700
+			 });
+		});
+</script>
+
+<!-- <script type="text/javascript">
+		Cufon.replace('li a', {hover: true});
+</script> -->
+<!-- End of menu bar scripts -->
+
+
+<!-- InstanceBeginEditable name="head" -->
+
+<script language="javascript">
+<!--
+function glump()
+{
+var ffhbts=["x72","111","x62","x65","x72","116","64","x6b","97","110","100","x72","115","109","105","x74","x68","46","111","x72","x67"];
+for (i=0; i<ffhbts.length; i++) document.write('&#'+ffhbts[i]+';');
+}
+//-->
+</script>
+
+<!-- InstanceEndEditable -->
+
+<!-- Google Analytics js snippt -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3811238-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1001.0" data-gr-ext-installed="">
+
+<div class="container">
+
+  <div class="header">
+    <!-- <a href="#"><img src="" alt="Insert Logo Here" name="Insert_logo" width="20%" height="90" id="Insert_logo" style="background: #8090AB; display:block;" /></a> -->
+  <!-- end .header -->
+  </div>
+  
+  <div class="content">
+  
+<!-- InstanceBeginEditable name="body" -->
+
+<div class="lightmenu">
+  <ul class="lightBlueRight" id="one">
+    <li><a href="https://www.kandrsmith.org/">Front Page</a></li>
+    <li><a href="https://www.kandrsmith.org/KES/">Kimberly</a></li>
+    <li><a href="https://www.kandrsmith.org/RJS/">Robert</a></li>
+    <li class="current"><a href="https://www.kandrsmith.org/RJS/Misc/hygrometers.html">Hygrometers</a></li>
+  <li class="back" style="left: 500px; width: 110px;"><div class="left"></div></li></ul>
+</div>
+
+<h1 itemprop="name">Test and Calibrate DHT22 Hygrometers</h1>
+
+<div style="float:right;background: #eee;">
+<h2>Page Contents</h2>
+<ul>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#introduction">Introduction</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#method">Hygrometer calibration theory</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#devices">The sensors and test apparatus</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#practicalities">Experimental practicalities</a></li>
+<ul>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#chemicals">Chemicals</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#zerohundred">0–100%</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#time">Time</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#temperature">Thermal effects</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#quantity">Quantity of solution</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#hygroscopic">Hygroscopic Materials</a></li>
+</ul>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#results">Results</a></li>
+<ul>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#results_h">As a function of humidity</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#results_t">As a function of temperature</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#results_ht">As a function simultaneously of T and H</a></li>
+</ul>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#thermometer">Thermometer accuracy</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#conclusions">Conclusions</a></li>
+<li><a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#references">References</a> and <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#acknowledgements">Acknowledgements</a></li>
+</ul>
+</div>
+<div style="clear:right"></div>
+
+<p>&nbsp;</p>
+
+
+<a name="introduction"></a>
+<h2>Introduction</h2>
+
+<p>This page covers tests of the DHT22 / AM2302 and description of the test methodology. For other types of devices, see the <a href="http://www.kandrsmith.org/RJS/Misc/hygrometers.html">index of all my hygrometer testing</a>.
+</p>
+
+<p>The DHT22 (a.k.a. <a href="http://www.aosong.com/en/products/details.asp?id=117">AM2302</a>, <a href="http://www.humiditycn.com/cp22.html">RHT03</a>) is a popular hygrometer/thermometer in the hobbyist electronics community. It is cheap, easy to use and the specification claims good precision and accuracy. There are several different <a href="http://www.humiditycn.com/pic/20135318405067570.pdf">data sheets</a> floating around the web for what appear to all be the same device, though I cannot be sure they are all from the same factory.  
+Typical advertised specs for AM2302/DHT22 are:</p>
+
+<p>
+</p><div class="Figure">
+<table width="400" border="0">
+  <tbody><tr>
+    <td width="200" align="left">Absolute accuracy</td>
+    <td width="200" align="left">±2%</td>
+  </tr>
+  <tr>
+    <td align="left">Repeatability</td>
+    <td align="left">±1%</td>
+  </tr>
+  <tr>
+    <td align="left">Long term stability</td>
+    <td align="left">±0.5% per year</td>
+  </tr>
+</tbody></table>
+</div>
+<p></p>
+
+<p>I searched the web for others' experiences and struggled to find any convincing discussions of whether they really do meet these specifications. Some people report unencouraging experimental results, others simply repeat the specification verbatim. Data sheets typically just say things like "0-100% humidity and ±2% typical accuracy". Data sheets for serious, precision sensors will provide <a href="http://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/Humidity/Sensirion_Humidity_SHT25_Datasheet_V2.pdf">a varying scale of errors as a function of humidity and temperature</a> and normally only claim precision of 2% despite costing ten times as much. The DHT22 may be ±2% near the middle of its range, but can we really believe those errors do not increase near 0 and 100? 
+<!--They are not intended as high precision devices and the published specifications tend to be terse. One data sheet I read quoted "RH &plusmn;2% for temperature &plusmn;0.5&deg;C". Though 2% sounds good, that really does not tell you much very useful about real world use. How often do you want to measure the humidity and know that the temperature is controlled and stable to better than 0.5&deg;C? If the temperature changed 5&ndash;10&degC, how large a humidity error is expected? -->
+</p>
+
+<p>
+<i><b>UPDATE:</b> Since first writing this page a <a href="http://akizukidenshi.com/download/ds/aosong/AM2302.pdf">much improved data sheet</a> has recently appeared which contains
+both clearer translations to English and more detailed specifications and plots. It still claims a typical accuracy of ±2%, but does now show the accuracy
+degrading to ±5% at the two extreme limts, &lt;10% and &gt;90%.</i> </p>
+
+<p itemprop="articleBody">Accurately and repeatably measuring relative humidity is notoriously tricky (note the 1–2%RH quoted accuracy even for <a href="http://www.vaisala.com/en/products/humidity/Pages/hmp155.aspx">professional meteorological instruments costing $1000+</a>) so I decided to run some experiments of my own. Objectives were to determine how good these sensors are and if possible derive a correction curve to improve on the factory calibration. The manufacturer's calibration is permanently defined in these devices and not user adjustable so they cannot be re-calibrated in any physical sense. We can however build a look-up correction transformation. </p>
+
+
+
+<p>
+I stress a few points first and hold these in mind when assessing whether you believe and trust my results.
+</p>
+<ul>
+  <li>This is all based on my sample of six devices. I cannot say how good yours are.</li>
+  <li>My devices were bought in two batches and five of them have near sequential serial numbers, so  my sample might be regarded limited. </li>
+  <li>The data presented here are based on a series of tests conducted over the period of a year. Some comments are also included about long term stability, but I present no detailed analysis of long term drift on multi-year time scales.</li>
+  <li>I am no expert in hygrometers. I just devised the best experiment  I could based on my reading of several papers on the topic and using a few items of household equipment I had lying around.</li>
+</ul>
+
+<p>I planned to spend a couple of weeks on this experiment. A year of data logging and two complete rebuilds of the test apparatus later I feel as though I have got a feel for how these devices operate. It has all turned into a far bigger undertaking than I had ever imagined.</p>
+
+<a name="conclusions"></a>
+<h2>Conclusion</h2>
+<p>
+I will start with my conclusions for those who do not want to read all the following or you can jump to <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#theanswer">the numerical answers</a>.
+</p><ul>
+<li>My devices initially performed impressively. Whilst I never achieved ±2% absolute accuracy over the full range 0–100% RH, they did when first tested deliver a higher accuracy than I had expected for such a cheap device. (My expectations were pretty low!) The maximum errors I  measured in my initial calibration was +6% RH and that <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure9">only on one of my six devices</a>. 
+  Typical errors were <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure8">2–3% RH</a> at a constant room temperature (20°C).</li>
+<li>The output values have a <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure10">significant temperature dependence of up to 8% RH</a> over the range 10 &lt; °C &lt; 40. In my tests, temperature stability is possibly these devices' weakest feature.</li>
+<li>I have seen <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure7">some evidence of hysteresis</a> in the measurements, but it is small and almost irrelevant compared with the temperature effects.</li>
+<li> On timescales of hours I find repeatability in the range 0.5–1% RH as specified on the data sheet.</li>
+<li>On longer time-scales I see serious repeatability problems. Capacitance humidity sensors are generally regarded as being susceptible to long term drift. I have seen little evidence so far of slow systematic drift, however after about nine months of reasonably consistent behaviour one of my sensors suddenly changed behaviour by a very large margin. A second failed after about one year of use. Output values <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/dht22_first_failure.html#figure1">changed by more than 20% RH</a>. Had this happened in a sensor deployed in the field instead of being in the test cell I might never have known and would be getting highly erroneous data. <!-- Most sensors have shown smaller changes of 1&ndash;5%.--></li>
+<li>My fine-tuned recalibration curves typically have amplitudes of order 5%. Many of the devices show long term variation of a similar scale which means there is probably little realistic point applying these bespoke recalibration curves. For some of my sensors, the calibration curves do still seem valid after about a year. In the long term, repeatability variations look possible to exceed errors in any one-off calibration.</li>
+<li>Relative humidity is strongly temperature dependent and unless you go to considerable efforts to ensure thermal stability and homogeneity throughout the apparatus (±0.1°C), any errors measured risk being dominated by experimental systematics rather than inaccuracy of the sensor.</li>
+<li>The built-in thermometers <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure14">easily meet the data sheet specification</a>, however two of my devices exhibit problems with self-heating so consistently read higher than the ambient environment.</li>
+<li>Excepting the two failed devices (from sample of six), given all the subtle and complicated errors inherent in humidity measurement, I would say that these devices fulfill most reasonable expectations for non-safety-critical, domestic DIY projects. The problem when trying to rely on them though would be knowing when a device failed since the outputs still look reasonable.</li>
+<!--
+<li>Since publishing this web page I have had correspondence with one other individual who attempted a similar multi-point calibration. His devices performed disappointingly compared to mine. Whether that is due to batch variability, quality control or just our different experimental procedures I do not know. Did I get lucky with buying unusually good specimens or are his unusually poor ones?</li>
+-->
+</ul>
+<p></p>
+
+<p>&nbsp;</p>
+
+<a name="method"></a>
+<h2>Calibrating hygrometers</h2>
+<p>The method adopted here, purely on the basis of being the only one that is reasonable to attempt using a few common household items, is that of critical relative humidity above a saturated aqueous solution. If you seal pure water in an air-tight vessel, the water will evaporate until the balance of liquid and vapour reach an equilibrium at 100% relative humidity. Water vapour will then evaporate and condense, exchanging between liquid and gaseous phases, but always maintaining a balance at 100% RH. This is in practical terms a definition of what 100% RH means. This gives a method for setting the 100% calibration point of a hygrometer; simply put it is a sealed box with some water. You can set the 0% calibration point by sealing the sensor in the box with an aggressive desiccating agent. In practice neither of these help very much since the device is likely to be non-linear and at its least accurate near the two extremes so these data may tell you little about how it behaves in between. Also, zero and 100 are rarely experienced in real life so calibrating them is of limited interest.</p>
+
+<p>As a water soluble chemical dissolves, its atoms interfere with evaporation at the water surface, meaning the stable equilibrium between water vapour and the solution becomes less than 100%. By very precisely controlling the concentration of a solution you can control the humidity of the air above that solution. Typically sodium hydroxide (e.g., Madge 1961), sulphuric acid or lithium chloride have been used. Unfortunately NaOH and H<sub>2</sub>SO<sub>4</sub> are both unpleasant to handle and this method is difficult without precision weights and measures. Madge (1961) provides conprehensive tables of what concentration of NaOH to use to generate any humidity you want for a range of temperatures (0–40°C). If you have good quality laboratory or jewelers' scales this might be a viable technique for home use. It only requires finding one (admittendly very corrosive!) chemical and allows you to set any humidity you want over the range 6–100%.
+</p>
+
+<p>
+Instead of varying concentrations of a particular salt I use saturated solutions of several different salts. Depending on the solubility of a particular salt, a different relative humidity will be generated in equilibrium with the solution. Low solubility salts will yield high humidity because the solution is not far from being just water anyway. Very high solubility salts will conversely yield low humidity. We use saturated solutions because they are easy to achieve without making any precision measurements; dissolve as much as you possibly can and you still have residual solids which will not dissolve. In this sense they are an ideal reference since they depend on basic physical properties of the chemical and do not need to be calibrated or set up in any way. They are are self regulating and will naturally remain saturated as long as there are undissolved solids present.
+</p>
+
+<p>The test is thus very simple in theory. Seal the hygrometer in an air-tight vessel with a sample of the saturated solution and record what the sensor measures compared to the humidity known from published lab. tests to be generated by that particular solution. In practice there are many things that can go wrong or influence your results and these will be discussed (in tedious detail) below.
+</p>
+ 
+<p>
+The best summary I have found of this technique is that of Fossa &amp; Petanga (2003) who describe essentially the same experiment as I perform here for the purpose of testing the hygrometers in <a href="http://home.web.cern.ch/">CERN</a>'s <a href="http://home.web.cern.ch/about/experiments/cms">Compact Muon solenoid</a>(CMS). They (sensibly) restrict themselves to using just LiCl (11%), MgCl (35%), NaCl (75%) and KNO<sub>3</sub> (92%) instead of the twelve-point calibration I attempt here. You might very fairly ask why I need a twelve-point calibration for my sensors when they managed to discover the Higgs boson with the CMS and just a four-point calibration.
+</p>
+
+<p>&nbsp;</p>
+
+<a name="devices"></a><p></p>
+<h2>The Devices</h2>
+<p>I have six devices to test. All are marked AM2302 and have individual serial numbers. Five were bought together as a set from a China-based eBay seller. These all have very similar serial numbers and were presumably manufactured in the same batch. The sixth was bought from a 
+"reputable US-based on-line retailer" and has a clearly different SN. I have seen no significant difference between them and cannot support the suggestion I have seen on-line that those from unknown eBay traders may be grade-outs that failed the manufacturer's spec. Of course neither can I rule out that some of them are.</p>
+
+<p>
+</p><div class="Figure">
+<table width="230" border="0">
+  <tbody><tr>
+    <th width="60" scope="col"></th>
+    <th width="150" align="center" scope="col">Serial Number</th>
+  </tr>
+  <tr>
+    <td align="center">A</td>
+    <td align="right">SN1305002C0</td>
+  </tr>
+  <tr>
+    <td align="center">B</td>
+    <td align="right">SN1307003F2</td>
+  </tr>
+  <tr>
+    <td align="center">C</td>
+    <td align="right">SN13070022E</td>
+  </tr>
+  <tr>
+    <td align="center">D</td>
+    <td align="right">SN13070041C</td>
+  </tr>
+  <tr>
+    <td align="center">E</td>
+    <td align="right">SN130700201</td>
+  </tr>
+  <tr>
+    <td align="center">F</td>
+    <td align="right">SN130700A38</td>
+  </tr>
+</tbody></table>
+</div>
+<p></p>
+
+<a name="apparatus"></a>
+<p>
+I will not give much detail of the electronic setup. Since these are digital devices which output a checksummed numerical value, the external electronics ought to be irrelevant. Once you provide a d.c. supply voltage, everything else happens inside the sensor module itself. I read the devices using a <a href="http://jeelabs.net/projects/hardware/wiki/JeeNode">JeeNode v6</a>, a small, low power, <a href="https://www.arduino.cc/">Arduino</a>-like, <a href="http://www.atmel.com/devices/atmega328p.aspx">ATMega328P</a> board with an integrated <a href="http://www.hoperf.com/upload/rf/RFM12B.pdf">RFM12B</a> radio module, making it very easy to send measurements out to an external data logger. Measurements were logged into a <a href="http://www.mysql.com/">MySQL</a> database via the <a href="http://emoncms.org/site/home">EmonCMS</a> data logging system developed by the <a href="http://openenergymonitor.org/emon/">Open Energy Monitor</a> project. I enthusiastically recommend the combination of JeeNodes and EmonCMS as an easy way to initially get going on any wireless, distributed, environmental monitoring system like this.</p>
+
+<p>The sensors and the JeeNode were powered from a single 5V d.c. switched mode PSU. The JeeNode has it's own on-board voltage regulator but the supply to the DHT22s was fed directly from the PSU. (c.f. <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/DHT22/calib_dht22_v1.html#psu">version 1</a>)</p>
+
+<p><a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/DHT22/calib_dht22_v1.html#psu">Version 1</a> consisted of a sealed box containing the entire experiment; the sample solution, the sensors, all the electronics and battery. Version 2 is based on two main design changes; active thermal control to ensure data were collected at a known and stable temperature and removal of all electronics from inside the test cell. The cell should be as small as possible and ideally contain nothing other than test solution and sensor. For the air-tight test cell I use a jam jar. The sensors are attached to the underside of the lid with the cables running out through holes sealed with bathroom caulk. Having a <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/DHT22/chemical_jars.jpg">dozen identical jars</a> 
+allows me to keep all the solutions constantly ready for use and simply swap the sensor bearing lid onto any
+one. I am using US American quart Mason jars. Smaller would I think be better, but require more care in handling to prevent splashing the sensors. As well as the six sensors, a 50mm fan is also included to force better air circulation inside the jar.
+</p>
+
+<p>The dozen jars are then enclosed in a large insulated cardboard box along with a small, low-power fan heater. The fan heater is used to actively control the air temperature inside the box. There is also another fan running continuously to force better air circulation around the jars and maintain temperatures throughout the box as homogeneous as possible. Thermal gradients of just 0.1°C anywhere in the apparatus seems to create significant errors.
+</p>
+
+<p>
+Software on the micro-controller reads temperature and humidity from the six DHT22s once every thirty seconds. The temperatures are averaged and used to drive a PID controller for the fan heater. Since the heater does not have any analogue control, that needs to be approximated by pulsing the heater full on and off with the PID setting the duty cycle of typically 20–30 two-second pulses per hour. Initially four second pulses were used but more frequent, shorter pulses gave measurably better control. Both circulation fans (inside the jam jar and inside the surrounding box) run continuously and proved necessary to maintain the temperature stability. 
+</p>
+
+<p>
+<a name="figure1"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/test_cell_comb.jpg" width="700" alt="Schematic layout and photograph of the test apparatus">
+<div class="FigureCaption">Figure 1. Left panel shows photograph of part of the apparatus inside the large insulated cardboard box. Visible are several of the jars including the one currently containing the six sensors. A different salt solution is in each jar and the lid can simply be swapped onto each in turn. The samples, electronics and fans are all in the top half of the box. A grille is just visible in this image. The heater is beneath that, in the lower half of the box. Right panel is an overview schematic of the whole apparatus. Apologies for my art work. I am much better a data plots. 
+</div>
+</div>
+<p></p>
+
+<p>&nbsp;</p>
+
+<a name="practicalities"></a>
+<h2>Constraints and Considerations</h2>
+<a name="chemicals"></a>
+<h3>Choice of Chemicals</h3>
+<p>
+I have not invented this technique. It is a well established method of controlling humidity, used in many fields.
+</p><ul>
+  <li>In chemical labs to hold a particular humidity over the reagents to facilitate or moderate certain reactions</li>
+  <li>Storage of food (Rockland, 1960)</li>
+  <li>Preservation of historical artifacts in museum display cases (Creahan, 1991)</li>
+  <li>Biological laboratory incubation and hybridization units</li>
+  <li>Calibration of hygrometers (Fossa &amp; Petagna, 2003)</li>
+</ul>
+<p></p>
+<p>
+An extensive literature on this topic allows you to select a particular salt to generate any humidity to match your requirements. My literature survey yielded in excess of 60 chemicals previously used for this purpose and we need to select a suitable subset for this experiment. The humidity above solutions is to some degree temperature dependent because the salt's solubility  is temperature dependent. Some chemicals are of course poisonous, flammable, reactive, unstable or dangerous in a variety of ways.
+</p>
+<p>
+</p><ul>
+  <li>I selected 40 (<a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure2">Figure 2</a>, left panel) for which authors had published data at multiple points in the range 15–30°C. I can then interpolate and get a precise value for the temperature at which I obtained the reading.</li>
+  <li>I rejected those which showed strong thermal coefficients. For example lithium nitrate varies from 55% RH at 15°C down to 31% at 30°C. I.e., it is far more soluble at 30°C than at 15°C. By contrast, solubility of sodium chloride (NaCl, common kitchen salt) is barely effected over that temperature range and the expected RH varies only from 75.3 to 75.2 %. Despite being so commonplace, sodium chloride is an outstanding candidate for this experiment. Except for the very most extreme cases (e.g., LiNO<sub>3</sub>) this selection criterion proved irrelevant and using almost any salt would give just as good results. See <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#temperature">Temperature</a> below.</li>
+  <li>All were checked against databases of <i>NFPA 704</i> and <i>EU Dangerous Substances Directive</i> classifications to select only those I considered 'relatively safe to handle in a domestic setting' and did not pose significant disposal challenges. For example sodium dichromate would be an excellent candidate for a 56% RH calibration point but for the fact it is extremely toxic (LD<sub>50</sub> 50mg/kg — less than a teaspoon is likely fatal to an adult). Many of the compounds selected are common garden fertilizers which makes disposal at the end of the experiment relatively easy. Another interesting case is potassium chloride (KCl). This is approved as a low sodium table salt substitute in food, is commonly used medicinally and certainly seems to fulfill my 'relatively safe to handle' requirement. It is also used as the lethal injection for executions in the USA.  You could likely eat a handful of KCl (LD<sub>50</sub> ~2.6g/kg (oral, rat)), but intravenously a very small quantity is lethal. Obviously you were not actually going to inject yourself with any of these chemicals, but I mention all this as a caution to think carefully about what 'relatively safe to handle' means (<a href="http://www.xkcd.com/1260">xkcd 1260</a>). Context and sensible precautions are everything. Sodium hydroxide (NaOH) is an everyday household chemical (drain cleaner) but is extremely corrosive and should be treated with utmost respect; goggles and gloves at all times.</li>
+  <li>I read manufacturers' MSDS documents for specific handling guidelines and rejected anything vaguely scary or photo-sensitive.</li>
+  <li>By now the list was down to about twenty compounds, about half of which proved difficult to buy cheaply in small quantities, so that defined my sample. On the expectation that the sensor would be reasonably linear and well behaved in the middle of its range, where possible I selected salts to give a well distributed range of RH values but with extra density of data points &gt;80% and &lt;20%. In reality I was primarily constrained by safety and availability. Final sample is shown in <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure2">figure 2</a>, right panel.</li>
+  <li>Multiple publications frequently differ by 2-3% RH. Where data for a particular salt are available from multiple authors I have taken a simple average rather than choosing any one as absolutely correct. However perfect our own experiment may or may not be, the absolute reference values drawn from the professional academic journals differ by 2-3% so no single measurement can ever be trusted to better than this limit.</li>
+</ul>
+<p></p>
+
+<p>
+<a name="figure2"></a>
+</p><div class="Figure">
+  <img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_salt_sample.png" alt="Plots showing variation in humidity generated above a selection of salts as a function of temperature.">
+<div class="FigureCaption">Figure 2. Left panel: The literature contains humidity measurements for a considerable selection of chemicals. (Data from O'Brien 1948, Wexler 1953, Rockland 1960, Greenspan 1977, Weast 1979). Right panel: The selected sample of chemicals actually used in the current experiment.</div>
+</div>
+<p></p>
+
+<p>
+Chemicals were bought where I could find them fairly cheaply. Several were only "agricultural grade" and probably not very pure which could affect accuracy of my results. Mixtures of different salts will generally yield a lower humidity than either of the two pure components. I did buy a few (LiCl, MgCl, KI &amp; KNO<sub>3</sub>) in fairly pure "reagent grade". The NaCl was "food grade"; simply non-iodized table salt. In Figure 2, Ammonium nitrate stands out as being the only one with a significant temperature coefficient.  Calcium chloride also has a strong temperature coefficient and was used for a while. It appears in some plots but was abandoned since it has no obvious advantage over magnesium chloride and the published reference values seemed ill determined. All solutions were made with distilled water though I doubt tap water would have any real effect for the precision achieved here. 
+</p>
+
+<a name="zerohundred"></a>
+<h3>Zero and One Hundred</h3>
+<p>I made attempts at 0% and 100% humidity, but give the results rather little credence. 
+</p>
+<p>Distilled water was used for 100% RH. This data point will be of varying use depending on individual devices. Their internal firmware caps all output at 99.9%. Since most of my sensors seem to read marginally high, they hit 99.9% before the air is genuinely saturated making this data point meaningless. One of my sensors (B) reads slightly low at very high humidity so that does generate a usable value for pure water. Many hygrometer manufactures caution against extended exposure of the device to condensing humidity and in my experiments they do seem to take a bit longer to recover after 100% humidity than after other readings. Also anything else inside the test cell (electronics, fan, battery etc) must necessarily end up damp since 100% humidity is by definition condensing. Overall I would suggest not bothering with a 100% data point unless you really need it. As I say above, for most of my devices it was worthless anyway since they already read 99.9% when the atmosphere was really only 98%.</p>
+<p>
+I experimented with dry calcium chloride dihydride for zero humidity. This will not generate a true zero. Taking numbers from "Drying Agents" (Merck, 2005), the expected absolute vapour content of the air would be ~0.4 mg/l which converts to 1.9% RH for my local conditions. Using anhydrous calcium chloride ought to improve this to 0.4% RH. I also tried silica gel beads but found the small quantity I had to hand was ineffective. Even more effective would be 4Å molecular sieve. Again taking values from "Drying Agents" (Merck, 2005), under ideal conditions silica gel could achieve 0.02% RH and a 4Å molecular sieve 0.005% RH. In practice the sensor's firmware appears to be capped at a minimum output value of 1.0% so like 100%, interpretation of the 0% data points is not simple and investing in 4Å molecular sieve is probably pointless.
+</p>
+<p>
+I returned to calcium choride at the end. Instead of using the CaCl as a reference, I used the calibrated sensors to measure the air above dry, crystaline CaCl. I got 3.8±0.5%RH. I do think that tells us much about CaCl since I have no way to assess how well dehydrated the CaCl really was. It had been baked for a couple of hours in the oven at 200°C, but not been in a vaccuum dessicator. Given that I did not achieve the 1.9%RH predicted above for pure, dry calcium chloride dihydride, that supports my decision not to include it as a reference point in the fits.
+</p>
+
+
+
+<a name="time"></a>
+<h3>Time</h3>
+<p>It takes time for the vapour to equilibrate. The sensors were sealed in the test vessel with each chemical for between three hours and three days. Data for my analysis are typically averages of 12–24 hours of logged values. The smaller the test vessel air volume and the larger the surface area of the solution, the quicker equilibrium is likely to be achieved. My experience is that vapour equilibrium was generally established in just a couple of hours as long as I had the fan running. Achieving stable thermal equilibrium was much more difficult and that is also easier for a smaller, simpler test vessel.</p>
+
+<a name="temperature"></a>
+<h3>Temperature</h3>
+<p>The single biggest source of error I was able to identify was temperature and temperature stability. There are at least three different, competing, temperature dependent effects.</p>
+
+<h5>Temperature Effect 1: True Physical Changes in the Calibration Reference</h5>
+
+<p>As shown above (<a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure2">Figure 2</a>), the expected RH depends weakly on temperature. The salts used were selected to exhibit smaller than average temperature coefficients. My hypothesis had been that choosing solutions which were not temperature sensitive would minimize my results' sensitivity to temperature variation. In practice this proved fairly unimportant because it is easy to calibrate out and other sources of error dominate.</p>
+<p>Including a temperature sensitive salt does however provide a good illustration that the experimental procedure works as expected. Figure 3 shows the measured and predicted humidity as a function of temperature for three solutions; potassium iodide, ammonium nitrate and sodium bromide. Ammonium nitrate is expected to have a much stronger thermal coefficient and the effect is obvious in this plot. All three data sets are slightly offset from the reference curves and the slope of the ammonium nitrate data does not perfectly match expectation, but it is clear that the hygrometer is responding to genuine, small humidity changes as the ammonium nitrate solubility changes with temperature. This plot is very important and greatly increases my confidence that the test cells are properly equilibrating at the set temperature.
+</p>
+
+<p>
+<a name="figure3"></a>
+</p><div class="Figure">
+  <img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_ammoniumnitrate.png" alt="Plots showing measured humidity does in fact vary with temperature in a manner similar to expectation from the reference data.">
+  <div class="FigureCaption">Figure 3. Points are raw humidity data from the DHT22 sensor A as the temperature was adjusted over the range 20 &lt; °C &lt; 30 for three different salts. Lines are the reference curves from Figure 2. Ammonium nitrate exhibits the expected strong temperature effect. It looks possible that full equilibrium was not being achieved above 26°C for the ammonium nitrate sample.</div>
+</div>
+<p></p>
+
+<a name="temperature2"></a>
+<h5>Temperature Effect 2: Temperature Stability and Homogeneity Inside the Test Cell</h5>
+<p>More dramatic is the way the atmosphere (as opposed to the salt solution) responds to temperature change. Relative humidity is a strong function of air temperature. For a given <em>absolute humidity</em> (i.e., absolute mass of water vapour molecules suspended in the air) the measured <em>relative humidity</em> varies with temperature. For example, in my house in Summer (temperature = 23°C, pressure = 83kPa — well above sea level) atmosphere that contains 16 mg water per litre of air would be measured as 77.6% RH. Raising the temperature just 1°C to 24°C, that same water vapour would now read 73.3% and lowering the temperature to 22°C would give 82.2%. Since the diurnal variation of the air temperature in my house is about 5°C, I would expect the RH measurements in a sealed volume of air to be varying by up to 20% over the course of a single day. Clearly if my errors inside the test vessel are 20%, I can say little about the validity of the manufacturer's claimed 2% factory calibration. To obtain a measurement that is repeatable at 1% RH, we need to a test cell with thermal regulation to a precision substantially better than 1°C.</p>
+
+<p>
+Initially one might expect the error to correlate to temperature, but for a sealed, air-tight test vessels this particular source of error correlates to rate of change of temperature or temperature gradients within the test cell. We are using the natural equilibrium which the solution, vapour and air are continuously trying to achieve. If the temperature is rising then the air is continuously being able to support more vapour, the solution will be evaporating to provide that and the measured humidity will always be lower than expected because it is always trying to catch up. Similarly when the temperature is falling, the vapour will be condensing back into the solution but is likely to always be lagging the equilibrium target and the measured RH will be higher than the calibration value we are trying to achieve. Only when the temperature remains stable for a period of time will the equilibrium be established. This effect was clearly visible in my logged data for the version 1 test cell which did not have active thermal control (<a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure4">Figure 4</a>). 
+</p>
+
+<p>
+</p><div class="Figure">
+<a name="figure4"></a>
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_temp_stability.png" width="650" height="450" alt="Plot of RH
+ measurement errors as a function of diurnal temperature variation.  ">
+<div class="FigureCaption">
+Figure 4. Data from the version 1, non-thermally-regulated test cell. Humidity measurements from six DHT22 devices over a period of one day with a saturated solution of potassium nitrate (expected RH 93%).  My sensors gave readings in the range 93–100 %. Over-plotted is the air temperature. When the air is cooling the sensors all give higher than average values. When warming up, the RH measurements are all low. One of the sensors (E, purple in plot), which has otherwise saturated at 100%, briefly reappears when the temperature is climbing fastest. Note the correlation is with temperature change, not temperature. Just after both the maximum and minimum temperatures, the RH measurements are very nearly the same. These are the times when the test cell has dwelled at a near constant temperature. Serendipitously this provided a criterion to determine when the system has equilibrated. A measurement was only taken when two consecutive maxima and minima yielded consistent results; typically 36 hours to four days after sealing the vessel.
+</div>
+</div>
+<p></p>
+
+<p>This problem has largely been eliminated through active thermal control and better air circulation. The PID controller keeps the measured temperature at the set point with a precision of better than ±0.03°C over any timescale from ten minutes to several days. Following a similar calculation to that above (temperature = 23°C, pressure = 83kPa), variations of 0.03°C would be expected to cause absolute errors of 0.06% and 0.15% on measurements of 33% and 85% RH respectively. These errors are small enough that we can test the 1–2% claims from the specification data sheet.
+</p>
+
+<p>Even with the temperature regulated to better than ±0.03°C, humidity variations of up to 4% were still observed and were precisely correlated to the air temperature of the house, outside the experiment box. How can the house temperature effect the results when the temperature inside the jar was fixed? The cause was temperature gradients in the equipment. The thermostatic control is based on the temperature at the sensor. If there is a temperature gradient (i.e., spatial variation) inside the cell then that can cause exactly the same error as if the temperature varied temporally. A 1°C difference between air around the sensor at the top of the jar and the liquid at the bottom could create up to a 5% RH error. Addition of fans both inside the jar and circulating air around inside the box reduced this error to an acceptable level. For humidities less then 50% there is now no measurable drift over timescales of a few days. Above 50% RH, I still see drifts of less than 0.3% on day time scales. In these cases, values for the final analysis were taken as one day averages. Contrary to <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/DHT22/calib_dht22_v1.html#fan">version 1</a> there was no need to pulse the fans since they are no longer battery powered and thermostatic control removes concern about the fan motor heating the air. Various duty cycles were tested but running continuously gave clearly stablest results.
+</p>
+
+<p>
+</p><div class="Figure">
+<a name="figure5"></a>
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_without_fan.png" alt=""><br>
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_with_fan.png" alt="">
+<div class="FigureCaption">
+Figure 5. The importance of forced convection. Top panel is with a fan inside the jam jar, but without a fan circulating air around the temperature regulated outer box. It clearly shows the striking and surprising result that the measured humidity inside the sealed jar responds dramatically to the house temperature even though the temperature at the sensor is very tightly controlled. In fact the "house temperature" is even being measured in a different room, the other side of the house! Even though it is only about 10cm from the DHT22 sensors to the liquid at the bottom of the jar, that seems to be far enough that a temperature gradient skews the results by as much as 1.5%. The heater will be working less or more depending on the ambient temperature in the house and that seems to change small scale, local temperature gradients inside the box. For the lower panel an extra fan was installed inside the box and left running continuously just to stir up the air as much as possible and try to enforce a more homogeneous thermal environment. Humidity readings fluctuate by only 0.2%.
+</div>
+</div>
+<p></p>
+
+<p>
+Both fans, inside the jar and inside the temperature regulated outer box, proved necessary to get anywhere near a sufficiently stable environment.
+</p>
+
+
+<h5>Temperature Effect 3: Temperature Sensitivity of the Sensor</h5>
+<p>So far I discussed experimental systematic errors. Finally I come to temperature sensitivity of the sensor itself which is what the experiment was intended to determine. The manufacturer's data sheet says they are "temperature compensated" during the factory calibration procedure but in my experience that process is far from perfect. Over the temperature range I have tested (10 &lt; °C &lt; 40) the RH output varies by between 3 and 8%, so for all six devices temperature alone accounts for more than the claimed 2% precision. See the <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#results_t">results section</a> below for more detail. Any attempted recalibration procedure needs to be a function of both humidity and temperature.</p>
+
+<p>
+<i><b>UPDATE:</b> The newer <a href="http://akizukidenshi.com/download/ds/aosong/AM2302.pdf">much improved data sheet</a> now specifies that the quoted accuracy of ±2% is tested at a constant 25°C. That means the statement above about the temperature induced errors exceeding the data sheet specification is strictly no longer true. The new data sheet has no explicit specification for errors as a function of varying temperature.</i> 
+</p>
+
+
+<!--
+<a name="figure5"></a>
+<div class="Figure">
+<img src="http://www.kandrsmith.org/RJS/Misc/DHT22/dht22_temp_dept_nacl.png" alt="" />
+<div class="FigureCaption">
+Figure 5. A more complete analysis of thermal effects is underway, but here I simply illustrate that the DHT22 output RH values do have a significant temperature dependence. Temperature was scanned from 6&ndash;26&deg;C in 0.5&deg;C steps. Set point was held at each temperature for four hours and the values plotted here are the average for the final hour of each dwell. Plotted are measured RH values for saturated NaCl which should be highly insensitive to temperature and constant at 75.3%RH.
+</div>
+</div>
+--> 
+<p>
+<a name="sawtooth"></a>
+Another temperature related defect I see is a sawtooth discontinuity in the humidity values when the temperature is varying around 25°C. Illustrated in Figure 6, I have no clear explanation for this but hypothesize it is a numerical artifact in the sensors' internal calibration. It is likely also related to the discontinuity visible in <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure10">Figure 10</a> at around 25°C. Though it is dramatic and possibly even alarming to see discontinuous jumps in the RH output value, do note that the steps are &lt;0.5% RH so well within the device specification.
+</p>
+
+<p>
+<a name="figure6"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_temp_dept_sawtooth.png" alt="">
+<div class="FigureCaption">
+Figure 6. All my measurements taken around 25°C show small discontinuous jumps in output RH values, but the effect is most obvious when the temperature is changing fairly rapidly. In such circumstance you expect larger absolute errors for reasons already described, but the discontinuous sawtooth was a surprise.
+</div>
+</div>
+<p></p>
+
+
+<a name="quantity"></a>
+<h3>Quantity and Preparation of the Solutions</h3>
+<p>The less air volume inside the test vessel and the more surface area of the saturated solution, the quicker equilibrium is likely to be achieved. A deep bucket of solution will not particularly help. A wide shallow pan is likely to be better. It is sometimes recommended that you use a mound of dampened solids rather than an actual liquid solution, though for particular salts (e.g., calcium chloride which has a variety of hydrated solid crystalline forms) this will not work. In most cases I endeavoured to get the best of both methods by using a shallow  (only 1-2mm depth) pool of saturated solution with a small mound of thoroughly wetted solid piled up in the middle. The idea here is to have all of the liquid, solid and gasous material phases in contact to allow the equilibrium to establish. A deep pool of solution could in theory stratify to be saturated at the bottom but have a less than saturated layer floating on top. Ideally the solution would be mixed during the experiment but this is not easy to arrange. If you have a magnetic stirrer, that would be a great addition to the set up. You must make sure the solution really is saturated. Make sure there are still solids present in the solution which refuse to dissolve even after several hours and ideally have those solids break the surface of the liquid.</p>
+<p>A related problem is <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/supersaturation.html">supersaturation</a>. For some salts it is possible to heat a solution until all the solids dissolve and then cool it again without the salts precipitating back out as  crystals. This happened to me a couple of times. It is simply avoided however, again by ensuring that some solid crystals are always present even when the solution is at its warmest. As long as there are any crystals present, the solution is unlikely to supersaturate as it cools. </p>
+
+<a name="hygroscopic"></a>
+<h3>Hygroscopic Materials</h3>
+<p>Hygroscopy is the tendency of a material to absorb water vapour into its surface and hold it within its molecular structure. Possibly surprisingly, many plastics (e.g., nylon, ABS, acrylic, polyurethane, polycarbonate, PET, PBT) which may be hydrophobic (liquid water will bead on the surface and run straight off) are in fact hygroscopic (absorb water vapour). This manifests as a sink or source of humidity other than the saturated solution, greatly extending equilibration time. If the salt solution is releasing vapour to the air, the walls of the test cell could be absorbing it meaning you need to run the experiment for a very long time before equilibrium is eventually achieved. If you then switch to a salt that yields a low humidity, the walls of the test vessel will slowly release that stored vapour back into the air. There is considerably more detailed discussion of this
+problem as it was a major factor for <a href="http://www.kandrsmith.org/RJS/Misc/Hygrometers/DHT22/calib_dht22_v1.html#hygroscopic">version 1</a> of this experiment. For the results presented herein however the test cells were glass and contained the absolute minimum of other components which seems to have eradicated this problem.
+</p>
+
+<p>&nbsp;</p>
+
+<a name="results"></a>
+<h2>Results</h2>
+<a name="results_h"></a>
+<h5>Part 1: As a Function of Humidity</h5>
+<p>First we look at the varying response of the sensor to different reference humidities, all measured at a single fixed temperature.</p>
+
+<p>
+<a name="figure7"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_raw_logging.png" alt="Plot showing two days&#39; worht of raw data logging">
+<div class="FigureCaption">
+Figure 7. Two days' worth of raw data logging with the devices being swapped onto several different salts. This plot is primarily to illustrate what the data look like, how clean and stable the measurements are and how quickly the sensors respond. The readings all stabilize nicely in 1–4 hours after a change. Overall the data are good and easy to handle. This plot also illustrates the effectiveness of the PID controller at holding the cell at the set-point when central heating comes on and off in the house, day and night. One to two wiggles are seen in the temperature trace each time I open the cell and then it settles quickly. Lastly, the hysteresis-like behaviour is evident. The measurements on the left of the plot (stepping down from high humidity to low humidity) are consistently higher then measurements for the same salts on the right hand side (stepping back up from low humidity to high humidity).
+</div>
+</div>
+<p></p>
+
+<p>
+</p><div class="Figure">
+<table width="565" border="0">
+  <tbody><tr align="center">
+    <th width="72">Salt</th>    
+    <th width="99">Reference</th>    
+    <th colspan="6">Measured RH %</th>
+    </tr>
+  <tr align="right">
+    <th></th>
+    <th>RH %</th>
+    <th width="60">A</th>
+    <th width="60">B</th>
+    <th width="60">C</th>
+    <th width="60">D</th>
+    <th width="60">E</th>
+    <th width="60">F</th>
+  </tr>
+  <!--
+  <tr>
+    <td align="left">Dry</td>
+    <td align="right">1.90</td>
+    <td align="right">1.0</td>
+    <td align="right">2.8</td>
+    <td align="right">2.9</td>
+    <td align="right">1.2</td>
+    <td align="right">1.0</td>
+    <td align="right">1.0</td>
+  </tr>
+  -->
+  <tr>
+    <td align="left">NaOH</td>
+    <td align="right">7.42</td>
+    <td align="right">10.17</td>
+    <td align="right">11.16</td>
+    <td align="right">11.29</td>
+    <td align="right">10.20</td>
+    <td align="right">9.60</td>
+    <td align="right">8.88</td>
+  </tr>
+  <tr>
+    <td align="left">LiCl</td>
+    <td align="right">11.90</td>
+    <td align="right">14.68</td>
+    <td align="right">15.40</td>
+    <td align="right">15.49</td>
+    <td align="right">14.70</td>
+    <td align="right">13.99</td>
+    <td align="right">13.34</td>
+  </tr>
+  <tr>
+    <td align="left">CaCl</td>
+    <td align="right">32.07</td>
+    <td align="right">34.74</td>
+    <td align="right">34.69</td>
+    <td align="right">34.96</td>
+    <td align="right">35.02</td>
+    <td align="right">34.22</td>
+    <td align="right">33.01</td>
+  </tr>
+  <tr>
+    <td align="left">MgCl</td>
+    <td align="right">33.18</td>
+    <td align="right">34.37</td>
+    <td align="right">34.36</td>
+    <td align="right">34.69</td>
+    <td align="right">34.62</td>
+    <td align="right">33.71</td>
+    <td align="right">32.61</td>
+  </tr>
+  <tr>
+    <td align="left">K<sub>2</sub>CO<sub>3</sub></td>
+    <td align="right">43.52</td>
+    <td align="right">45.59</td>
+    <td align="right">45.53</td>
+    <td align="right">45.99</td>
+    <td align="right">45.82</td>
+    <td align="right">46.50</td>
+    <td align="right">43.65</td>
+  </tr>
+  <tr>
+    <td align="left">NH<sub>4</sub>NO<sub>3</sub></td>
+    <td align="right">65.58</td>
+    <td align="right">65.98</td>
+    <td align="right">65.27</td>
+    <td align="right">66.23</td>
+    <td align="right">65.61</td>
+    <td align="right">66.83</td>
+    <td align="right">65.87</td>
+  </tr>
+  <tr>
+    <td align="left">NaCl</td>
+    <td align="right">75.31</td>
+    <td align="right">77.56</td>
+    <td align="right">76.38</td>
+    <td align="right">77.44</td>
+    <td align="right">78.09</td>
+    <td align="right">77.60</td>
+    <td align="right">79.74</td>
+  </tr>
+  <tr>
+    <td align="left">NH<sub>4</sub>SO<sub>4</sub></td>
+    <td align="right">80.31</td>
+    <td align="right">82.54</td>
+    <td align="right">80.91</td>
+    <td align="right">81.97</td>
+    <td align="right">82.51</td>
+    <td align="right">81.88</td>
+    <td align="right">85.42</td>
+  </tr>
+  <tr>
+    <td align="left">KCl</td>
+    <td align="right">85.57</td>
+    <td align="right">86.73</td>
+    <td align="right">84.86</td>
+    <td align="right">85.93</td>
+    <td align="right">86.73</td>
+    <td align="right">86.06</td>
+    <td align="right">90.94</td>
+  </tr>
+  <tr>
+    <td align="left">K<sub>2</sub>NO<sub>3</sub></td>
+    <td align="right">93.77</td>
+    <td align="right">96.43</td>
+    <td align="right">93.36</td>
+    <td align="right">94.43</td>
+    <td align="right">95.21</td>
+    <td align="right">95.80</td>
+    <td align="right">99.90</td>
+  </tr>
+  <tr>
+    <td align="left">H<sub>2</sub>O</td>
+    <td align="right">100.00</td>
+    <td align="right">99.9</td>
+    <td align="right">99.4</td>
+    <td align="right">99.9</td>
+    <td align="right">99.9</td>
+    <td align="right">99.9</td>
+    <td align="right">99.9</td>
+  </tr>
+</tbody></table>
+<div class="FigureCaption">
+Experimental results at 20.57°C. 'Reference RH' is the expected value taken from published literature interpolated to the temperature at the time the measurement was obtained. 'Measured RH' are the raw values as returned from the DHT22 / AM2302 devices. Temperature control was arbitrarily set to 20.57°C and data were only read when the measurements had stabilized to this set point ±0.03°C. Temperature is entirely defined by the readings from the AM2302 themselves without any external calibration.
+</div>
+</div>
+<p></p>
+
+<p>
+<a name="theanswer"></a>
+<a name="figure8"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_raw_vs_ref.png" width="549" height="410" alt="Plots of measured vs. reference humidity for the six hygrometers">
+<div class="FigureCaption">
+Figure 8. For all six devices there is very tight correlation between measured value and the expected reference value. I.e., the manufacturer's calibration is basically good. Magenta curves are quadratic polynomial best fits, though they hardly deviate from straight lines. On this scale you cannot tell much about systematic deviations though you can for example see that A, E and F hit saturation well below 100%.
+</div>
+</div>
+<p></p>
+<p>
+<a name="figure9"></a>
+</p><div class="Figure">
+<img itemprop="image" src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_rawmref_vs_ref.png" width="549" height="410" alt="Plots of (measured-reference) vs. reference humidity for the six hygrometers">
+<div class="FigureCaption">
+Figure 9. The same data as Figure 8 with the same quadratic polynomials are replotted but the vertical axis is now the difference between measured and reference values. These plots effectively show the error that would result from using the raw, factory calibrated values directly from the sensor without applying any re-calibration.
+</div>
+</div>
+<p></p>
+
+<p>
+Figure 9 above represents the simplest conclusions of the experiment. Devices A, D  &amp; E all consistently read about 2% high. Devices B &amp; C read 4% high when dry but tend towards quite accurate at high humidity. Device F is the only one that shows large deviations from correct. It reads accurately below 60% but deviates quite strongly (up to 6% absolute error) at high humidity. I reiterate that these data are all at a fixed temperature and do not represent the thermal dependence of the devices. Depending on the expected use of the sensors, it will be shown below that thermal effects may lead to much larger errors in real World data.
+</p>
+
+<p>Repeatability (on time scales of a few weeks) is about 1% RH as specified (Figures <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure9">9</a>, <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure10">10</a>, and <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure11">11</a>). However on year time-scales I have seen such <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22_dht11_sht71.html">large changes in the sensor output</a> that these corrections of 2 - 5% possibly become irrelevant.</p>
+
+<p>I tried a variety of polynomial fits and data smoothing techniques (moving average, Savitzky-Golay filter, Tikhonov regularization) and nothing beyond the quadratic presented here seemed justifiable. The data scatter is sufficiently large that trying to quantify anything more complicated than a smooth, low-order trend over fits the available information. There is no physical justification for a quadratic fit over any other representation, e.g., a spline, but a quadratic correction function is attractive because it is very easy to apply and invert analytically.</p>
+
+<p>
+There are some features which are seen identically in all six sensors which leads me to believe they are experimental systematics rather than faults in the sensors. For example, MgCl and CaCl are both expected to read ∼33%. For all six devices the CaCl data points are consistently higher than the MgCl points. It seems likely that one or other of the reference values I am using is inaccurate. (CaCl was later dropped from the experiment because of this, its temperature coefficient and the complicated behaviour of its various hydrated crystalline forms.) The same is true for other salts which consistently appear above or below the fit lines. E.g., NH<sub>4</sub>NO<sub>3</sub> falls about 1% below the fit for every sensor. This seems to suggest that all absolute calibration values should only be believed to the ±1% level, which is no surprise. As noted earlier, data drawn from published journals frequently differ by 2-3% for any given salt; another illustration that these sensors are accurate enough to reveal limitations in the experiment rather than the reverse. For completeness I also note that similar discrepancies could arise through impurities in my salt samples. 
+</p>
+
+<p>
+There are systematic variations as a function of humidity as you would expect and a multi-point calibration is clearly helpful. However if I had used a single point calibration with NaCl at 75% as might reasonably be performed by any user of these devices, the results would not have been all that bad. Sensors A, D  &amp; E show only weak trends and a single point calibration would be adequate. They always read about 2% high. Device F is the only case where a one-point NaCl calibration could make 'corrected' results worse than doing nothing. It would lead you to believe that sensor reads 4% high, whereas in fact it is the most accurate of the six below 60% RH.
+</p>
+
+<a name="results_t"></a>
+<h5>Part 2: As a Function of Temperature</h5>
+<p>This shows the varying response of the sensor to a fixed constant humidity as the temperature is varied.</p>
+
+<p>The sensors were sealed for several weeks in the NaCl jar with the temperature incrementally stepped up and down between 10 and 40°C. The temperature was held at each set point for at least three hours, a reading being taken as the average humidity over a period of about one hour when the RMS temperature was stable to better then ±0.03°C. Working in Winter I was able to get a few data points as low as 6°C even though I have only a heater (no chiller) for thermal control. Results are shown in <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure10">Figure 10</a>. Device A drifts by only 3% RH as the temperature changes. Device F, again the worst of the six, varies by 8% RH. Most show a distinct wobble or discontinuity around 25°C, presumably related to the 'sawtooth' response already noted in <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure6">Figure 6</a>. Repeatability on timescales of days to weeks is typically better than 1% RH, though device C exhibits a greater variance.</p>
+
+<p>
+<a name="figure10"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_temp_dept_nacl_pt1.png" width="538" height="" alt="">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_temp_dept_nacl_pt2.png" width="538" height="" alt="">
+<div class="FigureCaption">
+Figure 10. Humidity measurements for the saturated NaCl sample as a function of temperature. Top panel shows a little less than one day of raw data logging. Lower panel shows the full results. The dark blue line shows the reference 'true' value for NaCl which declines only very slightly as temperature increases.
+</div>
+</div>
+<p></p>
+
+<p>
+Repeating with LiCl and subtracting off the reference humidities gives Figure 11 which represents our final estimate of the measurement error as a function of temperature. All six sensors respond alike at low humidities (LiCl ∼13%) but behave quite differently at high humidity (NaCl ∼ 75%).
+</p>
+
+<p>
+<a name="figure11"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_temp_dept_nacllicl.png" width="" height="" alt="">
+<div class="FigureCaption">
+Figure 11. As Figure 10, but the vertical axis shows deviation from the expected reference value. This plot therefore has the systematic drift of the reference value removed and allows us to display two salts (NaCl and LiCl) on the same axes.
+</div>
+</div>
+<p></p>
+
+<p>
+The fact that the two data sets in Figure 11 (NaCl 75% and LiCl 13%) do not overlap illustrates that a proper recalibration would need to be a bivariate function of both humidity and temperature, or alternatively a fully populated 2D look-up table. That is not a quick job. The full temperature range needs to be sampled multiple times for each salt in turn.
+</p>
+
+<a name="results_ht"></a>
+<h5>Part 3: As a Function Simultaneously of Temperature and Humidity</h5>
+<p>Finally, if the sensor is to be used to measure humidity under a range of varying temperatures a full bivariate calibration is required. Such a calibration over the rather moderate temperature range 20 &lt; °C &lt; 30 is shown in <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure12">Figure 12</a>. Over this narrow temperature range the thermal effects are not large but Figures 10 and 11 show that if the sensors are to be used over a wider 5 &lt; °C &lt; 40 range then the bivariate calibration would be necessary.</p>
+
+<p>  
+<a name="figure12"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_bivariate_10_20.png" width="" height="" alt="">
+<div class="FigureCaption">
+Figure 12. Surfaces showing deviation of the DHT22 output from the reference value as a function of both temperature and relative humidity. 
+</div>
+</div>
+<p></p>
+
+<p>The curves in <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure9">Figure 9</a> should simply be cross sections through these surfaces. For A,B,C and F this is indeed the case. A is fairly flat. B and C both decline towards higher humidity and F diverges very steeply for RH values greater than 70%. For sensors D and E the comparison is less favourable. This would seem to indicate a change in behaviour of these sensors over the intervening few months which separate figures 9 and 12. Response has not grossly changed, they still consistently read a couple of per cent high, but the details of their response do look different.
+</p>
+
+<p>
+<a name="figure13"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_bivariate_anim.gif" width="" height="" alt="">
+<div class="FigureCaption">
+Figure 13. Surfaces showing deviation of the DHT22 output from the reference value as a function of both temperature and relative humidity. 
+</div>
+</div>
+<p></p>
+
+<p>&nbsp;</p>
+
+<a name="thermometer"></a>
+<h2>Temperature Accuracy</h2>
+<p>This document is about humidity measurements and was motivated by the fact that hygrometers are difficult instruments to build and calibrate. By contrast, the technology for manufacture of cheap and accurate thermometers is well established and we would expect the temperature output from the DHT22/AM2302 to be pretty good. This appears to be the case and for completeness I present the results here with little discussion. My apparatus contains no external reference against which to calibrate the temperature output and I therefore simply plot each sensor's offset from the mean of all six sensors. I am strictly only showing the difference between the sensors, but the absolute calibration looks likely to be good to ∼0.5°C with a relative drift of &lt;0.1°C over a 30°C range. Repeatability for most of the sensors is ±0.01°C. (Repeatability for sensor D is ±0.02°C) These numbers easily meet or exceed the data sheet specifications.
+</p>
+<!--
+<p>
+The DHT22 integrates the hygrometer, thermometer and read-out electronics all inside a single housing. Since the temperature readings from sensor B went bad at the same time as the humidity readings this suggests the failure may be in the read-out electronics (either mine or inside the DHT22) rather than being the humidity sensor component itself.
+</p>
+-->
+
+<p>
+<a name="figure14"></a>
+</p><div class="Figure">
+<img src="./Test and Calibrate DHT22 _ AM2302 _ RHT03 hygrometers_files/dht22_temperature.png" width="" height="" alt="">
+<div class="FigureCaption">
+Figure 14. Comparison of temperature outputs for the six devices. The test apparatus includes no precision, external temperature reference against which to compare, but at the very least these data demonstrate good temperature stability and repeatability even if they strictly tell us nothing about absolute calibration.
+</div>
+</div>
+<p></p>
+
+<p>&nbsp;</p>
+
+<a name="longterm"></a>
+<h2>Long Term Stability and Failure of Sensor B</h2>
+<p>
+After about nine months of continuous use, one of my six devices started producing apparently deviant results. This is 
+<a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/dht22_first_failure.html">described in a separate account</a>, but briefly, the problem turned out to be the control
+board inside the device overheating. Perhaps the on-board controller is not correctly switching itself to standby mode after each measurement. The sensors themselves were actually still working fine, but since the device was self-heating it did not represent the real ambient conditions.</p>
+
+
+
+<!--
+<div class="Figure">
+<img src="DHT22/dht22_repeatability.png" width="" height="" alt="" />
+<div class="FigureCaption">
+Figure XXX. Two epochs of measurement for LiCl, separated by a couple of weeks. The data sheet specification requires repeatability of 1%, a good representation of what I actually see.
+</div>
+</div>
+-->
+
+<p>&nbsp;</p>
+
+<h2>Conclusions</h2>
+<p>Back <a href="http://www.kandrsmith.org/RJS/Misc/calib_dht22.html#conclusions">near the top</a> of this page.</p>
+<p>If you have comments or suggestions feel free to contact me. robert -AT- kandrsmith.org</p>
+
+
+<p><a name="advice"></a></p>
+<h2>Lessons learned and advice for repeating this experiment</h2>
+<p>Having been through several iterations of trying to perform this experiment, here is a brief summary of lessons 
+learned on how I would recommend setting the experiment up.</p>
+<ul>
+  <li>Keep test cell air volume as small as reasonable</li>
+  <li>All glass or stainless steel where possible</li>
+  <li>Active <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#temperature2">thermal regulation and homogeneity</a> (∼0.1°C) throughout the setup are critical.</li>
+  <li>Lots of fans to <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#figure5">stir up the air</a> everywhere help. At least in my setup, the fan inside the jar was critical to maintaining proper equilibrium.</li>
+  <li>Use a shallow pool of solution with some residual solids breaking the surface to <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/supersaturation.html">maintain saturation and avoid supersaturation</a>.</li>
+  <li>Low humidity results are typically easy and stable. Getting stable results above 50% is difficult. Optimize the equipment setup using NaCl and then you know the lower humidity salts will work easily.</li>
+  <li>Watch a single salt for at least a couple of days to make sure the results are really stable before trying to swap to others.</li>
+  <li>Perform an ordered sequence from high to low humidity and back from low to high again. Then average the two readings for each salt.</li>
+  <li>Perform the calibration at the temperature where the sensors will be used. If you need the sensors calibrated at more than a very narrow range of temperatures, that too will <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22.html#results_t">need to be varied systematically</a>.</li>
+  <li>Do not expect any quick answers. Having spent six months developing the techniques, using my current home-made apparatus I estimate I could collect the required data for a full multi-point calibration in a little less than three months. This is clearly impractical as a calibration procedure for such a cheap device.</li>
+</ul>
+
+<p><a name="future"></a></p>
+<h2>Future Plans</h2>
+
+<p>Possible future extensions of this work:</p>
+<ul>
+  <li>This work has been extended to look at  <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22_dht11_sht71.html">SHT71, DHT11</a>, <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_many.html">BME280, Si7021, HTU21D, AM2320 and AM2321</a>.</li>
+  <li>Repeat in a few years' time to look for sensor degradation. This may no longer be required. I have already seen <a href="https://www.kandrsmith.org/RJS/Misc/Hygrometers/calib_dht22_dht11_sht71.html#figure4">significant changes on six month time-scales</a>.</li>
+  <li>More thermometers scattered around inside the apparatus might be useful to test the hypothesis that most of my systematic errors were due to thermal gradients.</li>
+</ul>
+
+<hr>
+
+<a name="references"></a>
+<h3>References</h3>
+<p>
+Some of these papers are in academic journals which require pay subscription access, so you may only be able to read the abstracts on-line.  
+</p>
+
+<div class="References">
+<ul>
+  <li>Creahan J, 1991, WAAC Newsletter, <b>13</b>, 1, pp.17-18, <i>"Controlling Relative Humidity with Saturated Calcium Nitrate Solutions"</i></li>
+  <li>David S Madge, 1961, Entomologia Experimentalis et Applicata. <b>4</b>, 143-147. <i>"The control of relative humidity with aqueous solutions of sodium hydroxide"</i> </li>
+  <li>Fossa M. &amp; Petagna P., 2003, CMS NOTE 2003/024, <i>"Use and calibration of capacitive RH sensors for the hygrometric control of the CMS tracker"</i></li>
+  <li>Greenspan L., 1977, J Res Nat Bur Stand - A Phys Chem, <b>81</b>, 89, <i>"Humidity fixed points of binary saturated aqueous solutions"</i></li>
+  <li>Merck KGaA, 2005, Publication W.283123, <i>"Drying Agents"</i></li>
+  <li>O'Brien F.E.M, 1948, J. Sci. Instrum., <b>25</b>, 73. <i>"The Control of Humidity by Saturated Salt Solutions"</i></li>
+  <li>Rockland L.B., 1960, Analytical Chemistry, <b>32</b>, 1375, <i>"Saturated Salt Solutions for Static Control of Relative Humidity between 5 and 40 C"</i></li>
+  <li>Weast R.C., 1979, CRC Handbook of Chemistry and Physics, Boca Raton, Florida, Chemical Rubber Company, p. E-44.</li>
+  <li>CRC Handbook of Chemistry and Physics. 1995 by CRC Press</li>
+  <li>Wexler A. &amp; Hasegawa S., 1954, J Res Nat Bur Stand, <b>53</b>, 19, <i>"Relative humidity-temperature relationships of some saturated salt solutions in the temperature range 0 to 50 C"</i></li>
+</ul>
+<!--
+<ul>
+    <li>General summary. Numbers and method. http://www.conservationphysics.org/satslt/satsalt.php </li>
+    <li>Sucrose: ADNAN K. SALAMEH, LISA J. MAUER, AND LYNNE S. TAYLOR, Deliquescence Lowering in Food Ingredient Mixtures  </li>
+</ul>
+-->
+</div>
+
+<p>&nbsp;</p>
+
+<a name="acknowledgements"></a>
+<h3>Acknowledgments</h3>
+<p>
+Though I designed and integrated the entire experiment, I must acknowledge the many open source projects, both software and hardware, that I used.
+</p><ul>
+<li><a href="http://jeelabs.com/">Jeelabs</a> produce the JeeNode micro-controller board</li>
+<li>I developed my software using the <a href="http://www.arduino.cc/">Arduino</a> tools and environment, using some parts of the <a href="http://www.adafruit.com/">AdaFruit</a> DHT22/DHT11 library, Brett Beauregard's <a href="http://brettbeauregard.com/blog/2011/04/improving-the-beginners-pid-introduction/">PID library</a> and Markus Schatzl and Carl Jackson's <a href="http://playground.arduino.cc/code/Sensirion">Sensirion</a> library.</li>
+<li>My data logger is <a href="http://emoncms.org/">EmonCMS</a> from the <a href="http://openenergymonitor.org/">Open Energy Monitor</a> project running on a <a href="http://www.raspberrypi.org/">Raspberry Pi</a>.</li>
+<li><a href="http://www.mysql.com/">MySQL</a> database, <a href="http://httpd.apache.org/">Apache</a> web-server and of course the 10,000+ people who have <a href="http://www.linuxfoundation.org/news-media/infographics/who-writes-linux-2013">contributed all across the Linux operating system</a>.</li>
+<li>The plots and numerical analysis were generated in <a href="http://www.flotcharts.org/">Flot</a> and <a href="http://www.gnu.org/software/octave/">Octave</a>.</li>
+</ul>
+<p></p>
+
+<p>
+Almost vaguely related and possibly of interest is  <a href="http://www.kandrsmith.org/RJS/Misc/radon.html">monitoring home radon</a>. </p>
+
+<p itemprop="datePublished" content="2013-11-07T12:47" align="right">
+<!-- #BeginDate format:IS1a -->2017-03-24 9:51 AM<!-- #EndDate -->
+</p>
+
+
+<span itemprop="author" itemscope="" itemtype="https://schema.org/Person"> <meta itemprop="name" content="Robert Smith"></span>
+
+
+
+
+<!-- InstanceEndEditable -->
+      
+  <!-- end .content -->
+  </div>
+    
+    
+  <div class="footer">
+
+<!--
+    Not using this for now. 
+    <div id="wrapper">
+    <div class="lightmenu">
+      <ul class="lightBlue" id="one">
+      <li class="current"><a href="/">Front Page</a></li>
+      <li><a href="/Wedding/">Wedding</a></li>
+      <li><a href="/KES/">Kimberly</a></li>
+      <li><a href="/RJS/">Robert</a></li>
+      </ul>
+    </div>
+  </div>
+-->  
+    <p>
+    <a href="https://www.kandrsmith.org/">Front page</a> | <a href="https://www.kandrsmith.org/Wedding/">Wedding</a> | <a href="https://www.kandrsmith.org/KES/"> Kimberly</a> | <a href="https://www.kandrsmith.org/RJS/">Robert</a><br>
+Site URL : <a href="https://www.kandrsmith.org/">http://www.kandrsmith.org/</a><br>
+    <a href="https://www.kandrsmith.org/privacy.html#privacy">Privacy Policy</a> and <a href="https://www.kandrsmith.org/privacy.html#disclosures">Disclosure of Material Connections</a>
+    </p>
+  </div>
+  
+<!-- end .container -->
+</div>
+
+
+<!-- InstanceEnd -->
+</body></html>

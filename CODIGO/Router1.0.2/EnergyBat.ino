@@ -13,7 +13,7 @@ Battery EnergyBat(Adafruit_INA219 ina219){
     current_mA = ina219.getCurrent_mA();
     power_mW = ina219.getPower_mW();
     
-    Serial.print(TotalVoltage);Serial.print(",");Serial.println(current_mA);
+    Serial.print(TotalVoltage,3);Serial.print(",");Serial.println(current_mA,3);
     
     
     Battery battery = Battery();
