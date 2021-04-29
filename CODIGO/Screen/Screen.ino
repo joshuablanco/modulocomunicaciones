@@ -12,7 +12,7 @@
 
 /* comment this if you dont use ubidots */
 #define WIFISSID "FAMILIA JEREZ" // Put your WifiSSID here "SAVI INGENIERIA "   ""   Familia Nena
-#define PASSWORD "Familiaporrasjerez" // Put your wifi password here 63485721  1098634009
+#define PASSWORD "P7P5C6R5X9J5" // Put your wifi password here 63485721  1098634009
 #define TOKEN "A1E-ZcXtyZALrFheZNl2gcJL1vV7J2uPWT" // Put your Ubidots' TOKEN
 #define MQTT_CLIENT_NAME "EcoTic124" // MQTT client Name, please enter your own 8-12 alphanumeric character ASCII string;       
 #define VARIABLE_LABEL0 "temperature1" // Assing the variable label
