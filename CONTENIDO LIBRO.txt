@@ -26,13 +26,6 @@ Requerimientos
 
 Proceso de diseño
 	- Ciclo de diseño 
-	- Seleccion de componentes
-		° Temperatura y humedad
-		° Corriente AC
-		° Fugas líquidas
-		° Autonomía
-		° Comunicacion
-		° Alarmas
 	- Arquitectura propuesta
 		° Recolección de datos
 			* Temperatura y Humedad relativa
@@ -50,8 +43,9 @@ Proceso de diseño
 				* ADC
 			* Fugas líquidas
 				* Aspectos generales
-				* Sensores				
-		° Transporte
+				* Sensores	
+			* Microcontroladores			
+		° Comunicación
 			* XBee
 				* Fundamentos
 				* Tipo de topologías
@@ -61,11 +55,19 @@ Proceso de diseño
 				* Observaciones
 				* Ventajas
 		° Aplicación
-			* Microcontrolador
+			
 			* Pantalla
 			* Indicadores
 			* Conexión a la Nube
 			* DashBoard
+	- Seleccion de componentes
+		° Temperatura y humedad
+		° Corriente AC
+		° Fugas líquidas
+		° Autonomía
+		° Comunicacion
+		° Alarmas
+	
 
 Implementacion y resultados
 	- Circuito impreso
