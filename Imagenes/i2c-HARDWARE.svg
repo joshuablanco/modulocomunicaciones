@@ -1,556 +1,497 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="829.000000pt" height="399.000000pt" viewBox="0 0 829.000000 399.000000"
+ preserveAspectRatio="xMidYMid meet">
 
-<svg xmlns="http://www.w3.org/2000/svg"
-     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="759"
-     height="358">
-    <defs>
-        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%"
-                        id="mx-gradient-d4d0ed-1-d4d0ed-1-s-0">
-            <stop offset="0%" style="stop-color:#d4d0ed"/>
-            <stop offset="100%" style="stop-color:#d4d0ed"/>
-        </linearGradient>
-        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%"
-                        id="mx-gradient-ffffaa-1-ffffaa-1-s-0">
-            <stop offset="0%" style="stop-color:#ffffaa"/>
-            <stop offset="100%" style="stop-color:#ffffaa"/>
-        </linearGradient>
-        <linearGradient x1="0%" y1="0%" x2="0%" y2="100%"
-                        id="mx-gradient-efd3d2-1-efd3d2-1-s-0">
-            <stop offset="0%" style="stop-color:#efd3d2"/>
-            <stop offset="100%" style="stop-color:#efd3d2"/>
-        </linearGradient>
-    </defs>
-    <g transform=" scale(1) translate(-265.5,-86)">
-        <rect x="639" y="119" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="640.35" y="95.86">
-                Vdd
-            </text>
-        </g>
-        <path d="M 640 101 L 640 119" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 630 100 L 650 100" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="549" y="199" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <rect x="549" y="259" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <rect x="509" y="229" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 550 201 L 550 214.5" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 550 249 L 550 259" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 550 215 L 535 215" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 550 245 L 535 245" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 535 225 L 535 235" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 535 240 L 535 250" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 535 220 L 535 210" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 542 230 L 550 230 L 550 249" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <ellipse cx="550" cy="245" rx="2" ry="2" fill="none" stroke="#000000"
-                 stroke-width="2" pointer-events="none"/>
-        <path d="M 511 230 L 526 230" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 527 215 L 527 245" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 542.39 226 L 536.39 230 L 542.39 234 Z" fill="#000000"
-              stroke="#000000" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="492" y="200" width="15" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="499.5" y="211">
-                Q1
-            </text>
-        </g>
-        <path d="M 420 160 L 480 190 L 420 220 Z" fill="#96cea7" stroke="#000"
-              stroke-width="1.8" stroke-miterlimit="10"
-              transform="rotate(180,450,190)" pointer-events="none"/>
-        <rect x="490" y="160" width="20" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="500" y="171">
-                LN1
-            </text>
-        </g>
-        <rect x="639" y="129" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <rect x="639" y="189" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 640 142 L 647 145 L 640 148" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 148 L 633 151 L 640 154" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 154 L 647 157 L 640 160" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 160 L 633 163 L 640 166" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 166 L 647 169 L 640 172" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 172 L 633 175 L 640 178" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 131 L 640 141" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 640 179 L 640 189" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="613" y="130" width="14" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="620" y="141">
-                R1
-            </text>
-        </g>
-        <rect x="639" y="259" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <rect x="639" y="319" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 640 272 L 647 275 L 640 278" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 278 L 633 281 L 640 284" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 284 L 647 287 L 640 290" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 290 L 633 293 L 640 296" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 296 L 647 299 L 640 302" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 302 L 633 305 L 640 308" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 261 L 640 271" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 640 309 L 640 319" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="613" y="260" width="14" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="620" y="271">
-                R2
-            </text>
-        </g>
-        <path d="M 480 190 L 540 190 Q 550 190 550 195 L 550 200" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="759" y="209" width="2" height="2" fill="#000000" stroke="none"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <rect x="759" y="269" width="2" height="2" fill="#000000" stroke="none"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <rect x="719" y="239" width="2" height="2" fill="#000000" stroke="none"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <path d="M 760 211 L 760 224.5" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <path d="M 760 259 L 760 269" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <path d="M 760 225 L 745 225" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <path d="M 760 255 L 745 255" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <path d="M 745 235 L 745 245" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <path d="M 745 250 L 745 260" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <path d="M 745 230 L 745 220" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <path d="M 752 240 L 760 240 L 760 259" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <ellipse cx="760" cy="255" rx="2" ry="2" fill="none" stroke="#000000"
-                 stroke-width="2" transform="rotate(180,745,240)"
-                 pointer-events="none"/>
-        <path d="M 721 240 L 736 240" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <path d="M 737 225 L 737 255" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-              transform="rotate(180,745,240)" pointer-events="none"/>
-        <path d="M 752.39 236 L 746.39 240 L 752.39 244 Z" fill="#000000"
-              stroke="#000000" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,240)"
-              pointer-events="none"/>
-        <rect x="770" y="254" width="15" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="777.5" y="265">
-                Q2
-            </text>
-        </g>
-        <path d="M 800 160 L 860 190 L 800 220 Z" fill="#96cea7" stroke="#000"
-              stroke-width="1.8" stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="776" y="160" width="20" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="786" y="171">
-                LN2
-            </text>
-        </g>
-        <rect x="549" y="259" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 539 281 C 561.02 281 561.02 281 561.02 281" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 543 287 C 552.57 287 557 287 557 287" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 547 293 C 550.12 293 553 293 553 293" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 550 261 L 550 279" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 550 260 L 550 260" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="729" y="269" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 719 291 C 741.02 291 741.02 291 741.02 291" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 723 297 C 732.57 297 737 297 737 297" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 727 303 C 730.12 303 733 303 733 303" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 730 271 L 730 289" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="639" y="249" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="640.35" y="225.86">
-                Vdd
-            </text>
-        </g>
-        <path d="M 640 231 L 640 249" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 630 230 L 650 230" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 800 190 L 740 190 Q 730 190 730 200 L 730 210" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 480 190 L 800 190" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 640 260 L 640 250" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="549" y="339" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <rect x="549" y="399" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <rect x="509" y="369" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 550 341 L 550 354.5" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 550 389 L 550 399" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 550 355 L 535 355" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 550 385 L 535 385" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 535 365 L 535 375" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 535 380 L 535 390" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 535 360 L 535 350" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 542 370 L 550 370 L 550 389" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <ellipse cx="550" cy="385" rx="2" ry="2" fill="none" stroke="#000000"
-                 stroke-width="2" pointer-events="none"/>
-        <path d="M 511 370 L 526 370" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 527 355 L 527 385" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 542.39 366 L 536.39 370 L 542.39 374 Z" fill="#000000"
-              stroke="#000000" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="500" y="380" width="18" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="509" y="391">
-                Q3
-            </text>
-        </g>
-        <rect x="549" y="399" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 539 421 C 561.02 421 561.02 421 561.02 421" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 543 427 C 552.57 427 557 427 557 427" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 547 433 C 550.12 433 553 433 553 433" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 550 401 L 550 419" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="759" y="339" width="2" height="2" fill="#000000" stroke="none"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <rect x="759" y="399" width="2" height="2" fill="#000000" stroke="none"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <rect x="719" y="369" width="2" height="2" fill="#000000" stroke="none"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <path d="M 760 341 L 760 354.5" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <path d="M 760 389 L 760 399" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <path d="M 760 355 L 745 355" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <path d="M 760 385 L 745 385" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <path d="M 745 365 L 745 375" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <path d="M 745 380 L 745 390" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <path d="M 745 360 L 745 350" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <path d="M 752 370 L 760 370 L 760 389" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <ellipse cx="760" cy="385" rx="2" ry="2" fill="none" stroke="#000000"
-                 stroke-width="2" transform="rotate(180,745,370)"
-                 pointer-events="none"/>
-        <path d="M 721 370 L 736 370" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <path d="M 737 355 L 737 385" fill="none" stroke="#000000"
-              stroke-width="2" stroke-linecap="round" stroke-miterlimit="10"
-              transform="rotate(180,745,370)" pointer-events="none"/>
-        <path d="M 752.39 366 L 746.39 370 L 752.39 374 Z" fill="#000000"
-              stroke="#000000" stroke-linejoin="round" stroke-linecap="round"
-              stroke-miterlimit="10" transform="rotate(180,745,370)"
-              pointer-events="none"/>
-        <rect x="760" y="380" width="18" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="769" y="391">
-                Q4
-            </text>
-        </g>
-        <rect x="729" y="399" width="2" height="2" fill="#000000" stroke="none"
-              pointer-events="none"/>
-        <path d="M 719 421 C 741.02 421 741.02 421 741.02 421" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 723 427 C 732.57 427 737 427 737 427" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 727 433 C 730.12 433 733 433 733 433" fill="none"
-              stroke="#000000" stroke-width="2" stroke-linecap="round"
-              stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 730 401 L 730 419" fill="#000000" stroke="#000000"
-              stroke-width="2" stroke-linecap="square" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 640 130 L 640 120" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="890" y="210" width="80" height="50"
-              fill="url(#mx-gradient-d4d0ed-1-d4d0ed-1-s-0)" stroke="#000000"
-              pointer-events="none"/>
-        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="930" y="233">
-                Registro de 
-            </text>
-            <text x="930" y="247">
-                datos
-            </text>
-        </g>
-        <path d="M 420 290 L 480 320 L 420 350 Z" fill="#96cea7" stroke="#000"
-              stroke-width="1.8" stroke-miterlimit="10"
-              transform="rotate(180,450,320)" pointer-events="none"/>
-        <rect x="490" y="290" width="24" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="502" y="301">
-                LN3
-            </text>
-        </g>
-        <path d="M 800 290 L 860 320 L 800 350 Z" fill="#96cea7" stroke="#000"
-              stroke-width="1.8" stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="776" y="290" width="24" height="12" fill-opacity="0"
-              fill="#dae2f2" stroke="none" pointer-events="none"/>
-        <g fill="#000000" font-family="Arial,Helvetica" font-weight="bold"
-           text-anchor="middle" font-size="12px">
-            <text x="788" y="301">
-                LN4
-            </text>
-        </g>
-        <rect x="320" y="210" width="80" height="50"
-              fill="url(#mx-gradient-d4d0ed-1-d4d0ed-1-s-0)" stroke="#000000"
-              pointer-events="none"/>
-        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="360" y="233">
-                Registro de 
-            </text>
-            <text x="360" y="247">
-                datos
-            </text>
-        </g>
-        <rect x="335" y="335" width="50" height="80"
-              fill="url(#mx-gradient-ffffaa-1-ffffaa-1-s-0)" stroke="#000000"
-              transform="rotate(90,360,375)" pointer-events="none"/>
-        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="360" y="373">
-                Generador de
-            </text>
-            <text x="360" y="387">
-                reloj
-            </text>
-        </g>
-        <path d="M 640 320 L 480 320" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 800 320 L 640 320" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 550 340 L 550 320 L 638 320" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <ellipse cx="640" cy="320" rx="2" ry="2" fill="#000000" stroke="#000000"
-                 stroke-width="2" pointer-events="none"/>
-        <path d="M 730 340 L 730 320 L 632 320" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <ellipse cx="630" cy="320" rx="2" ry="2" fill="#000000" stroke="#000000"
-                 stroke-width="2" pointer-events="none"/>
-        <rect x="905" y="335" width="50" height="80"
-              fill="url(#mx-gradient-ffffaa-1-ffffaa-1-s-0)" stroke="#000000"
-              transform="rotate(90,930,375)" pointer-events="none"/>
-        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="930" y="373">
-                Generador de
-            </text>
-            <text x="930" y="387">
-                reloj
-            </text>
-        </g>
-        <path d="M 770 370 L 890 370" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 860 320 L 900 320 Q 910 320 910 330 L 910 350" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 510 370 L 400 370" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 420 190 L 370 190 Q 360 190 360 200 L 360 210" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 860 190 L 920 190 Q 930 190 930 200 L 930 210" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 510 230 L 400 230" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 360 260 L 360 350" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 380 350 L 380 330 Q 380 320 390 320 L 420 320" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <path d="M 770 240 L 890 240" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <path d="M 930 350 L 930 260" fill="none" stroke="#000000"
-              stroke-width="2" stroke-miterlimit="10" pointer-events="none"/>
-        <rect x="940" y="280" width="80" height="50"
-              fill="url(#mx-gradient-efd3d2-1-efd3d2-1-s-0)" stroke="#000000"
-              pointer-events="none"/>
-        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="980" y="310">
-                Core lógico
-            </text>
-        </g>
-        <path d="M 970 235 L 975 235 Q 980 235 980 245 L 980 280" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-        <rect x="270" y="280" width="80" height="50"
-              fill="url(#mx-gradient-efd3d2-1-efd3d2-1-s-0)" stroke="#000000"
-              pointer-events="none"/>
-        <g fill="#000" font-family="Arial,Helvetica" text-anchor="middle"
-           font-size="12px">
-            <text x="310" y="310">
-                Core lógico
-            </text>
-        </g>
-        <path d="M 300 280 L 300 245 Q 300 235 310 235 L 320 235" fill="none"
-              stroke="#000000" stroke-width="2" stroke-miterlimit="10"
-              pointer-events="none"/>
-    </g>
+<g transform="translate(0.000000,399.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M4136 3658 c9 -27 19 -48 23 -48 4 0 14 21 24 48 13 37 14 43 2 28
+-8 -11 -15 -26 -15 -33 0 -7 -4 -13 -10 -13 -5 0 -10 6 -10 13 0 7 -7 22 -15
+33 -12 16 -12 12 1 -28z"/>
+<path d="M4250 3690 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M4320 3690 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M4120 3570 c0 -5 22 -10 50 -10 l50 0 -2 -207 c-1 -205 -1 -208 20
+-218 12 -5 22 -12 22 -16 0 -3 -25 -16 -55 -28 -31 -13 -54 -28 -53 -33 2 -6
+27 -20 56 -32 29 -11 52 -24 52 -27 0 -3 -25 -16 -55 -28 -31 -13 -54 -28 -53
+-33 2 -6 27 -20 56 -32 29 -11 52 -24 52 -27 0 -3 -25 -16 -55 -28 -30 -13
+-55 -27 -55 -32 0 -5 16 -15 35 -23 33 -14 35 -17 35 -65 l0 -51 -345 0 -345
+0 0 200 0 200 -1605 0 -1605 0 0 -1460 0 -1460 1605 0 1605 0 0 600 0 600 335
+0 c217 0 335 -4 335 -10 0 -5 11 -10 25 -10 14 0 25 5 25 10 0 6 118 10 335
+10 l335 0 0 -600 0 -600 1605 0 1605 0 0 1460 0 1460 -1605 0 -1605 0 0 -200
+0 -200 -346 0 -345 0 2 57 c2 50 0 58 -19 66 -12 6 -22 13 -22 16 0 3 23 16
+52 27 29 12 54 26 56 32 1 5 -22 20 -53 33 -30 12 -55 25 -55 28 0 3 23 16 52
+27 29 12 54 26 56 32 1 5 -22 20 -53 33 -30 12 -55 25 -55 28 0 3 23 16 52 27
+29 12 54 26 55 31 2 5 -12 16 -31 25 l-34 17 -1 200 0 201 49 0 c28 0 50 5 50
+10 0 6 -42 10 -105 10 -63 0 -105 -4 -105 -10z m-600 -700 l0 -190 -445 0
+-445 0 0 150 c0 83 -2 150 -5 150 -3 0 -140 -67 -305 -150 l-300 -150 -259 0
+c-143 0 -271 -4 -285 -10 -38 -14 -56 -50 -63 -124 l-6 -66 -193 0 -194 0 0
+-124 0 -124 -75 -4 c-123 -6 -134 -30 -135 -285 l0 -163 -195 0 -195 0 0 -260
+0 -260 405 0 405 0 0 260 0 260 -195 0 -195 0 0 194 0 195 26 20 c21 16 41 21
+90 21 l64 0 0 -125 0 -125 200 0 200 0 -2 -442 -3 -443 -198 -3 -197 -2 2
+-253 3 -252 400 0 400 0 3 147 3 148 624 0 624 0 3 -72 c2 -42 7 -72 13 -70 6
+1 10 60 10 152 0 92 -4 151 -10 153 -6 1 -11 -29 -13 -70 l-3 -73 -624 0 -625
+0 0 95 0 95 -95 0 -95 0 0 123 c0 168 -9 161 209 165 l166 3 305 -150 305
+-151 3 150 3 150 339 0 340 0 0 -67 c0 -38 3 -112 7 -165 l6 -98 -66 0 c-58 0
+-66 2 -69 20 -6 41 -23 19 -23 -30 0 -49 17 -71 23 -31 3 18 12 21 73 23 l70
+3 3 90 c2 50 4 127 5 173 l1 82 90 0 90 0 0 -595 0 -595 -1595 0 -1595 0 0
+1445 0 1445 1595 0 1595 0 0 -190z m4600 -1255 l0 -1445 -1595 0 -1595 0 0
+595 0 595 88 0 89 0 6 -142 c5 -114 3 -149 -8 -172 -10 -19 -12 -33 -6 -40 6
+-7 11 -41 13 -76 l3 -65 38 -3 c24 -2 37 -8 37 -18 0 -18 20 -17 45 2 18 14
+20 13 25 -6 9 -39 25 -20 25 30 0 50 -16 69 -25 30 -5 -19 -7 -20 -25 -6 -26
+20 -45 20 -45 1 0 -9 -9 -15 -25 -15 -25 0 -26 1 -23 62 l3 63 57 3 c51 3 57
+1 60 -18 6 -41 23 -19 23 30 0 49 -17 71 -23 30 -3 -17 -11 -20 -58 -20 -49 0
+-56 3 -64 24 -5 14 -6 87 -3 165 l6 141 339 0 338 0 0 -150 c0 -82 2 -150 5
+-150 3 0 140 67 305 150 l300 150 214 0 c279 0 266 8 266 -166 l0 -124 -95 0
+-95 0 0 -95 0 -95 -675 0 -674 0 -3 73 c-2 41 -7 71 -13 70 -6 -2 -10 -61 -10
+-153 0 -92 4 -151 10 -152 6 -2 11 28 13 70 l3 72 674 0 674 0 3 -148 3 -147
+400 0 400 0 3 252 2 253 -197 2 -198 3 -3 443 -2 442 200 0 200 0 0 125 0 125
+28 0 c50 0 52 -8 52 -227 l0 -203 -195 0 -195 0 0 -260 0 -260 405 0 405 0 0
+260 0 260 -195 0 -195 0 -1 163 c-1 246 -12 287 -81 287 l-28 0 0 125 0 125
+-194 0 -193 0 -6 66 c-7 74 -25 110 -63 124 -14 6 -164 10 -338 10 l-314 0
+-301 150 -301 149 0 -149 0 -150 -445 0 -445 0 0 190 0 190 1595 0 1595 0 0
+-1445z m-5510 1055 l0 -280 -275 137 c-151 76 -275 140 -275 143 0 4 534 276
+548 279 1 1 2 -125 2 -279z m3780 0 c0 -3 -124 -67 -275 -143 l-275 -137 0
+280 0 280 275 -137 c151 -76 275 -140 275 -143z m-4068 -160 l303 -150 3 150
+3 151 329 -3 c209 -2 333 -7 339 -13 6 -6 14 -57 17 -113 l7 -102 -66 0 c-60
+0 -66 2 -69 23 -6 41 -23 17 -23 -33 0 -49 17 -71 23 -31 3 18 12 21 73 23
+l69 3 4 100 c2 55 0 110 -5 123 -8 22 -8 22 91 22 l100 0 0 -640 0 -640 -445
+0 -445 0 0 150 c0 83 -2 150 -5 150 -3 0 -137 -66 -298 -147 l-292 -148 -182
+-5 -183 -5 -27 -28 c-27 -27 -28 -31 -32 -153 l-3 -125 -87 3 -86 3 -3 443 -2
+442 200 0 200 0 0 150 0 150 625 0 624 0 3 -72 c2 -42 7 -72 13 -70 6 1 10 60
+10 152 0 92 -4 151 -10 153 -6 1 -11 -29 -13 -70 l-3 -73 -624 0 -625 0 0 100
+0 100 -195 0 -195 0 0 69 c0 63 2 71 26 90 25 20 39 21 289 21 l263 0 304
+-150z m2598 -490 l0 -640 -331 0 c-373 0 -363 -2 -358 72 3 35 0 43 -19 51
+-12 6 -22 13 -22 16 0 3 23 16 52 27 29 12 54 26 56 32 1 5 -22 20 -53 33 -30
+12 -55 25 -55 28 0 3 23 16 52 27 29 12 54 26 56 32 1 5 -22 20 -53 33 -30 12
+-55 25 -55 28 0 3 23 16 52 27 29 12 54 26 55 31 2 5 -12 16 -31 25 l-34 17
+-1 200 0 201 49 0 c28 0 50 5 50 10 0 6 -42 10 -105 10 -63 0 -105 -4 -105
+-10 0 -5 22 -10 50 -10 l50 0 -2 -207 c-1 -205 -1 -208 20 -218 12 -5 22 -12
+22 -16 0 -3 -25 -16 -55 -28 -31 -13 -54 -28 -53 -33 2 -6 27 -20 56 -32 29
+-11 52 -24 52 -27 0 -3 -25 -16 -55 -28 -31 -13 -54 -28 -53 -33 2 -6 27 -20
+56 -32 29 -11 52 -24 52 -27 0 -3 -25 -16 -55 -28 -30 -13 -55 -27 -55 -32 0
+-5 16 -15 35 -23 31 -13 35 -19 35 -51 0 -66 7 -65 -359 -65 l-331 0 0 640 0
+640 695 0 695 0 0 -640z m213 613 c-15 -22 -18 -49 -18 -154 0 -92 -4 -130
+-14 -142 -10 -12 -10 -21 -3 -30 6 -7 12 -42 14 -77 l3 -65 38 -3 c24 -2 37
+-8 37 -18 0 -18 20 -17 45 2 18 14 20 13 25 -6 9 -39 25 -20 25 30 0 50 -16
+69 -25 30 -5 -19 -7 -20 -25 -6 -26 20 -45 20 -45 1 0 -9 -9 -15 -25 -15 -25
+0 -26 1 -23 63 l3 62 57 3 c52 3 57 1 60 -20 6 -42 23 -19 23 32 0 50 -17 74
+-23 33 -3 -21 -9 -23 -58 -23 -49 0 -55 2 -64 25 -6 15 -7 76 -3 146 9 172
+-21 159 369 159 l314 0 0 -150 c0 -82 2 -150 5 -150 3 0 140 67 305 150 l300
+150 314 0 c302 0 314 -1 340 -21 24 -19 26 -27 26 -90 l0 -69 -195 0 -195 0 0
+-150 0 -150 -675 0 -674 0 -3 73 c-2 41 -7 71 -13 70 -6 -2 -10 -61 -10 -153
+0 -92 4 -151 10 -152 6 -2 11 28 13 70 l3 72 674 0 675 0 0 -100 0 -100 200 0
+200 0 -2 -442 -3 -443 -86 -3 -87 -3 -4 119 c-4 130 -17 164 -64 182 -14 6
+-120 10 -235 10 l-211 0 -304 149 -304 149 0 -149 0 -149 -445 0 -445 0 0 640
+0 640 110 0 110 0 -17 -27z m-3313 -413 l0 -240 -395 0 -395 0 0 240 0 240
+395 0 395 0 0 -240z m5700 0 l0 -240 -395 0 -395 0 0 240 0 240 395 0 395 0 0
+-240z m-6300 -700 l0 -240 -395 0 -395 0 0 240 0 240 395 0 395 0 0 -240z
+m6800 0 l0 -240 -395 0 -395 0 0 240 0 240 395 0 395 0 0 -240z m-5410 -150
+l0 -280 -275 137 c-151 76 -275 140 -275 143 0 4 534 276 548 279 1 1 2 -125
+2 -279z m3780 0 c0 -3 -124 -67 -275 -143 l-275 -137 0 280 0 280 275 -137
+c151 -76 275 -140 275 -143z m-4570 -550 l0 -240 -395 0 -395 0 0 240 0 240
+395 0 395 0 0 -240z m5700 0 l0 -240 -395 0 -395 0 0 240 0 240 395 0 395 0 0
+-240z"/>
+<path d="M450 2900 c0 -65 19 -85 21 -22 l2 37 10 -37 c6 -21 16 -38 23 -38 7
+0 16 17 22 38 l10 37 1 -37 c2 -64 21 -42 21 23 0 51 -3 60 -17 57 -9 -2 -21
+-19 -27 -38 l-10 -35 -10 38 c-6 25 -15 37 -28 37 -15 0 -18 -9 -18 -60z"/>
+<path d="M592 2900 c-17 -49 -19 -60 -7 -60 8 0 15 7 15 15 0 21 40 19 56 -2
+7 -10 16 -15 19 -11 11 10 -35 118 -49 118 -7 0 -22 -27 -34 -60z m48 -2 c0
+-5 -6 -8 -14 -8 -9 0 -12 7 -9 21 4 16 8 17 14 7 5 -7 9 -16 9 -20z"/>
+<path d="M700 2900 l0 -60 45 0 c25 0 45 5 45 10 0 6 -16 10 -35 10 -24 0 -35
+5 -35 15 0 10 10 15 30 15 17 0 30 5 30 10 0 6 -13 10 -30 10 -20 0 -30 5 -30
+15 0 10 11 15 35 15 19 0 35 5 35 10 0 6 -20 10 -45 10 l-45 0 0 -60z"/>
+<path d="M820 2945 c-17 -20 -6 -43 25 -51 14 -3 25 -12 25 -20 0 -17 -22 -18
+-38 -2 -17 17 -28 2 -12 -17 26 -31 90 -7 77 30 -4 8 -21 21 -39 29 -29 12
+-31 14 -14 22 13 5 21 3 24 -4 2 -7 10 -12 18 -12 12 0 12 4 4 20 -13 24 -52
+26 -70 5z"/>
+<path d="M910 2950 c0 -5 9 -10 20 -10 17 0 20 -7 20 -50 0 -27 5 -50 10 -50
+6 0 10 23 10 50 0 38 4 50 15 50 8 0 15 5 15 10 0 6 -20 10 -45 10 -25 0 -45
+-4 -45 -10z"/>
+<path d="M1020 2900 c0 -33 4 -60 10 -60 6 0 10 11 10 25 0 14 6 25 13 25 8 0
+20 -11 27 -25 7 -14 19 -25 27 -25 17 0 16 10 -2 34 -12 16 -12 20 0 33 26 25
+1 53 -45 53 l-40 0 0 -60z m70 25 c0 -9 -9 -15 -25 -15 -16 0 -25 6 -25 15 0
+9 9 15 25 15 16 0 25 -6 25 -15z"/>
+<path d="M1156 2945 c-9 -9 -16 -29 -16 -45 0 -61 70 -81 100 -27 13 24 13 30
+0 55 -18 32 -60 41 -84 17z m62 -43 c2 -22 -2 -34 -12 -38 -34 -13 -61 37 -34
+64 21 21 43 9 46 -26z"/>
+<path d="M2720 2805 c0 -44 0 -45 33 -44 23 1 26 3 10 6 -19 4 -23 11 -23 44
+0 21 -4 39 -10 39 -5 0 -10 -20 -10 -45z"/>
+<path d="M2790 2805 c0 -25 5 -45 10 -45 6 0 10 10 10 22 l0 22 16 -22 c23
+-34 34 -27 34 23 0 25 -4 45 -10 45 -5 0 -10 -12 -10 -27 l-1 -28 -17 28 c-24
+38 -32 34 -32 -18z"/>
+<path d="M2892 2838 c-15 -15 -16 -32 -2 -23 6 4 10 -7 10 -24 0 -17 5 -31 10
+-31 6 0 10 20 10 45 0 46 -7 54 -28 33z"/>
+<path d="M3164 917 c-3 -8 -4 -34 -2 -58 3 -45 19 -56 28 -19 5 19 7 20 25 6
+26 -20 45 -20 45 -1 0 9 9 15 25 15 25 0 26 -1 23 -62 l-3 -63 -57 -3 c-51 -3
+-57 -1 -60 18 -6 41 -23 19 -23 -30 0 -49 17 -71 23 -30 3 17 11 20 58 20 70
+0 72 -4 73 -193 l1 -147 -55 0 c-30 0 -55 -4 -55 -10 0 -6 45 -10 115 -10 70
+0 115 4 115 10 0 6 -25 10 -55 10 l-55 0 1 147 c0 81 4 156 9 167 4 12 5 59 1
+106 l-6 85 -37 3 c-25 2 -38 8 -38 18 0 18 -15 18 -45 -2 -24 -16 -25 -15 -25
+4 0 26 -18 39 -26 19z"/>
+<path d="M2863 743 c-7 -2 -13 -20 -13 -39 0 -29 4 -35 28 -40 15 -3 32 -7 37
+-9 14 -3 17 53 4 76 -9 18 -30 23 -56 12z m45 -37 c2 -18 0 -26 -7 -21 -6 3
+-11 1 -11 -4 0 -17 -17 -13 -24 5 -10 25 3 56 22 52 10 -2 18 -15 20 -32z"/>
+<path d="M2945 741 c-3 -6 0 -9 8 -5 10 3 14 -5 15 -32 1 -28 -2 -35 -13 -30
+-8 3 -15 1 -15 -5 0 -6 10 -9 23 -7 19 3 22 9 22 43 0 29 -4 41 -17 43 -9 2
+-19 -2 -23 -7z"/>
+<path d="M3250 300 c0 -6 32 -10 75 -10 43 0 75 4 75 10 0 6 -32 10 -75 10
+-43 0 -75 -4 -75 -10z"/>
+<path d="M3290 240 c0 -5 16 -10 35 -10 19 0 35 5 35 10 0 6 -16 10 -35 10
+-19 0 -35 -4 -35 -10z"/>
+<path d="M7555 2940 c-3 -5 -2 -10 4 -10 5 0 13 5 16 10 3 6 2 10 -4 10 -5 0
+-13 -4 -16 -10z"/>
+<path d="M7040 2860 c0 -33 4 -60 10 -60 6 0 10 11 10 24 0 19 6 25 26 28 63
+7 51 68 -12 68 l-34 0 0 -60z m65 25 c0 -5 -10 -11 -22 -13 -16 -2 -23 2 -23
+13 0 11 7 15 23 13 12 -2 22 -7 22 -13z"/>
+<path d="M7150 2860 l0 -60 45 0 c25 0 45 5 45 10 0 6 -16 10 -35 10 -24 0
+-35 5 -35 15 0 10 10 15 30 15 17 0 30 5 30 10 0 6 -13 10 -30 10 -20 0 -30 5
+-30 15 0 10 11 15 35 15 19 0 35 5 35 10 0 6 -20 10 -45 10 l-45 0 0 -60z"/>
+<path d="M7260 2860 c0 -33 4 -60 10 -60 6 0 10 11 10 25 0 14 6 25 13 25 8 0
+20 -11 27 -25 7 -14 19 -25 27 -25 17 0 16 10 -2 34 -12 16 -12 20 0 33 26 25
+1 53 -45 53 l-40 0 0 -60z m70 25 c0 -9 -9 -15 -25 -15 -16 0 -25 6 -25 15 0
+9 9 15 25 15 16 0 25 -6 25 -15z"/>
+<path d="M7380 2860 c0 -33 4 -60 10 -60 6 0 10 27 10 60 0 33 -4 60 -10 60
+-6 0 -10 -27 -10 -60z"/>
+<path d="M7420 2860 c0 -47 3 -60 15 -60 9 0 15 9 15 25 0 18 5 25 20 25 11 0
+20 5 20 10 0 6 -9 10 -20 10 -11 0 -20 7 -20 15 0 9 9 15 25 15 14 0 25 5 25
+10 0 6 -18 10 -40 10 l-40 0 0 -60z"/>
+<path d="M7520 2860 l0 -60 45 0 c25 0 45 5 45 10 0 6 -16 10 -35 10 -24 0
+-35 5 -35 15 0 10 10 15 30 15 17 0 30 5 30 10 0 6 -13 10 -30 10 -20 0 -30 5
+-30 15 0 10 11 15 35 15 19 0 35 5 35 10 0 6 -20 10 -45 10 l-45 0 0 -60z"/>
+<path d="M7630 2860 c0 -33 4 -60 10 -60 6 0 10 11 10 25 0 14 6 25 13 25 8 0
+20 -11 27 -25 7 -14 19 -25 27 -25 17 0 16 10 -2 34 -12 16 -12 20 0 33 26 25
+1 53 -45 53 l-40 0 0 -60z m70 25 c0 -9 -9 -15 -25 -15 -16 0 -25 6 -25 15 0
+9 9 15 25 15 16 0 25 -6 25 -15z"/>
+<path d="M7750 2860 c0 -33 4 -60 10 -60 6 0 10 27 10 60 0 33 -4 60 -10 60
+-6 0 -10 -27 -10 -60z"/>
+<path d="M7806 2904 c-31 -31 -11 -104 29 -104 24 0 45 12 45 26 0 16 -16 19
+-25 4 -12 -19 -35 -10 -41 16 -9 35 18 63 41 44 18 -15 30 -7 22 15 -8 20 -51
+19 -71 -1z"/>
+<path d="M7926 2905 c-9 -9 -16 -29 -16 -45 0 -61 70 -81 100 -27 13 24 13 30
+0 55 -18 32 -60 41 -84 17z m62 -43 c2 -22 -2 -34 -12 -38 -34 -13 -61 37 -34
+64 21 21 43 9 46 -26z"/>
+<path d="M5520 2805 c0 -44 0 -45 33 -44 23 1 26 3 10 6 -19 4 -23 11 -23 44
+0 21 -4 39 -10 39 -5 0 -10 -20 -10 -45z"/>
+<path d="M5590 2805 c0 -25 5 -45 10 -45 6 0 10 10 10 22 l0 22 16 -22 c23
+-34 34 -27 34 23 0 25 -4 45 -10 45 -5 0 -10 -12 -10 -27 l-1 -28 -17 28 c-24
+38 -32 34 -32 -18z"/>
+<path d="M5680 2841 c0 -6 7 -8 15 -5 17 7 21 -21 5 -31 -5 -3 -15 -15 -20
+-26 -10 -17 -7 -19 22 -18 18 1 25 3 15 6 -17 4 -17 6 -2 23 22 24 15 54 -13
+58 -12 2 -22 -1 -22 -7z"/>
+<path d="M5267 774 c-4 -4 -7 -15 -7 -25 0 -15 -11 -19 -71 -21 l-72 -3 2
+-177 1 -178 -55 0 c-30 0 -55 -4 -55 -10 0 -6 45 -10 115 -10 70 0 115 4 115
+10 0 6 -25 10 -55 10 l-55 0 1 170 0 170 64 0 c58 0 64 -2 67 -22 6 -41 23
+-24 26 26 3 47 -7 74 -21 60z"/>
+<path d="M5463 743 c-7 -2 -13 -20 -13 -39 0 -29 4 -35 28 -40 15 -3 32 -7 39
+-9 7 -2 10 2 6 11 -4 10 2 14 20 14 14 0 27 -5 29 -12 8 -23 14 16 8 52 l-6
+35 -20 -32 -20 -32 -11 30 c-11 28 -29 35 -60 22z m45 -37 c2 -18 0 -26 -7
+-21 -6 3 -11 1 -11 -4 0 -17 -17 -13 -24 5 -10 25 3 56 22 52 10 -2 18 -15 20
+-32z m62 -6 c0 -5 -5 -10 -11 -10 -5 0 -7 5 -4 10 3 6 8 10 11 10 2 0 4 -4 4
+-10z"/>
+<path d="M5050 300 c0 -6 32 -10 75 -10 43 0 75 4 75 10 0 6 -32 10 -75 10
+-43 0 -75 -4 -75 -10z"/>
+<path d="M5090 240 c0 -5 16 -10 35 -10 19 0 35 5 35 10 0 6 -16 10 -35 10
+-19 0 -35 -4 -35 -10z"/>
+<path d="M2763 2543 c-7 -2 -13 -20 -13 -39 0 -29 4 -35 28 -40 15 -3 32 -7
+37 -9 14 -3 17 53 4 76 -9 18 -30 23 -56 12z m45 -37 c2 -18 0 -26 -7 -21 -6
+3 -11 1 -11 -4 0 -17 -17 -13 -24 5 -10 25 3 56 22 52 10 -2 18 -15 20 -32z"/>
+<path d="M2852 2538 c-15 -15 -16 -32 -2 -23 6 4 10 -7 10 -24 0 -17 5 -31 10
+-31 6 0 10 20 10 45 0 46 -7 54 -28 33z"/>
+<path d="M3164 2317 c-3 -8 -4 -34 -2 -58 3 -45 19 -56 28 -19 5 19 7 20 25 6
+26 -20 45 -20 45 -1 0 9 9 15 25 15 25 0 26 -1 23 -62 l-3 -63 -57 -3 c-51 -3
+-57 -1 -60 18 -6 41 -23 19 -23 -30 0 -49 17 -71 23 -30 3 17 11 20 58 20 70
+0 72 -4 73 -193 l1 -147 -55 0 c-30 0 -55 -4 -55 -10 0 -6 45 -10 115 -10 70
+0 115 4 115 10 0 6 -25 10 -55 10 l-55 0 1 147 c0 81 4 156 9 167 4 12 5 59 1
+106 l-6 85 -37 3 c-25 2 -38 8 -38 18 0 18 -15 18 -45 -2 -24 -16 -25 -15 -25
+4 0 26 -18 39 -26 19z"/>
+<path d="M3250 1700 c0 -6 32 -10 75 -10 43 0 75 4 75 10 0 6 -32 10 -75 10
+-43 0 -75 -4 -75 -10z"/>
+<path d="M3290 1640 c0 -5 16 -10 35 -10 19 0 35 5 35 10 0 6 -16 10 -35 10
+-19 0 -35 -4 -35 -10z"/>
+<path d="M2740 1505 c0 -44 0 -45 33 -44 23 1 26 3 10 6 -19 4 -23 11 -23 44
+0 21 -4 39 -10 39 -5 0 -10 -20 -10 -45z"/>
+<path d="M2810 1505 c0 -25 5 -45 10 -45 6 0 10 10 10 22 l0 22 16 -22 c23
+-34 34 -27 34 23 0 25 -4 45 -10 45 -5 0 -10 -12 -10 -27 l-1 -28 -17 28 c-24
+38 -32 34 -32 -18z"/>
+<path d="M2905 1541 c-3 -6 0 -9 8 -5 10 3 14 -5 15 -32 1 -28 -2 -35 -13 -30
+-8 3 -15 1 -15 -5 0 -6 10 -9 23 -7 19 3 22 9 22 43 0 29 -4 41 -17 43 -9 2
+-19 -2 -23 -7z"/>
+<path d="M4136 2358 c9 -27 19 -48 23 -48 4 0 14 21 24 48 13 37 14 43 2 28
+-8 -11 -15 -26 -15 -33 0 -7 -4 -13 -10 -13 -5 0 -10 6 -10 13 0 7 -7 22 -15
+33 -12 16 -12 12 1 -28z"/>
+<path d="M4250 2390 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M4320 2390 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M3960 1905 c0 -25 5 -45 10 -45 6 0 10 10 10 23 l1 22 20 -24 c11
+-13 22 -21 26 -17 4 3 1 12 -5 18 -8 8 -9 15 -1 25 18 21 2 43 -31 43 -29 0
+-30 -2 -30 -45z m50 20 c0 -8 -7 -15 -15 -15 -8 0 -15 7 -15 15 0 8 7 15 15
+15 8 0 15 -7 15 -15z"/>
+<path d="M4050 1941 c0 -6 7 -8 15 -5 17 7 21 -21 5 -31 -5 -3 -15 -15 -20
+-26 -10 -17 -7 -19 22 -18 18 1 25 3 15 6 -17 4 -17 6 -2 23 22 24 15 54 -13
+58 -12 2 -22 -1 -22 -7z"/>
+<path d="M3690 1545 c-17 -21 -5 -45 30 -58 41 -16 38 -31 -5 -23 -36 7 -44
+-1 -23 -22 17 -17 63 -15 78 3 19 23 7 49 -28 60 -43 12 -41 29 3 21 39 -8 42
+-5 19 18 -20 20 -58 21 -74 1z"/>
+<path d="M3817 1542 c-52 -57 24 -150 78 -96 21 22 4 44 -19 24 -22 -18 -46
+-5 -46 25 0 30 24 43 46 25 23 -20 40 2 19 24 -22 21 -58 20 -78 -2z"/>
+<path d="M3930 1495 l0 -65 45 0 c33 0 45 4 45 15 0 10 -10 15 -30 15 -29 0
+-30 1 -30 50 0 38 -4 50 -15 50 -12 0 -15 -14 -15 -65z"/>
+<path d="M5267 2074 c-4 -4 -7 -15 -7 -25 0 -15 -11 -19 -71 -21 l-72 -3 2
+-177 1 -178 -55 0 c-30 0 -55 -4 -55 -10 0 -6 45 -10 115 -10 70 0 115 4 115
+10 0 6 -25 10 -55 10 l-55 0 1 170 0 170 64 0 c58 0 64 -2 67 -22 6 -41 23
+-24 26 26 3 47 -7 74 -21 60z"/>
+<path d="M5543 2003 c-7 -2 -13 -20 -13 -39 0 -34 8 -40 60 -45 31 -3 84 3 67
+8 -17 4 -17 6 -2 23 22 24 15 54 -13 58 -12 2 -22 -1 -22 -7 0 -6 7 -8 15 -5
+23 9 17 -17 -11 -51 l-25 -30 6 27 c12 48 -19 79 -62 61z m45 -37 c2 -18 0
+-26 -7 -21 -6 3 -11 1 -11 -4 0 -17 -17 -13 -24 5 -10 25 3 56 22 52 10 -2 18
+-15 20 -32z"/>
+<path d="M5050 1600 c0 -6 32 -10 75 -10 43 0 75 4 75 10 0 6 -32 10 -75 10
+-43 0 -75 -4 -75 -10z"/>
+<path d="M5090 1540 c0 -5 16 -10 35 -10 19 0 35 5 35 10 0 6 -16 10 -35 10
+-19 0 -35 -4 -35 -10z"/>
+<path d="M5540 1505 c0 -44 0 -45 33 -44 23 1 26 3 10 6 -19 4 -23 11 -23 44
+0 21 -4 39 -10 39 -5 0 -10 -20 -10 -45z"/>
+<path d="M5610 1505 c0 -25 5 -45 10 -45 6 0 10 10 10 22 l0 22 16 -22 c23
+-34 34 -27 34 23 0 25 -4 45 -10 45 -5 0 -10 -12 -10 -27 l-1 -28 -17 28 c-24
+38 -32 34 -32 -18z"/>
+<path d="M5712 1520 c-20 -32 -21 -35 -4 -39 9 -2 20 -8 23 -13 10 -16 15 14
+9 52 l-6 35 -22 -35z m18 -20 c0 -5 -5 -10 -11 -10 -5 0 -7 5 -4 10 3 6 8 10
+11 10 2 0 4 -4 4 -10z"/>
+<path d="M1111 2283 c1 -27 4 -38 6 -25 2 12 9 22 15 22 5 0 18 -10 29 -22 10
+-13 18 -18 19 -11 0 6 -5 15 -10 18 -8 5 -7 11 1 21 18 22 3 44 -31 44 -29 0
+-30 -1 -29 -47z m49 22 c0 -8 -9 -15 -20 -15 -11 0 -20 7 -20 15 0 8 9 15 20
+15 11 0 20 -7 20 -15z"/>
+<path d="M1428 2320 c-5 -17 3 -80 11 -80 7 0 6 79 -2 86 -3 3 -7 0 -9 -6z"/>
+<path d="M1640 2321 c0 -5 -9 -11 -20 -14 -41 -11 -32 -67 11 -67 16 0 19 8
+19 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -9z m-5 -46 c0 -10 -6 -20 -12 -22 -8
+-3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M1200 2296 c-23 -28 17 -73 42 -48 8 8 5 9 -11 5 -12 -3 -21 -1 -21
+6 0 6 9 11 21 11 14 0 19 5 17 17 -4 23 -31 28 -48 9z m35 -6 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M1270 2295 c-15 -18 -4 -55 18 -56 14 0 13 -2 -3 -10 -18 -8 -18 -8
+5 -6 22 2 25 7 28 45 3 36 0 42 -16 42 -11 0 -25 -7 -32 -15z m35 -20 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M1343 2275 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+<path d="M1370 2290 c0 -11 7 -20 15 -20 8 0 15 -5 15 -11 0 -6 -9 -8 -21 -4
+-15 5 -19 4 -15 -4 10 -16 43 -14 49 3 3 8 -4 22 -16 31 -16 12 -17 15 -4 11
+9 -3 17 -1 17 4 0 6 -9 10 -20 10 -13 0 -20 -7 -20 -20z"/>
+<path d="M1461 2273 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M1500 2295 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M1670 2296 c-23 -28 17 -73 42 -48 8 8 5 9 -11 5 -12 -3 -21 -1 -21
+6 0 6 9 11 21 11 14 0 19 5 17 17 -4 23 -31 28 -48 9z m35 -6 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M1330 2181 c0 -5 -9 -11 -20 -14 -41 -11 -32 -67 11 -67 16 0 19 8
+19 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -9z m-5 -46 c0 -10 -6 -20 -12 -22 -8
+-3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M1428 2180 c-5 -17 3 -80 11 -80 7 0 6 79 -2 86 -3 3 -7 0 -9 -6z"/>
+<path d="M1360 2160 c0 -6 5 -8 10 -5 6 3 15 3 21 -1 7 -4 2 -11 -11 -18 -32
+-16 -30 -31 3 -32 26 -1 28 2 25 30 -2 23 -9 32 -25 34 -13 2 -23 -2 -23 -8z
+m35 -40 c-3 -5 -11 -10 -16 -10 -6 0 -7 5 -4 10 3 6 11 10 16 10 6 0 7 -4 4
+-10z"/>
+<path d="M1460 2155 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M1530 2150 c0 -11 7 -20 15 -20 8 0 15 -5 15 -11 0 -6 -9 -8 -21 -4
+-15 5 -19 4 -15 -4 10 -16 43 -14 49 3 3 8 -4 22 -16 31 -16 12 -17 15 -4 11
+9 -3 17 -1 17 4 0 6 -9 10 -20 10 -13 0 -20 -7 -20 -20z"/>
+<path d="M6811 2283 c1 -27 4 -38 6 -25 2 12 9 22 15 22 5 0 18 -10 29 -22 10
+-13 18 -18 19 -11 0 6 -5 15 -10 18 -8 5 -7 11 1 21 18 22 3 44 -31 44 -29 0
+-30 -1 -29 -47z m49 22 c0 -8 -9 -15 -20 -15 -11 0 -20 7 -20 15 0 8 9 15 20
+15 11 0 20 -7 20 -15z"/>
+<path d="M7128 2320 c-5 -17 3 -80 11 -80 7 0 6 79 -2 86 -3 3 -7 0 -9 -6z"/>
+<path d="M7340 2321 c0 -5 -9 -11 -20 -14 -41 -11 -32 -67 11 -67 16 0 19 8
+19 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -9z m-5 -46 c0 -10 -6 -20 -12 -22 -8
+-3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M6900 2296 c-23 -28 17 -73 42 -48 8 8 5 9 -11 5 -12 -3 -21 -1 -21
+6 0 6 9 11 21 11 14 0 19 5 17 17 -4 23 -31 28 -48 9z m35 -6 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M6970 2295 c-15 -18 -4 -55 18 -56 14 0 13 -2 -3 -10 -18 -8 -18 -8
+5 -6 22 2 25 7 28 45 3 36 0 42 -16 42 -11 0 -25 -7 -32 -15z m35 -20 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M7043 2275 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+<path d="M7070 2290 c0 -11 7 -20 15 -20 8 0 15 -5 15 -11 0 -6 -9 -8 -21 -4
+-15 5 -19 4 -15 -4 10 -16 43 -14 49 3 3 8 -4 22 -16 31 -16 12 -17 15 -4 11
+9 -3 17 -1 17 4 0 6 -9 10 -20 10 -13 0 -20 -7 -20 -20z"/>
+<path d="M7161 2273 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M7200 2295 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M7370 2296 c-23 -28 17 -73 42 -48 8 8 5 9 -11 5 -12 -3 -21 -1 -21
+6 0 6 9 11 21 11 14 0 19 5 17 17 -4 23 -31 28 -48 9z m35 -6 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M7030 2181 c0 -5 -9 -11 -20 -14 -41 -11 -32 -67 11 -67 16 0 19 8
+19 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -9z m-5 -46 c0 -10 -6 -20 -12 -22 -8
+-3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M7128 2180 c-5 -17 3 -80 11 -80 7 0 6 79 -2 86 -3 3 -7 0 -9 -6z"/>
+<path d="M7060 2160 c0 -6 5 -8 10 -5 6 3 15 3 21 -1 7 -4 2 -11 -11 -18 -32
+-16 -30 -31 3 -32 26 -1 28 2 25 30 -2 23 -9 32 -25 34 -13 2 -23 -2 -23 -8z
+m35 -40 c-3 -5 -11 -10 -16 -10 -6 0 -7 5 -4 10 3 6 11 10 16 10 6 0 7 -4 4
+-10z"/>
+<path d="M7160 2155 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M7230 2150 c0 -11 7 -20 15 -20 8 0 15 -5 15 -11 0 -6 -9 -8 -21 -4
+-15 5 -19 4 -15 -4 10 -16 43 -14 49 3 3 8 -4 22 -16 31 -16 12 -17 15 -4 11
+9 -3 17 -1 17 4 0 6 -9 10 -20 10 -13 0 -20 -7 -20 -20z"/>
+<path d="M870 1559 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10
+-5 -10 -11z"/>
+<path d="M532 1552 c-8 -6 -12 -23 -10 -43 3 -30 6 -34 32 -34 17 0 31 6 34
+15 5 13 3 13 -11 1 -23 -19 -47 -7 -47 24 0 31 24 43 47 24 14 -12 16 -12 11
+1 -5 17 -37 24 -56 12z"/>
+<path d="M823 1515 c0 -27 2 -38 4 -22 2 15 2 37 0 50 -2 12 -4 0 -4 -28z"/>
+<path d="M610 1525 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M681 1503 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M720 1526 c-23 -28 17 -73 42 -48 8 8 5 9 -11 5 -12 -3 -21 -1 -21 6
+0 6 9 11 21 11 14 0 19 5 17 17 -4 23 -31 28 -48 9z m35 -6 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M850 1525 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M922 1528 c-18 -18 -15 -35 9 -52 20 -13 20 -14 2 -19 -12 -4 -9 -5
+7 -4 22 2 25 7 28 45 3 35 0 42 -15 42 -11 0 -24 -5 -31 -12z m33 -23 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M993 1505 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+<path d="M1021 1526 c-9 -11 -10 -20 -1 -35 11 -22 35 -28 45 -11 5 8 11 7 21
+-1 20 -17 44 -3 44 26 0 29 -24 43 -44 26 -10 -8 -16 -9 -21 -1 -9 14 -30 13
+-44 -4z m33 -2 c28 -11 13 -44 -20 -44 -2 0 -4 11 -4 25 0 27 1 28 24 19z m61
+-19 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12
+-23z"/>
+<path d="M7670 1559 c0 -5 5 -7 10 -4 6 3 10 8 10 11 0 2 -4 4 -10 4 -5 0 -10
+-5 -10 -11z"/>
+<path d="M7332 1552 c-8 -6 -12 -23 -10 -43 3 -30 6 -34 32 -34 17 0 31 6 34
+15 5 13 3 13 -11 1 -23 -19 -47 -7 -47 24 0 31 24 43 47 24 14 -12 16 -12 11
+1 -5 17 -37 24 -56 12z"/>
+<path d="M7623 1515 c0 -27 2 -38 4 -22 2 15 2 37 0 50 -2 12 -4 0 -4 -28z"/>
+<path d="M7410 1525 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M7481 1503 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M7520 1526 c-23 -28 17 -73 42 -48 8 8 5 9 -11 5 -12 -3 -21 -1 -21
+6 0 6 9 11 21 11 14 0 19 5 17 17 -4 23 -31 28 -48 9z m35 -6 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M7650 1525 c-17 -21 -2 -50 26 -50 14 0 19 7 19 30 0 34 -24 45 -45
+20z m35 -20 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3
+12 -13 12 -23z"/>
+<path d="M7722 1528 c-18 -18 -15 -35 9 -52 20 -13 20 -14 2 -19 -12 -4 -9 -5
+7 -4 22 2 25 7 28 45 3 35 0 42 -15 42 -11 0 -24 -5 -31 -12z m33 -23 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M7793 1505 c0 -22 2 -30 4 -17 2 12 2 30 0 40 -3 9 -5 -1 -4 -23z"/>
+<path d="M7821 1526 c-9 -11 -10 -20 -1 -35 11 -22 35 -28 45 -11 5 8 11 7 21
+-1 20 -17 44 -3 44 26 0 29 -24 43 -44 26 -10 -8 -16 -9 -21 -1 -9 14 -30 13
+-44 -4z m33 -2 c28 -11 13 -44 -20 -44 -2 0 -4 11 -4 25 0 27 1 28 24 19z m61
+-19 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12
+-23z"/>
+<path d="M1072 918 c-7 -7 -12 -21 -12 -33 0 -41 45 -60 71 -29 11 14 13 14
+21 0 10 -18 34 -21 42 -7 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6 0 6 9 11 20 11
+11 0 20 7 20 15 0 22 -31 31 -44 14 -6 -8 -22 -13 -36 -12 -14 1 -19 0 -12 -3
+22 -10 14 -36 -10 -32 -18 2 -23 10 -23 33 0 26 4 30 27 30 14 -1 24 3 22 7
+-8 12 -38 10 -52 -4z m113 -28 c3 -5 -1 -10 -9 -10 -9 0 -16 5 -16 10 0 6 4
+10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M1510 920 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M1720 920 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M1222 873 c1 -38 1 -38 5 -5 5 40 25 38 35 -4 6 -27 6 -27 5 6 -2 28
+-6 36 -24 38 -21 3 -23 -1 -21 -35z"/>
+<path d="M1292 893 c-18 -32 24 -74 42 -44 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6
+0 6 9 11 21 11 14 0 19 5 17 17 -5 25 -35 28 -46 6z m33 -3 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M1361 873 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M1404 899 c-4 -8 -3 -9 4 -5 7 4 17 4 23 0 7 -4 2 -11 -11 -18 -30
+-15 -27 -31 5 -32 23 -1 26 2 23 30 -3 32 -30 47 -44 25z m31 -39 c-3 -5 -10
+-10 -16 -10 -5 0 -9 5 -9 10 0 6 7 10 16 10 8 0 12 -4 9 -10z"/>
+<path d="M1541 892 c-7 -14 -7 -24 3 -37 19 -27 48 -12 44 22 -4 33 -32 42
+-47 15z m34 -17 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6
+-3 12 -13 12 -23z"/>
+<path d="M1611 873 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M1752 893 c-18 -32 24 -74 42 -44 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6
+0 6 9 11 21 11 14 0 19 5 17 17 -5 25 -35 28 -46 6z m33 -3 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M1433 745 c0 -27 2 -38 4 -22 2 15 2 37 0 50 -2 12 -4 0 -4 -28z"/>
+<path d="M1321 733 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M1362 753 c-18 -32 24 -74 42 -44 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6
+0 6 9 11 21 11 14 0 19 5 17 17 -5 25 -35 28 -46 6z m33 -3 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M1461 752 c-7 -14 -7 -24 3 -37 19 -27 48 -12 44 22 -4 33 -32 42
+-47 15z m34 -17 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6
+-3 12 -13 12 -23z"/>
+<path d="M1530 728 c-3 -26 -1 -43 3 -39 5 5 7 26 5 47 l-3 39 -5 -47z"/>
+<path d="M6772 918 c-7 -7 -12 -21 -12 -33 0 -41 45 -60 71 -29 11 14 13 14
+21 0 10 -18 34 -21 42 -7 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6 0 6 9 11 20 11
+11 0 20 7 20 15 0 22 -31 31 -44 14 -6 -8 -22 -13 -36 -12 -14 1 -19 0 -12 -3
+22 -10 14 -36 -10 -32 -18 2 -23 10 -23 33 0 26 4 30 27 30 14 -1 24 3 22 7
+-8 12 -38 10 -52 -4z m113 -28 c3 -5 -1 -10 -9 -10 -9 0 -16 5 -16 10 0 6 4
+10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M7210 920 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M7420 920 c0 -5 -7 -10 -15 -10 -7 0 -18 -8 -24 -17 -12 -23 4 -53
+29 -53 17 0 20 7 20 45 0 25 -2 45 -5 45 -3 0 -5 -4 -5 -10z m-5 -45 c0 -10
+-6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6 -3 12 -13 12 -23z"/>
+<path d="M6922 873 c1 -38 1 -38 5 -5 5 40 25 38 35 -4 6 -27 6 -27 5 6 -2 28
+-6 36 -24 38 -21 3 -23 -1 -21 -35z"/>
+<path d="M6992 893 c-18 -32 24 -74 42 -44 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6
+0 6 9 11 21 11 14 0 19 5 17 17 -5 25 -35 28 -46 6z m33 -3 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M7061 873 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M7104 899 c-4 -8 -3 -9 4 -5 7 4 17 4 23 0 7 -4 2 -11 -11 -18 -30
+-15 -27 -31 5 -32 23 -1 26 2 23 30 -3 32 -30 47 -44 25z m31 -39 c-3 -5 -10
+-10 -16 -10 -5 0 -9 5 -9 10 0 6 7 10 16 10 8 0 12 -4 9 -10z"/>
+<path d="M7241 892 c-7 -14 -7 -24 3 -37 19 -27 48 -12 44 22 -4 33 -32 42
+-47 15z m34 -17 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6
+-3 12 -13 12 -23z"/>
+<path d="M7311 873 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M7452 893 c-18 -32 24 -74 42 -44 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6
+0 6 9 11 21 11 14 0 19 5 17 17 -5 25 -35 28 -46 6z m33 -3 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M7133 745 c0 -27 2 -38 4 -22 2 15 2 37 0 50 -2 12 -4 0 -4 -28z"/>
+<path d="M7021 733 c2 -35 2 -35 6 -8 3 16 10 33 16 37 8 5 6 8 -5 8 -14 0
+-18 -8 -17 -37z"/>
+<path d="M7062 753 c-18 -32 24 -74 42 -44 4 5 -3 7 -14 4 -11 -3 -20 0 -20 6
+0 6 9 11 21 11 14 0 19 5 17 17 -5 25 -35 28 -46 6z m33 -3 c3 -5 -1 -10 -9
+-10 -9 0 -16 5 -16 10 0 6 4 10 9 10 6 0 13 -4 16 -10z"/>
+<path d="M7161 752 c-7 -14 -7 -24 3 -37 19 -27 48 -12 44 22 -4 33 -32 42
+-47 15z m34 -17 c0 -10 -6 -20 -12 -22 -8 -3 -13 5 -13 22 0 17 5 25 13 23 6
+-3 12 -13 12 -23z"/>
+<path d="M7230 728 c-3 -26 -1 -43 3 -39 5 5 7 26 5 47 l-3 39 -5 -47z"/>
+<path d="M3960 3205 c0 -25 5 -45 10 -45 6 0 10 10 10 23 l1 22 20 -24 c11
+-13 22 -21 26 -17 4 3 1 12 -5 18 -8 8 -9 15 -1 25 18 21 2 43 -31 43 -29 0
+-30 -2 -30 -45z m50 20 c0 -8 -7 -15 -15 -15 -8 0 -15 7 -15 15 0 8 7 15 15
+15 8 0 15 -7 15 -15z"/>
+<path d="M4062 3238 c-15 -15 -16 -32 -2 -23 6 4 10 -7 10 -24 0 -17 5 -31 10
+-31 6 0 10 20 10 45 0 46 -7 54 -28 33z"/>
+<path d="M3690 2845 c-17 -21 -5 -45 30 -58 41 -16 38 -31 -5 -23 -36 7 -44
+-1 -23 -22 17 -17 63 -15 78 3 19 23 7 49 -28 60 -43 12 -41 29 3 21 39 -8 42
+-5 19 18 -20 20 -58 21 -74 1z"/>
+<path d="M3800 2795 l0 -65 38 0 c47 0 72 24 72 67 0 39 -28 63 -73 63 l-37 0
+0 -65z m75 0 c0 -23 -5 -31 -22 -33 -20 -3 -23 1 -23 33 0 32 3 36 23 33 17
+-2 22 -10 22 -33z"/>
+<path d="M3963 2843 c-3 -10 -14 -39 -24 -65 -15 -39 -16 -48 -5 -48 8 0 16 7
+20 15 7 20 53 19 64 -1 5 -9 14 -15 20 -13 6 3 0 28 -15 67 -25 62 -48 79 -60
+45z m26 -52 c-15 -5 -22 6 -14 19 6 9 10 9 16 -1 5 -8 4 -15 -2 -18z"/>
+</g>
 </svg>
