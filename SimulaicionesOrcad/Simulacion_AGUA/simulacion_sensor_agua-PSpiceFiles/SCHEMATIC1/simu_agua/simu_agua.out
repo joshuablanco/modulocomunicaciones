@@ -1,0 +1,276 @@
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simu_agua.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "C:/Cadence/SPB_17.4/tools/pspice/library/SS8050.lib" 
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 1000 1 10Meg
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMULACION_SENSOR_AGUA
+V_V1         VCC 0 5
+V_V2         VIN 0 2.5
+X_U2         N04664 VO VCC 0 VO MCP6001
+R_R3         0 N00954  560 TC=0,0 
+R_R5         N01362 N03429  30k TC=0,0 
+R_R6         N01362 VCC  {barrido} TC=0,0 
+C_C1         0 N00954  100N  TC=0,0 
+Q_Q6         VCC N03429 N00954 SS8050 
+V_V3         N04664 0 DC 0Vdc AC 1Vac 
+.PARAM  barrido=10000k
+
+**** RESUMING simu_agua.cir ****
+.END
+
+INFO(ORPSIM-16573): AC analysis does not support expression evaluation at each frequency. ABM devices with non-linear operations will be evaluated only at bias point.
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.DESD       X_U2.DL         X_U2.DN1        
+          IS    1.000000E-15    1.000000E-15    1.000000E-12 
+          KF                                  146.000000E-18 
+
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               SS8050          
+               NPN             
+       LEVEL    1            
+          IS  377.207000E-15 
+          EG    1.05         
+          BF  218.082        
+          NF    1.0409       
+         VAF   32.0909       
+         IKF     .84522      
+         ISE   51.722400E-12 
+          NE    2.12785      
+          BR    5.45795      
+          NR    1.06185      
+         VAR   49.0994       
+         IKR    2.19792      
+         ISC   51.722400E-12 
+          NC    3.96851      
+         ISS    0            
+          RB    5.74704      
+         RBM     .1          
+         IRB     .1          
+          RE  841.718000E-06 
+          RC     .248242     
+         CJE   27.334600E-12 
+         VJE     .721406     
+         MJE     .85         
+         CJC   26.000200E-12 
+         VJC     .4          
+         MJC     .367851     
+        XCJC     .1          
+         CJS    0            
+         VJS     .75         
+         MJS     .5          
+          FC     .9999       
+          TF  643.938000E-12 
+         XTF    1.43228      
+         VTF     .344801     
+         ITF    1.20072      
+          TR  100.000000E-09 
+         XTB     .626944     
+         XTI    1            
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.NMI        
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO    0            
+          KP   20.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     Resistor MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.REXP       
+           R    1            
+         TCE   10.1          
+
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(   VO) 180.3E-06  (  VCC)    5.0000  (  VIN)    2.5000  (N00954)     .0154     
+
+(N01362)     .5125 (N03429)     .4991 (N04664)    0.0000 (X_U2.10)    5.5000    
+
+(X_U2.11)    5.3278                   (X_U2.12)    5.3272                       
+
+(X_U2.13)    5.3000                   (X_U2.14)-426.0E-06                       
+
+(X_U2.15)    -.3452                   (X_U2.16)    -.3000                       
+
+(X_U2.20)     .5137                   (X_U2.21)    -.5137                       
+
+(X_U2.26)-135.0E-06                   (X_U2.27)-440.0E-06                       
+
+(X_U2.30)    -.6063                   (X_U2.31)  111.2500                       
+
+(X_U2.32) -130.2000                   (X_U2.33)    -.0376                       
+
+(X_U2.34)  -16.0000                   (X_U2.35)  -16.0000                       
+
+(X_U2.37)  -16.0000                   (X_U2.38)  -16.0000                       
+
+(X_U2.39)  -16.0000                   (X_U2.50)-10.81E-09                       
+
+(X_U2.51)-1.091E-15                   (X_U2.52)-10.79E-09                       
+
+(X_U2.55)    4.9993                   (X_U2.56)     .0012                       
+
+(X_U2.57) 180.3E-06                   (X_U2.61) 109.5E-06                       
+
+(X_U2.62) 58.20E-12                   (X_U2.70) 1.000E-06                       
+
+(X_U2.71)-1.000E-06                   (X_U2.96) 180.3E-06                       
+
+(X_U2.98)-5.128E-12                   (X_U2.99)-10.79E-12                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.380E-04
+    V_V2         0.000E+00
+    V_V3        -8.610E-13
+    X_U2.V10     5.000E-05
+    X_U2.V16     3.030E-13
+    X_U2.V13     5.353E-12
+
+    TOTAL POWER DISSIPATION   7.15E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 06/30/21 06:53:59 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  License check-out time            =        2.47
+  Total job time (using Solver 1)   =         .16
+

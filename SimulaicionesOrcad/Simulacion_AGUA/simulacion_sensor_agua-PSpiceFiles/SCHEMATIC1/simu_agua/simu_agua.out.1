@@ -1,0 +1,48 @@
+
+**** 06/30/21 06:21:16 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-simu_agua"  [ c:\users\joshu\onedrive\escritorio\modcomt\modulocomunicacion\simulaicionesorcad\simulacion_ag
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "simu_agua.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\joshu\AppData\Roaming\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM barrido 10K 10000k 100k 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source SIMULACION_SENSOR_AGUA
+V_V1         VCC 0 5
+V_V2         VIN 0 2.5
+X_U2         N00264 VO VCC 0 VO MCP6001
+R_R3         0 N00264  50 TC=0,0 
+R_R5         N01362 N03429  100 TC=0,0 
+R_R6         N01362 VCC  {barrido} TC=0,0 
+C_C1         0 N00264  100N  TC=0,0 
+Q_Q6         VCC N03429 N00264 SS8050 
+.PARAM  barrido=10000k
+
+**** RESUMING simu_agua.cir ****
+.END
+
+ERROR(ORPSIM-15113): Model SS8050 used by Q_Q6 is undefined
+

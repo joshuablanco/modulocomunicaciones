@@ -24,8 +24,8 @@ CurrentData Read_RMS(Rms2 readRms, Average MeasAvg , MCP331 adc){
             
             VTC = readRms.rmsVal;
             VTC_mean = MeasAvg.average;//change this to double to increase accuracy, probably
-            Serial.print("VTC: ");Serial.println(VTC);
-            Serial.print("VTC_MEAN: ");Serial.println(VTC_mean);
+            Serial.print("ACS_RMS: ");Serial.println(VTC);
+            Serial.print("ACS_MEAN: ");Serial.println(VTC_mean);
             VTC = Fit_Rms(VTC); // Fitted Value   
             cnt=0;        
             FlagNo = true;

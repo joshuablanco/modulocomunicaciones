@@ -9,7 +9,6 @@
 #include <XBee.h>
 #include <MCP331.h>
 
-
 const char HEADER = 'H';
 const char TAIL = 'T';
  
@@ -18,10 +17,10 @@ const char TAIL = 'T';
 #define VOLT_RANGE 5.0      // ADC full scale peak-to-peak is 5.00Volts measure in full operation
 #define ADC_GAIN 1          // 1.05 related with the trigger
 #define SCALE_PLOT_AXIS 1   // Scale Data to plot in the screen y-axis
-// float Sensitivity = 0.1;  
-// float VoltRange = 5;    
-// float ADC_Gain = 1;       
-// float Scale_Plot_Axis = 1;
+ float Sensitivity = 0.1;  
+ float VoltRange = 5;    
+ float ADC_Gain = 1;       
+ float Scale_Plot_Axis = 1;
  
 
 
@@ -35,10 +34,10 @@ const char TAIL = 'T';
 #define AVG_WINDOW 500  // window of 500 samples.  
 #define CLOCK_DIVISION 2
 #define NUM_BITS 14
-
-//MCP331 adc = MCP331(10, CLOCK_DIVISION, NUM_BITS);
-//Rms2 readRms ;// create an instance of
-//Average MeasAvg; // 
+//
+MCP331 adc = MCP331(10, CLOCK_DIVISION, NUM_BITS);
+Rms2 readRms ;// create an instance of
+Average MeasAvg; // 
 
 unsigned long nextLoop;
 unsigned long Time_Ex;
@@ -53,10 +52,13 @@ double VTC_mean;
 DHTNEW dhtpin1(8);
 
 /**** WATER SETUP ****/
-#define WATER_1 A1
+#define WATER_1 A0 //sensor W2
+//#define WATER_1 A1 //sensor W1
 
 /****** CURRENT MONITOR ******/
 Adafruit_INA219 ina219;
+const int ledPinGreen =  5;// the number of the LED pin GREEN
+const int ledPinRed =  6;// the number of the LED pin RED
 
 
 /******************   STRUCTS     ******************/
@@ -104,40 +106,40 @@ void setup() {
       Serial.println("Failed to find INA219 chip");
       while (1) { delay(10); }
     }
-    ina219.setCalibration_16V_400mA(); 
+    //ina219.setCalibration_16V_400mA(); 
   
-    //adc.begin();      
+    adc.begin();      
     //Xbee_Serial.begin(9600);   /// Xbee serial output
 
     
     
     /* Current Rms */
-//    readRms.begin(VOLT_RANGE, RMS_WINDOW, ADC_14BIT, BLR_ON, CNT_SCAN);
-//    readRms.start(); //start measuring
-//    
-//    MeasAvg.begin(VOLT_RANGE, AVG_WINDOW, ADC_14BIT, CNT_SCAN); // 
-//    MeasAvg.start(); //start measuring      
+    readRms.begin(VOLT_RANGE, RMS_WINDOW, ADC_14BIT, BLR_ON, CNT_SCAN);
+    readRms.start(); //start measuring
+    
+    MeasAvg.begin(VOLT_RANGE, AVG_WINDOW, ADC_14BIT, CNT_SCAN); // 
+    MeasAvg.start(); //start measuring      
 }
 
 void loop() {
     /*** instance of the sensors in field    ***/
-    
+    //Serial.print("its running");
     //TemperatureStruct temperatureH = TemperatureStruct();
     Battery battery = Battery();
     //Water water1 = Water();    
     //CurrentData currentData = CurrentData();
     //GraficaStruct graf = GraficaStruct();
-    
+
     /*** Reading sensors ***/   
-//    temperatureH = TempHum(dhtpin1);
-//    delay(5);
+    //temperatureH = TempHum(dhtpin1);
+//    delay(50);
     battery = EnergyBat(ina219);
     
-
-    delay(5);
-//    water1 = WaterReads(WATER_1);    
-//    delay(5);
-//    currentData = Read_RMS(readRms,MeasAvg, adc);
+//
+//    delay(50);
+    //water1 = WaterReads(WATER_1);    
+//    delay(50);
+    //currentData = Read_RMS(readRms,MeasAvg, adc);
 //    delay(5);
 //    graf = rms_Plot(adc, ADC_GAIN, SCALE_PLOT_AXIS, VOLT_RANGE, SENSITIVITY, currentData);    
     /****       Transmission PayLoad        ****/
@@ -160,5 +162,5 @@ void loop() {
     //ZBTxRequest zbTx2 = ZBTxRequest(addr64, payload2, sizeof(payload2)); 
     //xbee.send(zbTx2);    
     
-    delay(2000);
+    delay(5000);
 }
